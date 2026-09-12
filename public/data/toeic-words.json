@@ -1,0 +1,6502 @@
+[
+  {
+    "id": "w001",
+    "word": "negotiate",
+    "ipa": "/nɪˈɡoʊʃieɪt/",
+    "meaning": "thương lượng, đàm phán",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We need to negotiate the terms of the contract before signing.",
+    "tags": [
+      "contract",
+      "deal"
+    ]
+  },
+  {
+    "id": "w002",
+    "word": "contract",
+    "ipa": "/ˈkɒntrækt/",
+    "meaning": "hợp đồng",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Both parties signed the contract yesterday.",
+    "tags": [
+      "legal",
+      "agreement"
+    ]
+  },
+  {
+    "id": "w003",
+    "word": "agenda",
+    "ipa": "/əˈdʒendə/",
+    "meaning": "chương trình nghị sự, lịch họp",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Please review the agenda before the meeting starts.",
+    "tags": [
+      "meeting",
+      "schedule"
+    ]
+  },
+  {
+    "id": "w004",
+    "word": "deadline",
+    "ipa": "/ˈdedlaɪn/",
+    "meaning": "hạn chót, thời hạn",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The deadline for the project is next Friday.",
+    "tags": [
+      "time",
+      "project"
+    ]
+  },
+  {
+    "id": "w005",
+    "word": "revenue",
+    "ipa": "/ˈrevənjuː/",
+    "meaning": "doanh thu",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The company's revenue increased by 20% last quarter.",
+    "tags": [
+      "money",
+      "income"
+    ]
+  },
+  {
+    "id": "w006",
+    "word": "budget",
+    "ipa": "/ˈbʌdʒɪt/",
+    "meaning": "ngân sách",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "We need to stay within the budget this year.",
+    "tags": [
+      "money",
+      "planning"
+    ]
+  },
+  {
+    "id": "w007",
+    "word": "invoice",
+    "ipa": "/ˈɪnvɔɪs/",
+    "meaning": "hóa đơn",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Please send the invoice to our accounting department.",
+    "tags": [
+      "billing",
+      "payment"
+    ]
+  },
+  {
+    "id": "w008",
+    "word": "profit",
+    "ipa": "/ˈprɒfɪt/",
+    "meaning": "lợi nhuận",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The profit margin improved significantly this quarter.",
+    "tags": [
+      "money",
+      "success"
+    ]
+  },
+  {
+    "id": "w009",
+    "word": "expense",
+    "ipa": "/ɪkˈspens/",
+    "meaning": "chi phí, khoản chi tiêu",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Business travel expenses must be approved in advance.",
+    "tags": [
+      "money",
+      "cost"
+    ]
+  },
+  {
+    "id": "w010",
+    "word": "investment",
+    "ipa": "/ɪnˈvestmənt/",
+    "meaning": "đầu tư",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "This investment will generate returns within two years.",
+    "tags": [
+      "money",
+      "growth"
+    ]
+  },
+  {
+    "id": "w011",
+    "word": "recruitment",
+    "ipa": "/rɪˈkruːtmənt/",
+    "meaning": "tuyển dụng",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Our recruitment process takes about four weeks.",
+    "tags": [
+      "hiring",
+      "staff"
+    ]
+  },
+  {
+    "id": "w012",
+    "word": "applicant",
+    "ipa": "/ˈæplɪkənt/",
+    "meaning": "người xin việc, ứng viên",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "We received over 200 applicants for the position.",
+    "tags": [
+      "hiring",
+      "job"
+    ]
+  },
+  {
+    "id": "w013",
+    "word": "resume",
+    "ipa": "/ˈrezjuːmeɪ/",
+    "meaning": "hồ sơ xin việc, CV",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Please send your resume to our HR department.",
+    "tags": [
+      "job",
+      "application"
+    ]
+  },
+  {
+    "id": "w014",
+    "word": "interview",
+    "ipa": "/ˈɪntəvjuː/",
+    "meaning": "phỏng vấn",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "She has a job interview scheduled for tomorrow morning.",
+    "tags": [
+      "hiring",
+      "selection"
+    ]
+  },
+  {
+    "id": "w015",
+    "word": "promotion",
+    "ipa": "/prəˈmoʊʃən/",
+    "meaning": "sự thăng chức",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "He received a promotion after three years with the company.",
+    "tags": [
+      "career",
+      "advancement"
+    ]
+  },
+  {
+    "id": "w016",
+    "word": "salary",
+    "ipa": "/ˈsæləri/",
+    "meaning": "tiền lương",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The salary for this position starts at $50,000 per year.",
+    "tags": [
+      "pay",
+      "employment"
+    ]
+  },
+  {
+    "id": "w017",
+    "word": "colleague",
+    "ipa": "/ˈkɒliːɡ/",
+    "meaning": "đồng nghiệp",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "She introduced me to her colleagues at the office.",
+    "tags": [
+      "workplace",
+      "people"
+    ]
+  },
+  {
+    "id": "w018",
+    "word": "department",
+    "ipa": "/dɪˈpɑːtmənt/",
+    "meaning": "phòng ban, bộ phận",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The marketing department is on the third floor.",
+    "tags": [
+      "organization",
+      "workplace"
+    ]
+  },
+  {
+    "id": "w019",
+    "word": "performance",
+    "ipa": "/pəˈfɔːməns/",
+    "meaning": "hiệu suất, thành tích",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Annual performance reviews are held every December.",
+    "tags": [
+      "evaluation",
+      "work"
+    ]
+  },
+  {
+    "id": "w020",
+    "word": "benefits",
+    "ipa": "/ˈbenɪfɪts/",
+    "meaning": "phúc lợi (công ty)",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The benefits package includes health insurance and paid leave.",
+    "tags": [
+      "employment",
+      "perks"
+    ]
+  },
+  {
+    "id": "w021",
+    "word": "itinerary",
+    "ipa": "/aɪˈtɪnəreri/",
+    "meaning": "hành trình, lịch trình chuyến đi",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Please check your travel itinerary before departing.",
+    "tags": [
+      "trip",
+      "schedule"
+    ]
+  },
+  {
+    "id": "w022",
+    "word": "reservation",
+    "ipa": "/ˌrezəˈveɪʃən/",
+    "meaning": "đặt chỗ, đặt phòng",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "I'd like to make a reservation for two nights.",
+    "tags": [
+      "hotel",
+      "booking"
+    ]
+  },
+  {
+    "id": "w023",
+    "word": "departure",
+    "ipa": "/dɪˈpɑːtʃə/",
+    "meaning": "sự khởi hành, giờ bay",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "The departure is scheduled for 8:00 AM.",
+    "tags": [
+      "flight",
+      "airport"
+    ]
+  },
+  {
+    "id": "w024",
+    "word": "destination",
+    "ipa": "/ˌdestɪˈneɪʃən/",
+    "meaning": "điểm đến",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "What is your final destination?",
+    "tags": [
+      "travel",
+      "location"
+    ]
+  },
+  {
+    "id": "w025",
+    "word": "accommodation",
+    "ipa": "/əˌkɒməˈdeɪʃən/",
+    "meaning": "chỗ ở, nơi lưu trú",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "The conference will provide accommodation for all attendees.",
+    "tags": [
+      "hotel",
+      "stay"
+    ]
+  },
+  {
+    "id": "w026",
+    "word": "boarding",
+    "ipa": "/ˈbɔːdɪŋ/",
+    "meaning": "lên tàu/máy bay",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Boarding will begin 30 minutes before departure.",
+    "tags": [
+      "flight",
+      "airport"
+    ]
+  },
+  {
+    "id": "w027",
+    "word": "passport",
+    "ipa": "/ˈpɑːspɔːt/",
+    "meaning": "hộ chiếu",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Please have your passport ready at the immigration counter.",
+    "tags": [
+      "documents",
+      "travel"
+    ]
+  },
+  {
+    "id": "w028",
+    "word": "luggage",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "meaning": "hành lý",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "You are allowed one piece of carry-on luggage.",
+    "tags": [
+      "flight",
+      "packing"
+    ]
+  },
+  {
+    "id": "w029",
+    "word": "transit",
+    "ipa": "/ˈtrænsɪt/",
+    "meaning": "quá cảnh, trung chuyển",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Passengers in transit do not need a visa.",
+    "tags": [
+      "travel",
+      "airport"
+    ]
+  },
+  {
+    "id": "w030",
+    "word": "customs",
+    "ipa": "/ˈkʌstəmz/",
+    "meaning": "hải quan",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "All items must be declared at customs.",
+    "tags": [
+      "travel",
+      "border"
+    ]
+  },
+  {
+    "id": "w031",
+    "word": "prescription",
+    "ipa": "/prɪˈskrɪpʃən/",
+    "meaning": "đơn thuốc",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "The doctor gave me a prescription for antibiotics.",
+    "tags": [
+      "medicine",
+      "doctor"
+    ]
+  },
+  {
+    "id": "w032",
+    "word": "symptom",
+    "ipa": "/ˈsɪmptəm/",
+    "meaning": "triệu chứng",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Common symptoms include fever and headache.",
+    "tags": [
+      "illness",
+      "medical"
+    ]
+  },
+  {
+    "id": "w033",
+    "word": "diagnosis",
+    "ipa": "/ˌdaɪəɡˈnoʊsɪs/",
+    "meaning": "chẩn đoán bệnh",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "The diagnosis confirmed she had the flu.",
+    "tags": [
+      "medical",
+      "doctor"
+    ]
+  },
+  {
+    "id": "w034",
+    "word": "treatment",
+    "ipa": "/ˈtriːtmənt/",
+    "meaning": "phương pháp điều trị",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "The treatment requires daily medication for two weeks.",
+    "tags": [
+      "medical",
+      "cure"
+    ]
+  },
+  {
+    "id": "w035",
+    "word": "insurance",
+    "ipa": "/ɪnˈʃʊərəns/",
+    "meaning": "bảo hiểm",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Health insurance covers most of the hospital costs.",
+    "tags": [
+      "medical",
+      "finance"
+    ]
+  },
+  {
+    "id": "w036",
+    "word": "appointment",
+    "ipa": "/əˈpɔɪntmənt/",
+    "meaning": "cuộc hẹn, lịch hẹn",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "I have a doctor's appointment at 3 PM today.",
+    "tags": [
+      "medical",
+      "schedule"
+    ]
+  },
+  {
+    "id": "w037",
+    "word": "surgery",
+    "ipa": "/ˈsɜːdʒəri/",
+    "meaning": "phẫu thuật",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "The surgery was successful and she recovered quickly.",
+    "tags": [
+      "medical",
+      "hospital"
+    ]
+  },
+  {
+    "id": "w038",
+    "word": "pharmacy",
+    "ipa": "/ˈfɑːməsi/",
+    "meaning": "hiệu thuốc",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "You can pick up your medication at the pharmacy.",
+    "tags": [
+      "medicine",
+      "store"
+    ]
+  },
+  {
+    "id": "w039",
+    "word": "software",
+    "ipa": "/ˈsɒftweə/",
+    "meaning": "phần mềm",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "We need to update the software before the launch.",
+    "tags": [
+      "computer",
+      "digital"
+    ]
+  },
+  {
+    "id": "w040",
+    "word": "database",
+    "ipa": "/ˈdeɪtəbeɪs/",
+    "meaning": "cơ sở dữ liệu",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The customer database contains over one million records.",
+    "tags": [
+      "computer",
+      "data"
+    ]
+  },
+  {
+    "id": "w041",
+    "word": "network",
+    "ipa": "/ˈnetwɜːk/",
+    "meaning": "mạng lưới, mạng máy tính",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The company upgraded its network infrastructure last month.",
+    "tags": [
+      "computer",
+      "IT"
+    ]
+  },
+  {
+    "id": "w042",
+    "word": "password",
+    "ipa": "/ˈpɑːswɜːd/",
+    "meaning": "mật khẩu",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Please change your password every three months.",
+    "tags": [
+      "security",
+      "computer"
+    ]
+  },
+  {
+    "id": "w043",
+    "word": "upgrade",
+    "ipa": "/ˈʌɡreɪd/",
+    "meaning": "nâng cấp",
+    "partOfSpeech": "verb",
+    "topic": "Technology",
+    "example": "We plan to upgrade all computers by the end of the year.",
+    "tags": [
+      "improvement",
+      "computer"
+    ]
+  },
+  {
+    "id": "w044",
+    "word": "maintenance",
+    "ipa": "/ˈmeɪntənəns/",
+    "meaning": "bảo trì, bảo dưỡng",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Regular maintenance will extend the equipment lifespan.",
+    "tags": [
+      "repair",
+      "upkeep"
+    ]
+  },
+  {
+    "id": "w045",
+    "word": "backup",
+    "ipa": "/ˈbækʌp/",
+    "meaning": "sao lưu dữ liệu",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Always create a backup before making any changes.",
+    "tags": [
+      "data",
+      "computer"
+    ]
+  },
+  {
+    "id": "w046",
+    "word": "server",
+    "ipa": "/ˈsɜːvə/",
+    "meaning": "máy chủ",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The server will be down for maintenance tonight.",
+    "tags": [
+      "IT",
+      "computer"
+    ]
+  },
+  {
+    "id": "w047",
+    "word": "shipment",
+    "ipa": "/ˈʃɪpmənt/",
+    "meaning": "lô hàng, việc vận chuyển",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The shipment arrived two days ahead of schedule.",
+    "tags": [
+      "delivery",
+      "goods"
+    ]
+  },
+  {
+    "id": "w048",
+    "word": "warehouse",
+    "ipa": "/ˈweəhaʊs/",
+    "meaning": "nhà kho",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The goods are stored in our warehouse near the port.",
+    "tags": [
+      "storage",
+      "goods"
+    ]
+  },
+  {
+    "id": "w049",
+    "word": "freight",
+    "ipa": "/freɪt/",
+    "meaning": "hàng hóa vận chuyển, cước phí",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The freight charges depend on the weight of the package.",
+    "tags": [
+      "shipping",
+      "cost"
+    ]
+  },
+  {
+    "id": "w050",
+    "word": "delivery",
+    "ipa": "/dɪˈlɪvəri/",
+    "meaning": "giao hàng",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Delivery is expected within five business days.",
+    "tags": [
+      "shipping",
+      "service"
+    ]
+  },
+  {
+    "id": "w051",
+    "word": "inventory",
+    "ipa": "/ˈɪnvəntəri/",
+    "meaning": "hàng tồn kho, danh sách tồn kho",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "We need to do a full inventory count this weekend.",
+    "tags": [
+      "stock",
+      "goods"
+    ]
+  },
+  {
+    "id": "w052",
+    "word": "customs clearance",
+    "ipa": "/ˈkʌstəmz ˈklɪərəns/",
+    "meaning": "thông quan hải quan",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Customs clearance usually takes 2-3 business days.",
+    "tags": [
+      "import",
+      "export"
+    ]
+  },
+  {
+    "id": "w053",
+    "word": "supply chain",
+    "ipa": "/səˈplaɪ tʃeɪn/",
+    "meaning": "chuỗi cung ứng",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The pandemic disrupted supply chains worldwide.",
+    "tags": [
+      "business",
+      "logistics"
+    ]
+  },
+  {
+    "id": "w054",
+    "word": "proposal",
+    "ipa": "/prəˈpoʊzəl/",
+    "meaning": "đề xuất, bản đề nghị",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Please submit your proposal by the end of the week.",
+    "tags": [
+      "document",
+      "planning"
+    ]
+  },
+  {
+    "id": "w055",
+    "word": "strategy",
+    "ipa": "/ˈstrætədʒi/",
+    "meaning": "chiến lược",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The new marketing strategy targets younger consumers.",
+    "tags": [
+      "planning",
+      "management"
+    ]
+  },
+  {
+    "id": "w056",
+    "word": "merger",
+    "ipa": "/ˈmɜːdʒə/",
+    "meaning": "sự sáp nhập (công ty)",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The merger will create the largest bank in the country.",
+    "tags": [
+      "corporate",
+      "finance"
+    ]
+  },
+  {
+    "id": "w057",
+    "word": "acquisition",
+    "ipa": "/ˌækwɪˈzɪʃən/",
+    "meaning": "việc mua lại (công ty)",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The acquisition of the startup was completed last month.",
+    "tags": [
+      "corporate",
+      "business"
+    ]
+  },
+  {
+    "id": "w058",
+    "word": "stakeholder",
+    "ipa": "/ˈsteɪkhoʊldə/",
+    "meaning": "bên liên quan, cổ đông",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "All stakeholders must approve the new policy.",
+    "tags": [
+      "corporate",
+      "management"
+    ]
+  },
+  {
+    "id": "w059",
+    "word": "implement",
+    "ipa": "/ˈɪmplɪment/",
+    "meaning": "thực hiện, triển khai",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We plan to implement the new system next quarter.",
+    "tags": [
+      "action",
+      "project"
+    ]
+  },
+  {
+    "id": "w060",
+    "word": "quarterly",
+    "ipa": "/ˈkwɔːtəli/",
+    "meaning": "hàng quý, theo quý",
+    "partOfSpeech": "adjective",
+    "topic": "Finance",
+    "example": "Quarterly reports are submitted to the board of directors.",
+    "tags": [
+      "time",
+      "reporting"
+    ]
+  },
+  {
+    "id": "w061",
+    "word": "accountant",
+    "ipa": "/əˈkaʊntənt/",
+    "meaning": "kế toán viên",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The accountant reviewed all the financial statements.",
+    "tags": [
+      "job",
+      "finance"
+    ]
+  },
+  {
+    "id": "w062",
+    "word": "audit",
+    "ipa": "/ˈɔːdɪt/",
+    "meaning": "kiểm toán",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The external audit found no major discrepancies.",
+    "tags": [
+      "finance",
+      "review"
+    ]
+  },
+  {
+    "id": "w063",
+    "word": "interest rate",
+    "ipa": "/ˈɪntərɪst reɪt/",
+    "meaning": "lãi suất",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The central bank raised the interest rate by 0.5%.",
+    "tags": [
+      "banking",
+      "money"
+    ]
+  },
+  {
+    "id": "w064",
+    "word": "loan",
+    "ipa": "/loʊn/",
+    "meaning": "khoản vay",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "She applied for a business loan to expand her shop.",
+    "tags": [
+      "money",
+      "banking"
+    ]
+  },
+  {
+    "id": "w065",
+    "word": "dividend",
+    "ipa": "/ˈdɪvɪdend/",
+    "meaning": "cổ tức",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Shareholders will receive their dividends next month.",
+    "tags": [
+      "investment",
+      "stock"
+    ]
+  },
+  {
+    "id": "w066",
+    "word": "stock",
+    "ipa": "/stɒk/",
+    "meaning": "cổ phiếu",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Their stock price rose sharply after the announcement.",
+    "tags": [
+      "investment",
+      "market"
+    ]
+  },
+  {
+    "id": "w067",
+    "word": "portfolio",
+    "ipa": "/pɔːtˈfoʊlioʊ/",
+    "meaning": "danh mục đầu tư",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Diversifying your portfolio reduces investment risk.",
+    "tags": [
+      "investment",
+      "finance"
+    ]
+  },
+  {
+    "id": "w068",
+    "word": "overtime",
+    "ipa": "/ˈoʊvətaɪm/",
+    "meaning": "làm thêm giờ",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Employees will be paid extra for overtime work.",
+    "tags": [
+      "work",
+      "time"
+    ]
+  },
+  {
+    "id": "w069",
+    "word": "resignation",
+    "ipa": "/ˌrezɪɡˈneɪʃən/",
+    "meaning": "sự từ chức, đơn nghỉ việc",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "She submitted her resignation with two weeks' notice.",
+    "tags": [
+      "job",
+      "quit"
+    ]
+  },
+  {
+    "id": "w070",
+    "word": "probation",
+    "ipa": "/prəˈbeɪʃən/",
+    "meaning": "thời gian thử việc",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "New employees are on probation for the first three months.",
+    "tags": [
+      "employment",
+      "trial"
+    ]
+  },
+  {
+    "id": "w071",
+    "word": "incentive",
+    "ipa": "/ɪnˈsentɪv/",
+    "meaning": "tiền thưởng, động lực khuyến khích",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Sales bonuses are a great incentive for the team.",
+    "tags": [
+      "motivation",
+      "pay"
+    ]
+  },
+  {
+    "id": "w072",
+    "word": "workforce",
+    "ipa": "/ˈwɜːkfɔːs/",
+    "meaning": "lực lượng lao động",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The company plans to expand its workforce by 15%.",
+    "tags": [
+      "employment",
+      "people"
+    ]
+  },
+  {
+    "id": "w073",
+    "word": "remote work",
+    "ipa": "/rɪˈmoʊt wɜːk/",
+    "meaning": "làm việc từ xa",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Remote work has become standard in many tech companies.",
+    "tags": [
+      "work",
+      "flexibility"
+    ]
+  },
+  {
+    "id": "w074",
+    "word": "conference",
+    "ipa": "/ˈkɒnfərəns/",
+    "meaning": "hội nghị",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The annual conference will be held in Singapore this year.",
+    "tags": [
+      "meeting",
+      "event"
+    ]
+  },
+  {
+    "id": "w075",
+    "word": "seminar",
+    "ipa": "/ˈsemɪnɑː/",
+    "meaning": "hội thảo",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Employees are encouraged to attend industry seminars.",
+    "tags": [
+      "learning",
+      "event"
+    ]
+  },
+  {
+    "id": "w076",
+    "word": "presentation",
+    "ipa": "/ˌprezənˈteɪʃən/",
+    "meaning": "bài thuyết trình",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "She gave an excellent presentation to the board.",
+    "tags": [
+      "communication",
+      "meeting"
+    ]
+  },
+  {
+    "id": "w077",
+    "word": "correspondence",
+    "ipa": "/ˌkɒrəˈspɒndəns/",
+    "meaning": "thư từ, giao tiếp bằng văn bản",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "All correspondence should be kept in writing.",
+    "tags": [
+      "communication",
+      "email"
+    ]
+  },
+  {
+    "id": "w078",
+    "word": "feedback",
+    "ipa": "/ˈfiːdbæk/",
+    "meaning": "phản hồi, góp ý",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Customer feedback helps us improve our products.",
+    "tags": [
+      "communication",
+      "improvement"
+    ]
+  },
+  {
+    "id": "w079",
+    "word": "memo",
+    "ipa": "/ˈmemoʊ/",
+    "meaning": "ghi chú nội bộ, thông báo nội bộ",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "A memo was circulated about the new office policy.",
+    "tags": [
+      "communication",
+      "document"
+    ]
+  },
+  {
+    "id": "w080",
+    "word": "minute",
+    "ipa": "/ˈmɪnɪt/",
+    "meaning": "biên bản cuộc họp",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The secretary will take the minutes during the meeting.",
+    "tags": [
+      "meeting",
+      "document"
+    ]
+  },
+  {
+    "id": "w081",
+    "word": "refund",
+    "ipa": "/ˈriːfʌnd/",
+    "meaning": "hoàn tiền",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "The customer requested a full refund for the defective product.",
+    "tags": [
+      "payment",
+      "service"
+    ]
+  },
+  {
+    "id": "w082",
+    "word": "complaint",
+    "ipa": "/kəmˈpleɪnt/",
+    "meaning": "khiếu nại, lời phàn nàn",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "We received several complaints about the delayed shipment.",
+    "tags": [
+      "service",
+      "problem"
+    ]
+  },
+  {
+    "id": "w083",
+    "word": "warranty",
+    "ipa": "/ˈwɒrənti/",
+    "meaning": "bảo hành",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "The product comes with a one-year warranty.",
+    "tags": [
+      "product",
+      "guarantee"
+    ]
+  },
+  {
+    "id": "w084",
+    "word": "satisfaction",
+    "ipa": "/ˌsætɪsˈfækʃən/",
+    "meaning": "sự hài lòng",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "Customer satisfaction is our top priority.",
+    "tags": [
+      "service",
+      "quality"
+    ]
+  },
+  {
+    "id": "w085",
+    "word": "inquiry",
+    "ipa": "/ɪnˈkwaɪəri/",
+    "meaning": "yêu cầu thông tin, sự hỏi thăm",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "We received an inquiry about our new product line.",
+    "tags": [
+      "communication",
+      "sales"
+    ]
+  },
+  {
+    "id": "w086",
+    "word": "quotation",
+    "ipa": "/kwoʊˈteɪʃən/",
+    "meaning": "báo giá",
+    "partOfSpeech": "noun",
+    "topic": "Sales",
+    "example": "Please send us a quotation for the bulk order.",
+    "tags": [
+      "price",
+      "sales"
+    ]
+  },
+  {
+    "id": "w087",
+    "word": "discount",
+    "ipa": "/ˈdɪskaʊnt/",
+    "meaning": "chiết khấu, giảm giá",
+    "partOfSpeech": "noun",
+    "topic": "Sales",
+    "example": "We offer a 10% discount for orders over 100 units.",
+    "tags": [
+      "price",
+      "promotion"
+    ]
+  },
+  {
+    "id": "w088",
+    "word": "commission",
+    "ipa": "/kəˈmɪʃən/",
+    "meaning": "hoa hồng",
+    "partOfSpeech": "noun",
+    "topic": "Sales",
+    "example": "Sales representatives earn a 5% commission on each deal.",
+    "tags": [
+      "pay",
+      "sales"
+    ]
+  },
+  {
+    "id": "w089",
+    "word": "target",
+    "ipa": "/ˈtɑːɡɪt/",
+    "meaning": "mục tiêu",
+    "partOfSpeech": "noun",
+    "topic": "Sales",
+    "example": "The sales team exceeded their monthly target.",
+    "tags": [
+      "goal",
+      "performance"
+    ]
+  },
+  {
+    "id": "w090",
+    "word": "campaign",
+    "ipa": "/kæmˈpeɪn/",
+    "meaning": "chiến dịch (marketing)",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The new advertising campaign attracted many new customers.",
+    "tags": [
+      "marketing",
+      "promotion"
+    ]
+  },
+  {
+    "id": "w091",
+    "word": "brand",
+    "ipa": "/brænd/",
+    "meaning": "thương hiệu",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "They invested heavily in building a strong brand identity.",
+    "tags": [
+      "marketing",
+      "company"
+    ]
+  },
+  {
+    "id": "w092",
+    "word": "launch",
+    "ipa": "/lɔːntʃ/",
+    "meaning": "ra mắt, khai trương",
+    "partOfSpeech": "verb",
+    "topic": "Marketing",
+    "example": "The company will launch a new product line next spring.",
+    "tags": [
+      "product",
+      "event"
+    ]
+  },
+  {
+    "id": "w093",
+    "word": "advertisement",
+    "ipa": "/ədˈvɜːtɪsmənt/",
+    "meaning": "quảng cáo",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The advertisement will run on TV and social media.",
+    "tags": [
+      "promotion",
+      "media"
+    ]
+  },
+  {
+    "id": "w094",
+    "word": "market share",
+    "ipa": "/ˈmɑːkɪt ʃeə/",
+    "meaning": "thị phần",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Our market share grew from 15% to 22% last year.",
+    "tags": [
+      "business",
+      "competition"
+    ]
+  },
+  {
+    "id": "w095",
+    "word": "competitor",
+    "ipa": "/kəmˈpetɪtə/",
+    "meaning": "đối thủ cạnh tranh",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "We must monitor our competitors' pricing strategies.",
+    "tags": [
+      "business",
+      "market"
+    ]
+  },
+  {
+    "id": "w096",
+    "word": "survey",
+    "ipa": "/ˈsɜːveɪ/",
+    "meaning": "khảo sát",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The survey results showed high customer satisfaction.",
+    "tags": [
+      "research",
+      "data"
+    ]
+  },
+  {
+    "id": "w097",
+    "word": "demographic",
+    "ipa": "/ˌdeməˈɡræfɪk/",
+    "meaning": "nhân khẩu học, đặc điểm dân số",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The target demographic is adults aged 25-40.",
+    "tags": [
+      "research",
+      "audience"
+    ]
+  },
+  {
+    "id": "w098",
+    "word": "lease",
+    "ipa": "/liːs/",
+    "meaning": "hợp đồng thuê, cho thuê",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The office lease expires at the end of December.",
+    "tags": [
+      "property",
+      "legal"
+    ]
+  },
+  {
+    "id": "w099",
+    "word": "renovation",
+    "ipa": "/ˌrenəˈveɪʃən/",
+    "meaning": "sự cải tạo, nâng cấp",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The office renovation will take three months to complete.",
+    "tags": [
+      "building",
+      "improvement"
+    ]
+  },
+  {
+    "id": "w100",
+    "word": "facilities",
+    "ipa": "/fəˈsɪlɪtɪz/",
+    "meaning": "cơ sở vật chất, tiện ích",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The building has excellent facilities including a gym.",
+    "tags": [
+      "building",
+      "amenities"
+    ]
+  },
+  {
+    "id": "w101",
+    "word": "authorize",
+    "ipa": "/ˈɔːθəraɪz/",
+    "meaning": "ủy quyền, cho phép",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Only the manager can authorize payments over $500.",
+    "tags": [
+      "permission",
+      "management"
+    ]
+  },
+  {
+    "id": "w102",
+    "word": "comply",
+    "ipa": "/kəmˈplaɪ/",
+    "meaning": "tuân thủ, chấp hành",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "All employees must comply with company regulations.",
+    "tags": [
+      "rules",
+      "policy"
+    ]
+  },
+  {
+    "id": "w103",
+    "word": "liability",
+    "ipa": "/ˌlaɪəˈbɪlɪti/",
+    "meaning": "trách nhiệm pháp lý, nợ phải trả",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The company has significant financial liabilities.",
+    "tags": [
+      "legal",
+      "finance"
+    ]
+  },
+  {
+    "id": "w104",
+    "word": "expenditure",
+    "ipa": "/ɪkˈspendɪtʃə/",
+    "meaning": "khoản chi tiêu, chi phí",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Total expenditure for this quarter was $2 million.",
+    "tags": [
+      "money",
+      "budget"
+    ]
+  },
+  {
+    "id": "w105",
+    "word": "forecast",
+    "ipa": "/ˈfɔːkɑːst/",
+    "meaning": "dự báo",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The sales forecast predicts a 15% growth next year.",
+    "tags": [
+      "prediction",
+      "planning"
+    ]
+  },
+  {
+    "id": "w106",
+    "word": "turnover",
+    "ipa": "/ˈtɜːnoʊvə/",
+    "meaning": "doanh số, tỷ lệ nhân viên nghỉ việc",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "High employee turnover is a major problem for the firm.",
+    "tags": [
+      "business",
+      "HR"
+    ]
+  },
+  {
+    "id": "w107",
+    "word": "overhead",
+    "ipa": "/ˈoʊvəhed/",
+    "meaning": "chi phí chung (không tính sản xuất)",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "We need to reduce overhead costs to improve margins.",
+    "tags": [
+      "cost",
+      "finance"
+    ]
+  },
+  {
+    "id": "w108",
+    "word": "subsidiary",
+    "ipa": "/səbˈsɪdɪəri/",
+    "meaning": "công ty con",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The parent company owns three subsidiaries in Asia.",
+    "tags": [
+      "corporate",
+      "company"
+    ]
+  },
+  {
+    "id": "w109",
+    "word": "headquarters",
+    "ipa": "/ˈhedkwɔːtəz/",
+    "meaning": "trụ sở chính",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The company's headquarters is located in New York.",
+    "tags": [
+      "office",
+      "location"
+    ]
+  },
+  {
+    "id": "w110",
+    "word": "branch",
+    "ipa": "/brɑːntʃ/",
+    "meaning": "chi nhánh",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "We are planning to open three new branches next year.",
+    "tags": [
+      "office",
+      "expansion"
+    ]
+  },
+  {
+    "id": "w111",
+    "word": "productivity",
+    "ipa": "/ˌprɒdʌkˈtɪvɪti/",
+    "meaning": "năng suất",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "New tools have significantly improved our productivity.",
+    "tags": [
+      "efficiency",
+      "work"
+    ]
+  },
+  {
+    "id": "w112",
+    "word": "efficiency",
+    "ipa": "/ɪˈfɪʃənsi/",
+    "meaning": "hiệu quả",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "We need to improve the efficiency of our production line.",
+    "tags": [
+      "performance",
+      "optimization"
+    ]
+  },
+  {
+    "id": "w113",
+    "word": "outsource",
+    "ipa": "/ˈaʊtsɔːs/",
+    "meaning": "thuê ngoài, gia công",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We decided to outsource our IT support to a specialist company.",
+    "tags": [
+      "business",
+      "service"
+    ]
+  },
+  {
+    "id": "w114",
+    "word": "venture",
+    "ipa": "/ˈventʃə/",
+    "meaning": "liên doanh, dự án mạo hiểm",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "They entered a joint venture with a Chinese firm.",
+    "tags": [
+      "business",
+      "partnership"
+    ]
+  },
+  {
+    "id": "w115",
+    "word": "initiative",
+    "ipa": "/ɪˈnɪʃɪətɪv/",
+    "meaning": "sáng kiến, chủ động",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The green initiative aims to reduce carbon emissions.",
+    "tags": [
+      "project",
+      "leadership"
+    ]
+  },
+  {
+    "id": "w116",
+    "word": "circulation",
+    "ipa": "/ˌsɜːkjʊˈleɪʃən/",
+    "meaning": "lưu hành, phân phối",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The memo was put into circulation this morning.",
+    "tags": [
+      "distribution",
+      "communication"
+    ]
+  },
+  {
+    "id": "w117",
+    "word": "objective",
+    "ipa": "/əbˈdʒektɪv/",
+    "meaning": "mục tiêu, khách quan",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The key objective is to increase sales by 20%.",
+    "tags": [
+      "goal",
+      "planning"
+    ]
+  },
+  {
+    "id": "w118",
+    "word": "regulation",
+    "ipa": "/ˌreɡjʊˈleɪʃən/",
+    "meaning": "quy định, điều lệ",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The new regulation requires stricter data privacy measures.",
+    "tags": [
+      "legal",
+      "rules"
+    ]
+  },
+  {
+    "id": "w119",
+    "word": "shareholder",
+    "ipa": "/ˈʃeəhoʊldə/",
+    "meaning": "cổ đông",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Shareholders will vote on the merger next week.",
+    "tags": [
+      "investment",
+      "corporate"
+    ]
+  },
+  {
+    "id": "w120",
+    "word": "transaction",
+    "ipa": "/trænˈzækʃən/",
+    "meaning": "giao dịch",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "All transactions must be recorded in the system.",
+    "tags": [
+      "money",
+      "banking"
+    ]
+  },
+  {
+    "id": "w121",
+    "word": "receipt",
+    "ipa": "/rɪˈsiːt/",
+    "meaning": "biên lai, hóa đơn nhận hàng",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Please keep your receipt for reimbursement purposes.",
+    "tags": [
+      "payment",
+      "document"
+    ]
+  },
+  {
+    "id": "w122",
+    "word": "reimbursement",
+    "ipa": "/ˌriːɪmˈbɜːsmənt/",
+    "meaning": "hoàn trả tiền",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Submit your receipts for travel expense reimbursement.",
+    "tags": [
+      "money",
+      "HR"
+    ]
+  },
+  {
+    "id": "w123",
+    "word": "personnel",
+    "ipa": "/ˌpɜːsəˈnel/",
+    "meaning": "nhân sự, đội ngũ nhân viên",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "All personnel must attend the safety training session.",
+    "tags": [
+      "employees",
+      "HR"
+    ]
+  },
+  {
+    "id": "w124",
+    "word": "orientation",
+    "ipa": "/ˌɔːrɪənˈteɪʃən/",
+    "meaning": "buổi định hướng cho nhân viên mới",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "New employees attend a two-day orientation program.",
+    "tags": [
+      "training",
+      "HR"
+    ]
+  },
+  {
+    "id": "w125",
+    "word": "credentials",
+    "ipa": "/krɪˈdenʃəlz/",
+    "meaning": "bằng cấp, chứng chỉ",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Candidates should list their credentials on the resume.",
+    "tags": [
+      "qualification",
+      "job"
+    ]
+  },
+  {
+    "id": "w126",
+    "word": "termination",
+    "ipa": "/ˌtɜːmɪˈneɪʃən/",
+    "meaning": "chấm dứt hợp đồng",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Termination of employment requires a formal notice.",
+    "tags": [
+      "job",
+      "contract"
+    ]
+  },
+  {
+    "id": "w127",
+    "word": "temporary",
+    "ipa": "/ˈtempəreri/",
+    "meaning": "tạm thời",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "We hired temporary staff for the holiday season.",
+    "tags": [
+      "employment",
+      "time"
+    ]
+  },
+  {
+    "id": "w128",
+    "word": "flexible",
+    "ipa": "/ˈfleksɪbəl/",
+    "meaning": "linh hoạt",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "The company offers flexible working hours.",
+    "tags": [
+      "work",
+      "policy"
+    ]
+  },
+  {
+    "id": "w129",
+    "word": "pension",
+    "ipa": "/ˈpenʃən/",
+    "meaning": "lương hưu",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Employees contribute 5% of their salary to the pension fund.",
+    "tags": [
+      "retirement",
+      "benefits"
+    ]
+  },
+  {
+    "id": "w130",
+    "word": "maternity leave",
+    "ipa": "/məˈtɜːnɪti liːv/",
+    "meaning": "nghỉ thai sản",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "She is entitled to 14 weeks of paid maternity leave.",
+    "tags": [
+      "benefits",
+      "policy"
+    ]
+  },
+  {
+    "id": "w131",
+    "word": "itinerary",
+    "ipa": "/aɪˈtɪnəreri/",
+    "meaning": "lịch trình, hành trình",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "The travel agent prepared a detailed itinerary for the trip.",
+    "tags": [
+      "travel",
+      "plan"
+    ]
+  },
+  {
+    "id": "w132",
+    "word": "visa",
+    "ipa": "/ˈviːzə/",
+    "meaning": "thị thực, visa",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "You will need a business visa to attend the conference.",
+    "tags": [
+      "travel",
+      "documents"
+    ]
+  },
+  {
+    "id": "w133",
+    "word": "fare",
+    "ipa": "/feə/",
+    "meaning": "giá vé",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Economy class fares are 30% lower than business class.",
+    "tags": [
+      "travel",
+      "price"
+    ]
+  },
+  {
+    "id": "w134",
+    "word": "layover",
+    "ipa": "/ˈleɪoʊvə/",
+    "meaning": "dừng chân giữa các chuyến bay",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "We have a four-hour layover in Hong Kong.",
+    "tags": [
+      "flight",
+      "travel"
+    ]
+  },
+  {
+    "id": "w135",
+    "word": "check-in",
+    "ipa": "/ˈtʃek ɪn/",
+    "meaning": "làm thủ tục nhận phòng/lên máy bay",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Online check-in is available 24 hours before departure.",
+    "tags": [
+      "hotel",
+      "flight"
+    ]
+  },
+  {
+    "id": "w136",
+    "word": "concierge",
+    "ipa": "/ˈkɒnsɪeəʒ/",
+    "meaning": "nhân viên hỗ trợ khách sạn",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "The hotel concierge helped us book a dinner reservation.",
+    "tags": [
+      "hotel",
+      "service"
+    ]
+  },
+  {
+    "id": "w137",
+    "word": "reimbursable",
+    "ipa": "/ˌriːɪmˈbɜːsəbəl/",
+    "meaning": "được hoàn trả",
+    "partOfSpeech": "adjective",
+    "topic": "Travel",
+    "example": "Business travel expenses are fully reimbursable.",
+    "tags": [
+      "finance",
+      "travel"
+    ]
+  },
+  {
+    "id": "w138",
+    "word": "proximity",
+    "ipa": "/prɒkˈsɪmɪti/",
+    "meaning": "sự gần gũi, khoảng cách gần",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The hotel's proximity to the airport is very convenient.",
+    "tags": [
+      "location",
+      "distance"
+    ]
+  },
+  {
+    "id": "w139",
+    "word": "spacious",
+    "ipa": "/ˈspeɪʃəs/",
+    "meaning": "rộng rãi",
+    "partOfSpeech": "adjective",
+    "topic": "Real Estate",
+    "example": "The new office is more spacious than the old one.",
+    "tags": [
+      "space",
+      "property"
+    ]
+  },
+  {
+    "id": "w140",
+    "word": "amenities",
+    "ipa": "/əˈmiːnɪtɪz/",
+    "meaning": "tiện nghi, tiện ích",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The building offers amenities like parking and a gym.",
+    "tags": [
+      "facilities",
+      "property"
+    ]
+  },
+  {
+    "id": "w141",
+    "word": "tenant",
+    "ipa": "/ˈtenənt/",
+    "meaning": "người thuê nhà/văn phòng",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The building has several long-term tenants.",
+    "tags": [
+      "property",
+      "rental"
+    ]
+  },
+  {
+    "id": "w142",
+    "word": "premises",
+    "ipa": "/ˈpremɪsɪz/",
+    "meaning": "cơ sở, tòa nhà",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "Smoking is not allowed on the premises.",
+    "tags": [
+      "building",
+      "property"
+    ]
+  },
+  {
+    "id": "w143",
+    "word": "pharmaceutical",
+    "ipa": "/ˌfɑːməˈsuːtɪkəl/",
+    "meaning": "dược phẩm",
+    "partOfSpeech": "adjective",
+    "topic": "Health",
+    "example": "The pharmaceutical company developed a new vaccine.",
+    "tags": [
+      "medicine",
+      "industry"
+    ]
+  },
+  {
+    "id": "w144",
+    "word": "clinical",
+    "ipa": "/ˈklɪnɪkəl/",
+    "meaning": "lâm sàng",
+    "partOfSpeech": "adjective",
+    "topic": "Health",
+    "example": "Clinical trials showed the drug is safe and effective.",
+    "tags": [
+      "medicine",
+      "test"
+    ]
+  },
+  {
+    "id": "w145",
+    "word": "outpatient",
+    "ipa": "/ˈaʊtpeɪʃənt/",
+    "meaning": "bệnh nhân ngoại trú",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "The outpatient clinic is open from 8 AM to 5 PM.",
+    "tags": [
+      "hospital",
+      "medical"
+    ]
+  },
+  {
+    "id": "w146",
+    "word": "nutrition",
+    "ipa": "/njuːˈtrɪʃən/",
+    "meaning": "dinh dưỡng",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Good nutrition is essential for a healthy lifestyle.",
+    "tags": [
+      "health",
+      "food"
+    ]
+  },
+  {
+    "id": "w147",
+    "word": "rehabilitation",
+    "ipa": "/ˌriːəˌbɪlɪˈteɪʃən/",
+    "meaning": "phục hồi chức năng",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "He needed six months of rehabilitation after the accident.",
+    "tags": [
+      "medical",
+      "recovery"
+    ]
+  },
+  {
+    "id": "w148",
+    "word": "encryption",
+    "ipa": "/ɪnˈkrɪpʃən/",
+    "meaning": "mã hóa (dữ liệu)",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "All customer data is protected with 256-bit encryption.",
+    "tags": [
+      "security",
+      "data"
+    ]
+  },
+  {
+    "id": "w149",
+    "word": "bandwidth",
+    "ipa": "/ˈbændwɪdθ/",
+    "meaning": "băng thông",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "We need more bandwidth to support video conferencing.",
+    "tags": [
+      "internet",
+      "network"
+    ]
+  },
+  {
+    "id": "w150",
+    "word": "interface",
+    "ipa": "/ˈɪntəfeɪs/",
+    "meaning": "giao diện",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The new user interface is more intuitive.",
+    "tags": [
+      "software",
+      "design"
+    ]
+  },
+  {
+    "id": "w151",
+    "word": "compatibility",
+    "ipa": "/kəmˌpætəˈbɪlɪti/",
+    "meaning": "khả năng tương thích",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "We tested the software for compatibility across all systems.",
+    "tags": [
+      "software",
+      "tech"
+    ]
+  },
+  {
+    "id": "w152",
+    "word": "cybersecurity",
+    "ipa": "/ˌsaɪbəsɪˈkjʊərɪti/",
+    "meaning": "an ninh mạng",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Cybersecurity threats are increasing every year.",
+    "tags": [
+      "security",
+      "internet"
+    ]
+  },
+  {
+    "id": "w153",
+    "word": "automation",
+    "ipa": "/ˌɔːtəˈmeɪʃən/",
+    "meaning": "tự động hóa",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Automation reduced manufacturing costs significantly.",
+    "tags": [
+      "technology",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "w154",
+    "word": "algorithm",
+    "ipa": "/ˈælɡərɪðəm/",
+    "meaning": "thuật toán",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The algorithm sorts customer data in seconds.",
+    "tags": [
+      "software",
+      "computer"
+    ]
+  },
+  {
+    "id": "w155",
+    "word": "prototype",
+    "ipa": "/ˈproʊtətaɪp/",
+    "meaning": "mẫu thử nghiệm, nguyên mẫu",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Engineers developed a prototype of the new device.",
+    "tags": [
+      "development",
+      "product"
+    ]
+  },
+  {
+    "id": "w156",
+    "word": "dispatch",
+    "ipa": "/dɪˈspætʃ/",
+    "meaning": "gửi đi, phái đi",
+    "partOfSpeech": "verb",
+    "topic": "Logistics",
+    "example": "We will dispatch the order within 24 hours.",
+    "tags": [
+      "shipping",
+      "action"
+    ]
+  },
+  {
+    "id": "w157",
+    "word": "consignment",
+    "ipa": "/kənˈsaɪnmənt/",
+    "meaning": "lô hàng gửi đi",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The consignment includes 500 units of the product.",
+    "tags": [
+      "shipping",
+      "goods"
+    ]
+  },
+  {
+    "id": "w158",
+    "word": "procurement",
+    "ipa": "/prəˈkjʊəmənt/",
+    "meaning": "mua sắm, thu mua",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Procurement of raw materials is handled centrally.",
+    "tags": [
+      "buying",
+      "supply"
+    ]
+  },
+  {
+    "id": "w159",
+    "word": "vendor",
+    "ipa": "/ˈvendə/",
+    "meaning": "nhà cung cấp, người bán",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "We work with several vendors for office supplies.",
+    "tags": [
+      "supplier",
+      "business"
+    ]
+  },
+  {
+    "id": "w160",
+    "word": "order",
+    "ipa": "/ˈɔːdə/",
+    "meaning": "đơn đặt hàng",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Please confirm the order within 24 hours.",
+    "tags": [
+      "purchase",
+      "business"
+    ]
+  },
+  {
+    "id": "w161",
+    "word": "trademark",
+    "ipa": "/ˈtreɪdmɑːk/",
+    "meaning": "nhãn hiệu đã đăng ký",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The company registered its trademark in 50 countries.",
+    "tags": [
+      "legal",
+      "brand"
+    ]
+  },
+  {
+    "id": "w162",
+    "word": "patent",
+    "ipa": "/ˈpeɪtənt/",
+    "meaning": "bằng sáng chế",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The inventor applied for a patent for the new device.",
+    "tags": [
+      "legal",
+      "innovation"
+    ]
+  },
+  {
+    "id": "w163",
+    "word": "copyright",
+    "ipa": "/ˈkɒpiraɪt/",
+    "meaning": "bản quyền",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Using copyrighted material without permission is illegal.",
+    "tags": [
+      "legal",
+      "creative"
+    ]
+  },
+  {
+    "id": "w164",
+    "word": "clause",
+    "ipa": "/klɔːz/",
+    "meaning": "điều khoản (trong hợp đồng)",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Please review the penalty clause before signing.",
+    "tags": [
+      "contract",
+      "legal"
+    ]
+  },
+  {
+    "id": "w165",
+    "word": "arbitration",
+    "ipa": "/ˌɑːbɪˈtreɪʃən/",
+    "meaning": "trọng tài phân xử",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Disputes will be resolved through arbitration.",
+    "tags": [
+      "legal",
+      "dispute"
+    ]
+  },
+  {
+    "id": "w166",
+    "word": "accommodate",
+    "ipa": "/əˈkɒmədeɪt/",
+    "meaning": "đáp ứng, cung cấp chỗ ở",
+    "partOfSpeech": "verb",
+    "topic": "Customer Service",
+    "example": "We will accommodate your request as quickly as possible.",
+    "tags": [
+      "service",
+      "help"
+    ]
+  },
+  {
+    "id": "w167",
+    "word": "resolution",
+    "ipa": "/ˌrezəˈluːʃən/",
+    "meaning": "giải pháp, sự giải quyết",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "We hope to find a quick resolution to your complaint.",
+    "tags": [
+      "problem",
+      "solution"
+    ]
+  },
+  {
+    "id": "w168",
+    "word": "escalate",
+    "ipa": "/ˈeskəleɪt/",
+    "meaning": "leo thang, chuyển lên cấp cao hơn",
+    "partOfSpeech": "verb",
+    "topic": "Customer Service",
+    "example": "I will escalate this issue to my supervisor immediately.",
+    "tags": [
+      "problem",
+      "service"
+    ]
+  },
+  {
+    "id": "w169",
+    "word": "retain",
+    "ipa": "/rɪˈteɪn/",
+    "meaning": "giữ lại, duy trì",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The company implemented programs to retain key employees.",
+    "tags": [
+      "HR",
+      "business"
+    ]
+  },
+  {
+    "id": "w170",
+    "word": "benchmark",
+    "ipa": "/ˈbentʃmɑːk/",
+    "meaning": "chuẩn so sánh, tiêu chuẩn đánh giá",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Sales performance is measured against industry benchmarks.",
+    "tags": [
+      "evaluation",
+      "standard"
+    ]
+  },
+  {
+    "id": "w171",
+    "word": "delegate",
+    "ipa": "/ˈdelɪɡeɪt/",
+    "meaning": "ủy thác, phân công",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "A good manager knows when to delegate tasks.",
+    "tags": [
+      "leadership",
+      "work"
+    ]
+  },
+  {
+    "id": "w172",
+    "word": "prioritize",
+    "ipa": "/praɪˈɒrɪtaɪz/",
+    "meaning": "ưu tiên",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "Learn to prioritize your tasks for better productivity.",
+    "tags": [
+      "time",
+      "management"
+    ]
+  },
+  {
+    "id": "w173",
+    "word": "collaborate",
+    "ipa": "/kəˈlæbəreɪt/",
+    "meaning": "hợp tác",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "Teams from both offices will collaborate on this project.",
+    "tags": [
+      "teamwork",
+      "work"
+    ]
+  },
+  {
+    "id": "w174",
+    "word": "restructure",
+    "ipa": "/riːˈstrʌktʃə/",
+    "meaning": "tái cơ cấu",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "The company restructured its operations to cut costs.",
+    "tags": [
+      "corporate",
+      "change"
+    ]
+  },
+  {
+    "id": "w175",
+    "word": "streamline",
+    "ipa": "/ˈstriːmlaɪn/",
+    "meaning": "hợp lý hóa, đơn giản hóa",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "We plan to streamline our approval process.",
+    "tags": [
+      "efficiency",
+      "management"
+    ]
+  },
+  {
+    "id": "w176",
+    "word": "optimal",
+    "ipa": "/ˈɒptɪməl/",
+    "meaning": "tối ưu",
+    "partOfSpeech": "adjective",
+    "topic": "Management",
+    "example": "We are looking for the optimal solution to the problem.",
+    "tags": [
+      "best",
+      "performance"
+    ]
+  },
+  {
+    "id": "w177",
+    "word": "allocate",
+    "ipa": "/ˈæləkeɪt/",
+    "meaning": "phân bổ, phân bổ nguồn lực",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "Resources are allocated based on project priority.",
+    "tags": [
+      "planning",
+      "resources"
+    ]
+  },
+  {
+    "id": "w178",
+    "word": "assessment",
+    "ipa": "/əˈsesmənt/",
+    "meaning": "đánh giá",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "A thorough risk assessment is required before proceeding.",
+    "tags": [
+      "evaluation",
+      "analysis"
+    ]
+  },
+  {
+    "id": "w179",
+    "word": "agenda",
+    "ipa": "/əˈdʒendə/",
+    "meaning": "chương trình nghị sự",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "The agenda for tomorrow's meeting has been distributed.",
+    "tags": [
+      "meeting",
+      "planning"
+    ]
+  },
+  {
+    "id": "w180",
+    "word": "keynote",
+    "ipa": "/ˈkiːnoʊt/",
+    "meaning": "bài phát biểu chính",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "The CEO will deliver the keynote speech at the conference.",
+    "tags": [
+      "speech",
+      "event"
+    ]
+  },
+  {
+    "id": "w181",
+    "word": "venue",
+    "ipa": "/ˈvenjuː/",
+    "meaning": "địa điểm tổ chức sự kiện",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "The venue for the annual gala has been confirmed.",
+    "tags": [
+      "event",
+      "location"
+    ]
+  },
+  {
+    "id": "w182",
+    "word": "exhibit",
+    "ipa": "/ɪɡˈzɪbɪt/",
+    "meaning": "triển lãm, trưng bày",
+    "partOfSpeech": "verb",
+    "topic": "Events",
+    "example": "The company will exhibit its new products at the trade fair.",
+    "tags": [
+      "event",
+      "product"
+    ]
+  },
+  {
+    "id": "w183",
+    "word": "registration",
+    "ipa": "/ˌredʒɪˈstreɪʃən/",
+    "meaning": "đăng ký",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Online registration for the conference is now open.",
+    "tags": [
+      "event",
+      "process"
+    ]
+  },
+  {
+    "id": "w184",
+    "word": "catering",
+    "ipa": "/ˈkeɪtərɪŋ/",
+    "meaning": "dịch vụ cung cấp thức ăn",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Catering will be provided at no extra charge.",
+    "tags": [
+      "food",
+      "service"
+    ]
+  },
+  {
+    "id": "w185",
+    "word": "preliminary",
+    "ipa": "/prɪˈlɪmɪneri/",
+    "meaning": "sơ bộ, ban đầu",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "A preliminary agreement was reached between the two companies.",
+    "tags": [
+      "initial",
+      "planning"
+    ]
+  },
+  {
+    "id": "w186",
+    "word": "comprehensive",
+    "ipa": "/ˌkɒmprɪˈhensɪv/",
+    "meaning": "toàn diện, bao quát",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "We conducted a comprehensive review of the project.",
+    "tags": [
+      "complete",
+      "analysis"
+    ]
+  },
+  {
+    "id": "w187",
+    "word": "subsequent",
+    "ipa": "/ˈsʌbsɪkwənt/",
+    "meaning": "tiếp theo, về sau",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Subsequent meetings will be held monthly.",
+    "tags": [
+      "time",
+      "order"
+    ]
+  },
+  {
+    "id": "w188",
+    "word": "consecutive",
+    "ipa": "/kənˈsekjʊtɪv/",
+    "meaning": "liên tiếp",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Revenue increased for five consecutive quarters.",
+    "tags": [
+      "sequence",
+      "time"
+    ]
+  },
+  {
+    "id": "w189",
+    "word": "approximately",
+    "ipa": "/əˈprɒksɪmɪtli/",
+    "meaning": "khoảng chừng, xấp xỉ",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "The project will take approximately three months.",
+    "tags": [
+      "estimate",
+      "number"
+    ]
+  },
+  {
+    "id": "w190",
+    "word": "significantly",
+    "ipa": "/sɪɡˈnɪfɪkəntli/",
+    "meaning": "đáng kể, đáng lưu ý",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "Costs have been reduced significantly this year.",
+    "tags": [
+      "change",
+      "magnitude"
+    ]
+  },
+  {
+    "id": "w191",
+    "word": "consequently",
+    "ipa": "/ˈkɒnsɪkwəntli/",
+    "meaning": "do đó, vì vậy",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "Sales declined, and consequently, staff were laid off.",
+    "tags": [
+      "cause",
+      "effect"
+    ]
+  },
+  {
+    "id": "w192",
+    "word": "alternatively",
+    "ipa": "/ɔːlˈtɜːnətɪvli/",
+    "meaning": "thay vào đó, hoặc là",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "You can email or, alternatively, call our office.",
+    "tags": [
+      "choice",
+      "option"
+    ]
+  },
+  {
+    "id": "w193",
+    "word": "exclusively",
+    "ipa": "/ɪkˈskluːsɪvli/",
+    "meaning": "riêng biệt, dành riêng",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "This offer is available exclusively to members.",
+    "tags": [
+      "limit",
+      "special"
+    ]
+  },
+  {
+    "id": "w194",
+    "word": "promptly",
+    "ipa": "/ˈprɒmptli/",
+    "meaning": "ngay lập tức, nhanh chóng",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "Please respond to customer inquiries promptly.",
+    "tags": [
+      "speed",
+      "action"
+    ]
+  },
+  {
+    "id": "w195",
+    "word": "efficiently",
+    "ipa": "/ɪˈfɪʃəntli/",
+    "meaning": "hiệu quả",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "The new software processes data more efficiently.",
+    "tags": [
+      "performance",
+      "speed"
+    ]
+  },
+  {
+    "id": "w196",
+    "word": "feasible",
+    "ipa": "/ˈfiːzɪbəl/",
+    "meaning": "khả thi",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "We need to determine if the plan is feasible.",
+    "tags": [
+      "possibility",
+      "planning"
+    ]
+  },
+  {
+    "id": "w197",
+    "word": "mandatory",
+    "ipa": "/ˈmændətəri/",
+    "meaning": "bắt buộc",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Attendance at the safety training is mandatory.",
+    "tags": [
+      "required",
+      "rule"
+    ]
+  },
+  {
+    "id": "w198",
+    "word": "confidential",
+    "ipa": "/ˌkɒnfɪˈdenʃəl/",
+    "meaning": "bí mật, mật",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "This document is strictly confidential.",
+    "tags": [
+      "privacy",
+      "document"
+    ]
+  },
+  {
+    "id": "w199",
+    "word": "mutual",
+    "ipa": "/ˈmjuːtʃuəl/",
+    "meaning": "cùng chung, tương hỗ",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The agreement is based on mutual benefit.",
+    "tags": [
+      "together",
+      "agreement"
+    ]
+  },
+  {
+    "id": "w200",
+    "word": "substantial",
+    "ipa": "/səbˈstænʃəl/",
+    "meaning": "đáng kể, lớn",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The company made a substantial investment in research.",
+    "tags": [
+      "large",
+      "amount"
+    ]
+  },
+  {
+    "id": "w201",
+    "word": "provision",
+    "ipa": "/prəˈvɪʒən/",
+    "meaning": "điều khoản quy định, sự dự phòng",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The contract includes a provision for early termination.",
+    "tags": [
+      "contract",
+      "clause"
+    ]
+  },
+  {
+    "id": "w202",
+    "word": "breach",
+    "ipa": "/briːtʃ/",
+    "meaning": "sự vi phạm (hợp đồng)",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Failing to deliver on time constitutes a breach of contract.",
+    "tags": [
+      "contract",
+      "violation"
+    ]
+  },
+  {
+    "id": "w203",
+    "word": "binding",
+    "ipa": "/ˈbaɪndɪŋ/",
+    "meaning": "ràng buộc (về pháp lý)",
+    "partOfSpeech": "adjective",
+    "topic": "Legal",
+    "example": "This agreement is legally binding on both parties.",
+    "tags": [
+      "contract",
+      "legal"
+    ]
+  },
+  {
+    "id": "w204",
+    "word": "obligate",
+    "ipa": "/ˈɒblɪɡeɪt/",
+    "meaning": "bắt buộc, ép buộc làm gì",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "The lease obligates the tenant to pay rent on the first of each month.",
+    "tags": [
+      "duty",
+      "legal"
+    ]
+  },
+  {
+    "id": "w205",
+    "word": "nullify",
+    "ipa": "/ˈnʌlɪfaɪ/",
+    "meaning": "vô hiệu hóa, hủy bỏ giá trị pháp lý",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "Any unauthorized modification will nullify the warranty.",
+    "tags": [
+      "cancel",
+      "law"
+    ]
+  },
+  {
+    "id": "w206",
+    "word": "terminate",
+    "ipa": "/ˈtɜːmɪneɪt/",
+    "meaning": "chấm dứt, kết thúc",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "Either party may terminate the contract with 30 days notice.",
+    "tags": [
+      "end",
+      "agreement"
+    ]
+  },
+  {
+    "id": "w207",
+    "word": "stipulation",
+    "ipa": "/ˌstɪpjʊˈleɪʃən/",
+    "meaning": "sự quy định, điều kiện giao kèo",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "One stipulation of the contract is full payment upon delivery.",
+    "tags": [
+      "rule",
+      "contract"
+    ]
+  },
+  {
+    "id": "w208",
+    "word": "arbitrate",
+    "ipa": "/ˈɑːbɪtreɪt/",
+    "meaning": "phân xử, làm trọng tài phân xử",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "An independent panel was chosen to arbitrate the dispute.",
+    "tags": [
+      "dispute",
+      "law"
+    ]
+  },
+  {
+    "id": "w209",
+    "word": "indemnity",
+    "ipa": "/ɪnˈdemnɪti/",
+    "meaning": "khoản bồi thường, sự bảo đảm bồi thường",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The supplier agreed to provide indemnity for damages caused by defective goods.",
+    "tags": [
+      "compensation",
+      "legal"
+    ]
+  },
+  {
+    "id": "w210",
+    "word": "enforce",
+    "ipa": "/ɪnˈfɔːs/",
+    "meaning": "thực thi, bắt buộc thi hành",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "The authorities strictly enforce building safety codes.",
+    "tags": [
+      "law",
+      "execute"
+    ]
+  },
+  {
+    "id": "w211",
+    "word": "adhere",
+    "ipa": "/ədˈhɪər/",
+    "meaning": "tuân theo, dính chặt vào",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "Staff members must adhere strictly to company dress guidelines.",
+    "tags": [
+      "compliance",
+      "rule"
+    ]
+  },
+  {
+    "id": "w212",
+    "word": "consent",
+    "ipa": "/kənˈsent/",
+    "meaning": "sự đồng thuận, chấp thuận",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Written consent is required before releasing customer data.",
+    "tags": [
+      "agreement",
+      "permission"
+    ]
+  },
+  {
+    "id": "w213",
+    "word": "oversee",
+    "ipa": "/ˌoʊvərˈsiː/",
+    "meaning": "giám sát, trông coi",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "He was appointed to oversee the regional branch offices.",
+    "tags": [
+      "supervise",
+      "control"
+    ]
+  },
+  {
+    "id": "w214",
+    "word": "subordinate",
+    "ipa": "/səˈbɔːdɪnət/",
+    "meaning": "cấp dưới, nhân viên dưới quyền",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Managers should communicate constructively with their subordinates.",
+    "tags": [
+      "staff",
+      "hierarchy"
+    ]
+  },
+  {
+    "id": "w215",
+    "word": "facility",
+    "ipa": "/fəˈsɪlɪti/",
+    "meaning": "cơ sở vật chất, nhà máy / tiện ích",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Our manufacturing facility operates 24 hours a day.",
+    "tags": [
+      "premises",
+      "operations"
+    ]
+  },
+  {
+    "id": "w216",
+    "word": "stationery",
+    "ipa": "/ˈsteɪʃənri/",
+    "meaning": "văn phòng phẩm",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Submit an order form if you need additional stationery.",
+    "tags": [
+      "office",
+      "supplies"
+    ]
+  },
+  {
+    "id": "w217",
+    "word": "bulletin",
+    "ipa": "/ˈbʊlətɪn/",
+    "meaning": "bản tin nội bộ, thông báo ngắn",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Important company announcements are posted on the bulletin board.",
+    "tags": [
+      "notice",
+      "news"
+    ]
+  },
+  {
+    "id": "w218",
+    "word": "memorandum",
+    "ipa": "/ˌmeməˈrændəm/",
+    "meaning": "bản ghi nhớ, thông báo nội bộ",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "The CEO circulated an internal memorandum regarding the merger.",
+    "tags": [
+      "memo",
+      "communication"
+    ]
+  },
+  {
+    "id": "w219",
+    "word": "adjourn",
+    "ipa": "/əˈdʒɜːn/",
+    "meaning": "hoãn lại, bế mạc (cuộc họp)",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "The committee chairman decided to adjourn the meeting until Monday.",
+    "tags": [
+      "meeting",
+      "postpone"
+    ]
+  },
+  {
+    "id": "w220",
+    "word": "convene",
+    "ipa": "/kənˈviːn/",
+    "meaning": "triệu tập, họp lại",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "The board of directors convenes quarterly to assess performance.",
+    "tags": [
+      "meeting",
+      "gather"
+    ]
+  },
+  {
+    "id": "w221",
+    "word": "quorum",
+    "ipa": "/ˈkwɔːrəm/",
+    "meaning": "số lượng đại biểu tối thiểu cần để họp",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "We cannot vote on the resolution because we lack a quorum.",
+    "tags": [
+      "meeting",
+      "voting"
+    ]
+  },
+  {
+    "id": "w222",
+    "word": "reorganize",
+    "ipa": "/riːˈɔːɡənaɪz/",
+    "meaning": "tái tổ chức, cơ cấu lại",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "The corporation plans to reorganize its distribution network.",
+    "tags": [
+      "restructure",
+      "change"
+    ]
+  },
+  {
+    "id": "w223",
+    "word": "consensus",
+    "ipa": "/kənˈsensəs/",
+    "meaning": "sự nhất trí, đồng lòng",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "The committee finally reached a consensus on the new policy.",
+    "tags": [
+      "agreement",
+      "decision"
+    ]
+  },
+  {
+    "id": "w224",
+    "word": "apprentice",
+    "ipa": "/əˈprentɪs/",
+    "meaning": "người học việc, thực tập nghề",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "He began his career as an apprentice electrician.",
+    "tags": [
+      "training",
+      "junior"
+    ]
+  },
+  {
+    "id": "w225",
+    "word": "severance",
+    "ipa": "/ˈsevərəns/",
+    "meaning": "trợ cấp thôi việc",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Employees laid off received four months of severance pay.",
+    "tags": [
+      "pay",
+      "layoff"
+    ]
+  },
+  {
+    "id": "w226",
+    "word": "compensation",
+    "ipa": "/ˌkɒmpenˈseɪʃən/",
+    "meaning": "sự đền bù, lương bổng đãi ngộ",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The executive compensation package includes stock options.",
+    "tags": [
+      "salary",
+      "reward"
+    ]
+  },
+  {
+    "id": "w227",
+    "word": "resign",
+    "ipa": "/rɪˈzaɪn/",
+    "meaning": "từ chức, xin thôi việc",
+    "partOfSpeech": "verb",
+    "topic": "HR",
+    "example": "She decided to resign from her post for personal reasons.",
+    "tags": [
+      "leave",
+      "job"
+    ]
+  },
+  {
+    "id": "w228",
+    "word": "payroll",
+    "ipa": "/ˈpeɪroʊl/",
+    "meaning": "bảng lương, danh sách phát lương",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The company added 50 workers to its payroll this quarter.",
+    "tags": [
+      "salary",
+      "accounting"
+    ]
+  },
+  {
+    "id": "w229",
+    "word": "roster",
+    "ipa": "/ˈrɒstər/",
+    "meaning": "bảng phân công ca trực, danh sách nhân sự",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Check the weekly duty roster to see your shift hours.",
+    "tags": [
+      "schedule",
+      "shift"
+    ]
+  },
+  {
+    "id": "w230",
+    "word": "vacancy",
+    "ipa": "/ˈveɪkənsi/",
+    "meaning": "vị trí tuyển dụng còn trống",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "We currently have a vacancy for an experienced web designer.",
+    "tags": [
+      "job",
+      "opening"
+    ]
+  },
+  {
+    "id": "w231",
+    "word": "headhunter",
+    "ipa": "/ˈhedhʌntər/",
+    "meaning": "chuyên viên săn đầu người, tuyển dụng cấp cao",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "A headhunter approached him regarding an executive opportunity.",
+    "tags": [
+      "recruiter",
+      "talent"
+    ]
+  },
+  {
+    "id": "w232",
+    "word": "appraisal",
+    "ipa": "/əˈpreɪzəl/",
+    "meaning": "sự đánh giá (năng lực nhân viên, giá trị)",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Managers conduct annual performance appraisals every November.",
+    "tags": [
+      "review",
+      "evaluation"
+    ]
+  },
+  {
+    "id": "w233",
+    "word": "morale",
+    "ipa": "/məˈrɑːl/",
+    "meaning": "tinh thần làm việc, nhuệ khí",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Team building events help boost office morale.",
+    "tags": [
+      "motivation",
+      "spirit"
+    ]
+  },
+  {
+    "id": "w234",
+    "word": "eligible",
+    "ipa": "/ˈelɪdʒɪbəl/",
+    "meaning": "đủ điều kiện, đủ tư cách",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "Full-time employees are eligible for retirement benefits after one year.",
+    "tags": [
+      "qualification",
+      "rights"
+    ]
+  },
+  {
+    "id": "w235",
+    "word": "absenteeism",
+    "ipa": "/ˌæbsənˈtiːɪzəm/",
+    "meaning": "tình trạng vắng mặt thường xuyên",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The human resources division introduced flexible hours to combat absenteeism.",
+    "tags": [
+      "attendance",
+      "work"
+    ]
+  },
+  {
+    "id": "w236",
+    "word": "qualified",
+    "ipa": "/ˈkwɒlɪfaɪd/",
+    "meaning": "đủ phẩm chất, có năng lực chuyên môn",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "We are seeking a qualified accountant with at least five years experience.",
+    "tags": [
+      "skills",
+      "competence"
+    ]
+  },
+  {
+    "id": "w237",
+    "word": "stipend",
+    "ipa": "/ˈstaɪpend/",
+    "meaning": "khoản phụ cấp, học bổng",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Interns receive a modest monthly stipend for meals and transport.",
+    "tags": [
+      "allowance",
+      "intern"
+    ]
+  },
+  {
+    "id": "w238",
+    "word": "fiscal",
+    "ipa": "/ˈfɪskəl/",
+    "meaning": "thuộc về tài khóa, tài chính",
+    "partOfSpeech": "adjective",
+    "topic": "Finance",
+    "example": "Our fiscal year begins on October 1 and ends on September 30.",
+    "tags": [
+      "period",
+      "budget"
+    ]
+  },
+  {
+    "id": "w239",
+    "word": "ledger",
+    "ipa": "/ˈledʒər/",
+    "meaning": "sổ cái kế toán",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The bookkeeper entered the transaction into the general ledger.",
+    "tags": [
+      "records",
+      "accounting"
+    ]
+  },
+  {
+    "id": "w240",
+    "word": "collateral",
+    "ipa": "/kəˈlætərəl/",
+    "meaning": "tài sản thế chấp",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The bank requires commercial real estate as collateral for the loan.",
+    "tags": [
+      "loan",
+      "security"
+    ]
+  },
+  {
+    "id": "w241",
+    "word": "liquidate",
+    "ipa": "/ˈlɪkwɪdeɪt/",
+    "meaning": "thanh lý (tài sản), giải thể",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "The retailer decided to liquidate remaining inventory at half price.",
+    "tags": [
+      "cash",
+      "sell"
+    ]
+  },
+  {
+    "id": "w242",
+    "word": "deduction",
+    "ipa": "/dɪˈdʌkʃən/",
+    "meaning": "khoản khấu trừ (thuế, chi phí)",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Mortgage interest qualifies as a tax deduction in many countries.",
+    "tags": [
+      "tax",
+      "savings"
+    ]
+  },
+  {
+    "id": "w243",
+    "word": "depreciation",
+    "ipa": "/dɪˌpriːʃiˈeɪʃən/",
+    "meaning": "sự khấu hao tài sản",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Calculate the annual depreciation of machinery over ten years.",
+    "tags": [
+      "accounting",
+      "equipment"
+    ]
+  },
+  {
+    "id": "w244",
+    "word": "deficit",
+    "ipa": "/ˈdefɪsɪt/",
+    "meaning": "sự thâm hụt ngân sách",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The government took emergency measures to shrink the trade deficit.",
+    "tags": [
+      "debt",
+      "loss"
+    ]
+  },
+  {
+    "id": "w245",
+    "word": "surplus",
+    "ipa": "/ˈsɜːpləs/",
+    "meaning": "thặng dư, số dư dôi thừa",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The company reported a surplus of $4 million at the end of the year.",
+    "tags": [
+      "excess",
+      "profit"
+    ]
+  },
+  {
+    "id": "w246",
+    "word": "mortgage",
+    "ipa": "/ˈmɔːɡɪdʒ/",
+    "meaning": "khoản vay thế chấp bất động sản",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Interest rates on home mortgages reached historic lows last month.",
+    "tags": [
+      "loan",
+      "property"
+    ]
+  },
+  {
+    "id": "w247",
+    "word": "default",
+    "ipa": "/dɪˈfɔːlt/",
+    "meaning": "vỡ nợ, không trả nợ đúng hạn",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "Borrowers who default on loans risk damage to their credit scores.",
+    "tags": [
+      "debt",
+      "failure"
+    ]
+  },
+  {
+    "id": "w248",
+    "word": "remittance",
+    "ipa": "/rɪˈmɪtəns/",
+    "meaning": "khoản tiền chuyển, việc gửi tiền",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Foreign workers generate significant economic remittance to their homelands.",
+    "tags": [
+      "transfer",
+      "payment"
+    ]
+  },
+  {
+    "id": "w249",
+    "word": "bankrupt",
+    "ipa": "/ˈbæŋkrʌpt/",
+    "meaning": "phá sản",
+    "partOfSpeech": "adjective",
+    "topic": "Finance",
+    "example": "The airline declared itself bankrupt after suffering heavy losses.",
+    "tags": [
+      "insolvent",
+      "business"
+    ]
+  },
+  {
+    "id": "w250",
+    "word": "solvency",
+    "ipa": "/ˈsɒlvənsi/",
+    "meaning": "khả năng thanh toán nợ",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The audit attested to the long-term solvency of the financial institution.",
+    "tags": [
+      "liquidity",
+      "health"
+    ]
+  },
+  {
+    "id": "w251",
+    "word": "yield",
+    "ipa": "/jiːld/",
+    "meaning": "lợi suất, sản lượng sinh lời",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Government bonds offer a guaranteed annual yield of four percent.",
+    "tags": [
+      "return",
+      "interest"
+    ]
+  },
+  {
+    "id": "w252",
+    "word": "reconcile",
+    "ipa": "/ˈrekənsaɪl/",
+    "meaning": "đối chiếu, so khớp số liệu kế toán",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "The accountant reconciled the bank statement with internal ledgers.",
+    "tags": [
+      "check",
+      "matching"
+    ]
+  },
+  {
+    "id": "w253",
+    "word": "discrepancy",
+    "ipa": "/dɪˈskrepənsi/",
+    "meaning": "sự sai lệch, chênh lệch giữa các số liệu",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "There is a notable discrepancy between the invoice and delivery slip.",
+    "tags": [
+      "error",
+      "difference"
+    ]
+  },
+  {
+    "id": "w254",
+    "word": "contingency",
+    "ipa": "/kənˈtɪndʒənsi/",
+    "meaning": "quỹ dự phòng, trường hợp khẩn cấp",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "We set aside five percent of the budget as a contingency reserve.",
+    "tags": [
+      "reserve",
+      "emergency"
+    ]
+  },
+  {
+    "id": "w255",
+    "word": "demographics",
+    "ipa": "/ˌdeməˈɡræfɪks/",
+    "meaning": "nhân khẩu học (đặc điểm khách hàng)",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The survey reveals intriguing demographics among young consumers.",
+    "tags": [
+      "audience",
+      "research"
+    ]
+  },
+  {
+    "id": "w256",
+    "word": "endorse",
+    "ipa": "/ɪnˈdɔːs/",
+    "meaning": "chứng thực, quảng bá ủng hộ sản phẩm",
+    "partOfSpeech": "verb",
+    "topic": "Marketing",
+    "example": "The professional athlete agreed to endorse our new running shoes.",
+    "tags": [
+      "branding",
+      "promotion"
+    ]
+  },
+  {
+    "id": "w257",
+    "word": "brochure",
+    "ipa": "/ˈbroʊʃər/",
+    "meaning": "cuốn sách nhỏ quảng cáo, tập tài liệu giới thiệu",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Colorful travel brochures are distributed at travel exhibitions.",
+    "tags": [
+      "print",
+      "advertising"
+    ]
+  },
+  {
+    "id": "w258",
+    "word": "slogan",
+    "ipa": "/ˈsloʊɡən/",
+    "meaning": "khẩu hiệu quảng cáo",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "A memorable slogan helps consumers remember the brand identity.",
+    "tags": [
+      "brand",
+      "catchphrase"
+    ]
+  },
+  {
+    "id": "w259",
+    "word": "flyer",
+    "ipa": "/ˈflaɪər/",
+    "meaning": "tờ rơi quảng cáo",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Promotional flyers were handed out at the subway entrance.",
+    "tags": [
+      "pamphlet",
+      "promo"
+    ]
+  },
+  {
+    "id": "w260",
+    "word": "prospective",
+    "ipa": "/prəˈspektɪv/",
+    "meaning": "tiềm năng, triển vọng",
+    "partOfSpeech": "adjective",
+    "topic": "Marketing",
+    "example": "The sales rep scheduled calls with prospective clients this week.",
+    "tags": [
+      "potential",
+      "leads"
+    ]
+  },
+  {
+    "id": "w261",
+    "word": "rebate",
+    "ipa": "/ˈriːbeɪt/",
+    "meaning": "khoản tiền giảm hoàn lại sau khi mua",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Customers who buy the appliance before June can claim a $50 mail-in rebate.",
+    "tags": [
+      "discount",
+      "cashback"
+    ]
+  },
+  {
+    "id": "w262",
+    "word": "merchandise",
+    "ipa": "/ˈmɜːtʃəndaɪs/",
+    "meaning": "hàng hóa thương mại",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The boutique stocks exclusive imported designer merchandise.",
+    "tags": [
+      "goods",
+      "retail"
+    ]
+  },
+  {
+    "id": "w263",
+    "word": "clearance",
+    "ipa": "/ˈklɪərəns/",
+    "meaning": "xả hàng, bán tháo thanh lý",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Visit our clearance section for discounts up to 70 percent.",
+    "tags": [
+      "sale",
+      "stock"
+    ]
+  },
+  {
+    "id": "w264",
+    "word": "showcase",
+    "ipa": "/ˈʃoʊkeɪs/",
+    "meaning": "trưng bày, phô diễn thế mạnh",
+    "partOfSpeech": "verb",
+    "topic": "Marketing",
+    "example": "The annual electronics expo allows vendors to showcase breakthrough gadgets.",
+    "tags": [
+      "display",
+      "exhibit"
+    ]
+  },
+  {
+    "id": "w265",
+    "word": "penetrate",
+    "ipa": "/ˈpenɪtreɪt/",
+    "meaning": "thâm nhập thị trường",
+    "partOfSpeech": "verb",
+    "topic": "Marketing",
+    "example": "The startup aims to penetrate the Southeast Asian market next year.",
+    "tags": [
+      "expansion",
+      "strategy"
+    ]
+  },
+  {
+    "id": "w266",
+    "word": "compelling",
+    "ipa": "/kəmˈpelɪŋ/",
+    "meaning": "thuyết phục, hấp dẫn",
+    "partOfSpeech": "adjective",
+    "topic": "Marketing",
+    "example": "The presenter made a compelling pitch that won over investors.",
+    "tags": [
+      "convincing",
+      "pitch"
+    ]
+  },
+  {
+    "id": "w267",
+    "word": "patronage",
+    "ipa": "/ˈpætrənɪdʒ/",
+    "meaning": "sự ủng hộ thường xuyên của khách hàng",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "We truly value your continued patronage over the past decade.",
+    "tags": [
+      "loyalty",
+      "customers"
+    ]
+  },
+  {
+    "id": "w268",
+    "word": "niche",
+    "ipa": "/niːʃ/",
+    "meaning": "thị trường ngách",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Organic infant clothing has emerged as a lucrative niche market.",
+    "tags": [
+      "segment",
+      "focus"
+    ]
+  },
+  {
+    "id": "w269",
+    "word": "questionnaire",
+    "ipa": "/ˌkwestʃəˈneər/",
+    "meaning": "bảng câu hỏi khảo sát",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Shoppers who complete the questionnaire receive a store coupon.",
+    "tags": [
+      "survey",
+      "feedback"
+    ]
+  },
+  {
+    "id": "w270",
+    "word": "cargo",
+    "ipa": "/ˈkɑːɡoʊ/",
+    "meaning": "hàng hóa chuyên chở (tàu/máy bay)",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The aircraft has capacity for 40 tons of commercial cargo.",
+    "tags": [
+      "freight",
+      "goods"
+    ]
+  },
+  {
+    "id": "w271",
+    "word": "carrier",
+    "ipa": "/ˈkæriər/",
+    "meaning": "hãng vận tải, người chuyên chở",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The parcel was transferred to a trusted international carrier.",
+    "tags": [
+      "courier",
+      "transport"
+    ]
+  },
+  {
+    "id": "w272",
+    "word": "tariff",
+    "ipa": "/ˈtærɪf/",
+    "meaning": "thuế quan xuất nhập khẩu",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "New tariffs were imposed on imported steel and aluminum.",
+    "tags": [
+      "customs",
+      "tax"
+    ]
+  },
+  {
+    "id": "w273",
+    "word": "expedite",
+    "ipa": "/ˈekspədaɪt/",
+    "meaning": "xúc tiến, đẩy nhanh tiến độ",
+    "partOfSpeech": "verb",
+    "topic": "Logistics",
+    "example": "Please pay an extra fee if you need to expedite the delivery.",
+    "tags": [
+      "speed",
+      "rush"
+    ]
+  },
+  {
+    "id": "w274",
+    "word": "crate",
+    "ipa": "/kreɪt/",
+    "meaning": "thùng gỗ lớn đựng hàng",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The fragile glass machinery was packed inside reinforced crates.",
+    "tags": [
+      "packing",
+      "box"
+    ]
+  },
+  {
+    "id": "w275",
+    "word": "vessel",
+    "ipa": "/ˈvesəl/",
+    "meaning": "tàu thủy lớn chở hàng",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The container vessel is scheduled to dock at terminal three.",
+    "tags": [
+      "ship",
+      "maritime"
+    ]
+  },
+  {
+    "id": "w276",
+    "word": "courier",
+    "ipa": "/ˈkʊriər/",
+    "meaning": "người/công ty chuyển phát nhanh",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The confidential documents were delivered securely by courier.",
+    "tags": [
+      "express",
+      "delivery"
+    ]
+  },
+  {
+    "id": "w277",
+    "word": "stockpile",
+    "ipa": "/ˈstɒkpaɪl/",
+    "meaning": "dự trữ một lượng lớn hàng hóa",
+    "partOfSpeech": "verb",
+    "topic": "Logistics",
+    "example": "Distributors stockpiled microchips in anticipation of supply shortages.",
+    "tags": [
+      "reserve",
+      "accumulate"
+    ]
+  },
+  {
+    "id": "w278",
+    "word": "distributor",
+    "ipa": "/dɪˈstrɪbjətər/",
+    "meaning": "nhà phân phối",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "We signed an exclusive agreement with an authorized distributor in Asia.",
+    "tags": [
+      "supply",
+      "wholesale"
+    ]
+  },
+  {
+    "id": "w279",
+    "word": "consistently",
+    "ipa": "/kənˈsɪstəntli/",
+    "meaning": "một cách nhất quán, liên tục ổn định",
+    "partOfSpeech": "adverb",
+    "topic": "Logistics",
+    "example": "The logistics provider consistently meets agreed delivery windows.",
+    "tags": [
+      "reliability",
+      "service"
+    ]
+  },
+  {
+    "id": "w280",
+    "word": "haul",
+    "ipa": "/hɔːl/",
+    "meaning": "vận chuyển đường dài (xe tải/tàu)",
+    "partOfSpeech": "verb",
+    "topic": "Logistics",
+    "example": "Heavy trucks haul raw materials from mines directly to processing plants.",
+    "tags": [
+      "trucking",
+      "transport"
+    ]
+  },
+  {
+    "id": "w281",
+    "word": "assembly",
+    "ipa": "/əˈsembli/",
+    "meaning": "sự lắp ráp, dây chuyền sản xuất",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The car parts move along an automated assembly line.",
+    "tags": [
+      "factory",
+      "production"
+    ]
+  },
+  {
+    "id": "w282",
+    "word": "defective",
+    "ipa": "/dɪˈfektɪv/",
+    "meaning": "bị lỗi, có khuyết tật",
+    "partOfSpeech": "adjective",
+    "topic": "Logistics",
+    "example": "Customers may exchange any defective units within thirty days.",
+    "tags": [
+      "flaw",
+      "quality"
+    ]
+  },
+  {
+    "id": "w283",
+    "word": "malfunction",
+    "ipa": "/ˌmælˈfʌŋkʃən/",
+    "meaning": "sự cố trục trặc, hoạt động sai hỏng",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The power outage caused a minor malfunction in cooling units.",
+    "tags": [
+      "breakdown",
+      "glitch"
+    ]
+  },
+  {
+    "id": "w284",
+    "word": "overhaul",
+    "ipa": "/ˈoʊvərhɔːl/",
+    "meaning": "đại tu, kiểm tra sửa chữa toàn diện",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The turbine underwent a complete overhaul after five years in service.",
+    "tags": [
+      "maintenance",
+      "repair"
+    ]
+  },
+  {
+    "id": "w285",
+    "word": "blueprint",
+    "ipa": "/ˈbluːprɪnt/",
+    "meaning": "bản thiết kế chi tiết, bản vẽ kỹ thuật",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Architects reviewed the building blueprints with structural engineers.",
+    "tags": [
+      "design",
+      "plan"
+    ]
+  },
+  {
+    "id": "w286",
+    "word": "batch",
+    "ipa": "/bætʃ/",
+    "meaning": "mẻ, lô sản phẩm sản xuất",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Each batch of medicine is rigorously tested before shipment.",
+    "tags": [
+      "lot",
+      "production"
+    ]
+  },
+  {
+    "id": "w287",
+    "word": "precision",
+    "ipa": "/prɪˈsɪʒən/",
+    "meaning": "độ chính xác cao",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Laser cutting tools require extraordinary mechanical precision.",
+    "tags": [
+      "accuracy",
+      "engineering"
+    ]
+  },
+  {
+    "id": "w288",
+    "word": "safeguard",
+    "ipa": "/ˈseɪfɡɑːrd/",
+    "meaning": "biện pháp an toàn bảo vệ",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "The machine features automatic safeguards to prevent workplace accidents.",
+    "tags": [
+      "safety",
+      "protection"
+    ]
+  },
+  {
+    "id": "w289",
+    "word": "automate",
+    "ipa": "/ˈɔːtəmeɪt/",
+    "meaning": "tự động hóa",
+    "partOfSpeech": "verb",
+    "topic": "Technology",
+    "example": "We invested heavily to automate the sorting and packing process.",
+    "tags": [
+      "robots",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "w290",
+    "word": "courtesy",
+    "ipa": "/ˈkɜːrtəsi/",
+    "meaning": "sự lịch thiệp, nhã nhặn",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "Service staff are trained to treat all guests with courtesy.",
+    "tags": [
+      "politeness",
+      "attitude"
+    ]
+  },
+  {
+    "id": "w291",
+    "word": "dispute",
+    "ipa": "/dɪˈspjuːt/",
+    "meaning": "tranh chấp, sự bất đồng",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "A mediation team resolved the billing dispute peacefully.",
+    "tags": [
+      "conflict",
+      "complaint"
+    ]
+  },
+  {
+    "id": "w292",
+    "word": "rapport",
+    "ipa": "/ræˈpɔːr/",
+    "meaning": "mối quan hệ thiện cảm, hòa hợp",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "Sales representatives excel when they build genuine rapport with clients.",
+    "tags": [
+      "relationship",
+      "trust"
+    ]
+  },
+  {
+    "id": "w293",
+    "word": "attentive",
+    "ipa": "/əˈtentɪv/",
+    "meaning": "chu đáo, lắng nghe chăm chú",
+    "partOfSpeech": "adjective",
+    "topic": "Customer Service",
+    "example": "The restaurant staff was praised for being attentive and courteous.",
+    "tags": [
+      "care",
+      "hospitality"
+    ]
+  },
+  {
+    "id": "w294",
+    "word": "loyalty",
+    "ipa": "/ˈlɔɪəlti/",
+    "meaning": "lòng trung thành của khách hàng",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "Our customer loyalty program grants points for every purchase.",
+    "tags": [
+      "retention",
+      "rewards"
+    ]
+  },
+  {
+    "id": "w295",
+    "word": "clarify",
+    "ipa": "/ˈklærɪfaɪ/",
+    "meaning": "làm rõ, giải thích rõ ràng",
+    "partOfSpeech": "verb",
+    "topic": "Customer Service",
+    "example": "Could you clarify the return policy for clearance merchandise?",
+    "tags": [
+      "explain",
+      "understand"
+    ]
+  },
+  {
+    "id": "w296",
+    "word": "assurance",
+    "ipa": "/əˈʃʊərəns/",
+    "meaning": "sự cam đoan, bảo đảm vững chắc",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "The representative gave assurance that replacement parts were en route.",
+    "tags": [
+      "promise",
+      "guarantee"
+    ]
+  },
+  {
+    "id": "w297",
+    "word": "promptness",
+    "ipa": "/ˈprɒmptnəs/",
+    "meaning": "sự nhanh chóng, đúng giờ",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "We appreciate the promptness with which our inquiry was answered.",
+    "tags": [
+      "speed",
+      "punctuality"
+    ]
+  },
+  {
+    "id": "w298",
+    "word": "shuttle",
+    "ipa": "/ˈʃʌtəl/",
+    "meaning": "xe đưa đón cự ly ngắn",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "A complimentary shuttle bus runs between the airport and hotel.",
+    "tags": [
+      "transport",
+      "bus"
+    ]
+  },
+  {
+    "id": "w299",
+    "word": "cancellation",
+    "ipa": "/ˌkænsəˈleɪʃən/",
+    "meaning": "sự hủy bỏ (vé, chuyến bay)",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Flight cancellations were caused by unexpected blizzards.",
+    "tags": [
+      "delay",
+      "flight"
+    ]
+  },
+  {
+    "id": "w300",
+    "word": "carousel",
+    "ipa": "/ˌkærəˈsel/",
+    "meaning": "băng chuyền trả hành lý sân bay",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Passengers retrieved their suitcases from baggage carousel four.",
+    "tags": [
+      "luggage",
+      "airport"
+    ]
+  },
+  {
+    "id": "w301",
+    "word": "amenity",
+    "ipa": "/əˈmiːnəti/",
+    "meaning": "tiện nghi (trong khách sạn, phòng ở)",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Hotel amenities include a heated pool, fitness center, and free Wi-Fi.",
+    "tags": [
+      "facility",
+      "comfort"
+    ]
+  },
+  {
+    "id": "w302",
+    "word": "surcharge",
+    "ipa": "/ˈsɜːrtʃɑːrdʒ/",
+    "meaning": "khoản phụ phí",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "A fuel surcharge was added to the total cost of the airline ticket.",
+    "tags": [
+      "fee",
+      "extra"
+    ]
+  },
+  {
+    "id": "w303",
+    "word": "commute",
+    "ipa": "/kəˈmjuːt/",
+    "meaning": "quãng đường đi lại hàng ngày giữa nhà và nơi làm",
+    "partOfSpeech": "verb",
+    "topic": "Travel",
+    "example": "Many employees commute more than an hour by train every day.",
+    "tags": [
+      "travel",
+      "work"
+    ]
+  },
+  {
+    "id": "w304",
+    "word": "excursion",
+    "ipa": "/ɪkˈskɜːrʒən/",
+    "meaning": "chuyến tham quan dã ngoại ngắn ngày",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "The conference agenda included an afternoon excursion to the historic castle.",
+    "tags": [
+      "tour",
+      "trip"
+    ]
+  },
+  {
+    "id": "w305",
+    "word": "embark",
+    "ipa": "/ɪmˈbɑːrk/",
+    "meaning": "bắt đầu lên tàu/máy bay, dấn thân vào",
+    "partOfSpeech": "verb",
+    "topic": "Travel",
+    "example": "Passengers will embark the cruise liner starting at 2:00 PM.",
+    "tags": [
+      "board",
+      "journey"
+    ]
+  },
+  {
+    "id": "w306",
+    "word": "junction",
+    "ipa": "/ˈdʒʌŋkʃən/",
+    "meaning": "nút giao thông, ngã ba/tư đường",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "Turn left after you cross the railway junction.",
+    "tags": [
+      "intersection",
+      "road"
+    ]
+  },
+  {
+    "id": "w307",
+    "word": "banquet",
+    "ipa": "/ˈbæŋkwɪt/",
+    "meaning": "bữa tiệc lớn trang trọng",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "The annual awards banquet will be hosted in the grand ballroom.",
+    "tags": [
+      "party",
+      "dinner"
+    ]
+  },
+  {
+    "id": "w308",
+    "word": "beverage",
+    "ipa": "/ˈbevərɪdʒ/",
+    "meaning": "đồ uống, thức uống",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Alcoholic and non-alcoholic beverages are served at the reception.",
+    "tags": [
+      "drinks",
+      "refreshment"
+    ]
+  },
+  {
+    "id": "w309",
+    "word": "culinary",
+    "ipa": "/ˈkʌlɪnəri/",
+    "meaning": "thuộc về nấu nướng, ẩm thực",
+    "partOfSpeech": "adjective",
+    "topic": "Events",
+    "example": "The executive chef is renowned for his culinary expertise.",
+    "tags": [
+      "cooking",
+      "food"
+    ]
+  },
+  {
+    "id": "w310",
+    "word": "utensil",
+    "ipa": "/juːˈtensəl/",
+    "meaning": "dụng cụ nhà bếp, đồ dùng ăn uống",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Eco-friendly wooden utensils were provided with take-out orders.",
+    "tags": [
+      "tools",
+      "cutlery"
+    ]
+  },
+  {
+    "id": "w311",
+    "word": "appetizer",
+    "ipa": "/ˈæpɪtaɪzər/",
+    "meaning": "món khai vị",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Guests enjoyed seafood appetizers while mingling before dinner.",
+    "tags": [
+      "starter",
+      "meal"
+    ]
+  },
+  {
+    "id": "w312",
+    "word": "ingredient",
+    "ipa": "/ɪnˈɡriːdiənt/",
+    "meaning": "nguyên liệu thành phần món ăn",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "The sauce is prepared using organic locally sourced ingredients.",
+    "tags": [
+      "food",
+      "recipe"
+    ]
+  },
+  {
+    "id": "w313",
+    "word": "hospitality",
+    "ipa": "/ˌhɒspɪˈtæləti/",
+    "meaning": "lòng hiếu khách, ngành dịch vụ nhà hàng khách sạn",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "The region is famous for its warm hospitality and exquisite wines.",
+    "tags": [
+      "service",
+      "tourism"
+    ]
+  },
+  {
+    "id": "w314",
+    "word": "dietary",
+    "ipa": "/ˈdaɪətəri/",
+    "meaning": "thuộc về chế độ ăn uống, kiêng cữ",
+    "partOfSpeech": "adjective",
+    "topic": "Events",
+    "example": "Please let us know in advance if you have any special dietary requirements.",
+    "tags": [
+      "nutrition",
+      "health"
+    ]
+  },
+  {
+    "id": "w315",
+    "word": "delicacy",
+    "ipa": "/ˈdelɪkəsi/",
+    "meaning": "cao lương mỹ vị, món ăn đặc sản tinh tế",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Smoked salmon is considered an exquisite delicacy in the region.",
+    "tags": [
+      "gourmet",
+      "specialty"
+    ]
+  },
+  {
+    "id": "w316",
+    "word": "landlord",
+    "ipa": "/ˈlændlɔːrd/",
+    "meaning": "chủ nhà, chủ cho thuê bất động sản",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The landlord agreed to replace the heating unit before winter.",
+    "tags": [
+      "owner",
+      "property"
+    ]
+  },
+  {
+    "id": "w317",
+    "word": "renovate",
+    "ipa": "/ˈrenəveɪt/",
+    "meaning": "cải tạo, nâng cấp công trình",
+    "partOfSpeech": "verb",
+    "topic": "Real Estate",
+    "example": "They plan to renovate the conference hall before the annual summit.",
+    "tags": [
+      "remodel",
+      "upgrade"
+    ]
+  },
+  {
+    "id": "w318",
+    "word": "architect",
+    "ipa": "/ˈɑːrkɪtekt/",
+    "meaning": "kiến trúc sư",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The architect designed an eco-friendly office tower with solar panels.",
+    "tags": [
+      "design",
+      "building"
+    ]
+  },
+  {
+    "id": "w319",
+    "word": "vacant",
+    "ipa": "/ˈveɪkənt/",
+    "meaning": "bỏ trống, chưa có người thuê/ở",
+    "partOfSpeech": "adjective",
+    "topic": "Real Estate",
+    "example": "Several retail storefronts on Main Street have sat vacant for months.",
+    "tags": [
+      "empty",
+      "unoccupied"
+    ]
+  },
+  {
+    "id": "w320",
+    "word": "zoning",
+    "ipa": "/ˈzoʊnɪŋ/",
+    "meaning": "quy hoạch phân vùng đất đai",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "Zoning laws prohibit industrial factories in residential neighborhoods.",
+    "tags": [
+      "urban",
+      "regulations"
+    ]
+  },
+  {
+    "id": "w321",
+    "word": "fixture",
+    "ipa": "/ˈfɪkstʃər/",
+    "meaning": "vật cố định đi kèm theo nhà (đèn, bồn rửa)",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "All lighting fixtures are included in the property sale price.",
+    "tags": [
+      "fittings",
+      "appliances"
+    ]
+  },
+  {
+    "id": "w322",
+    "word": "occupancy",
+    "ipa": "/ˈɒkjəpənsi/",
+    "meaning": "công suất phòng, sự có người ở",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "Hotel occupancy rates hit 95 percent during the summer holiday season.",
+    "tags": [
+      "capacity",
+      "rooms"
+    ]
+  },
+  {
+    "id": "w323",
+    "word": "physician",
+    "ipa": "/fɪˈzɪʃən/",
+    "meaning": "bác sĩ điều trị",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Consult your primary care physician before beginning an intense exercise regime.",
+    "tags": [
+      "doctor",
+      "clinic"
+    ]
+  },
+  {
+    "id": "w324",
+    "word": "hygiene",
+    "ipa": "/ˈhaɪdʒiːn/",
+    "meaning": "vệ sinh phòng dịch",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Food handlers must maintain strict standards of personal hygiene.",
+    "tags": [
+      "cleanliness",
+      "safety"
+    ]
+  },
+  {
+    "id": "w325",
+    "word": "hazard",
+    "ipa": "/ˈhæzərd/",
+    "meaning": "mối nguy hiểm, rủi ro an toàn",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Loose electrical wiring poses a serious fire hazard.",
+    "tags": [
+      "danger",
+      "risk"
+    ]
+  },
+  {
+    "id": "w326",
+    "word": "ergonomic",
+    "ipa": "/ˌɜːrɡəˈnɒmɪk/",
+    "meaning": "công thái học (thiết kế chống mỏi)",
+    "partOfSpeech": "adjective",
+    "topic": "Health",
+    "example": "The company purchased ergonomic chairs to reduce back strain among staff.",
+    "tags": [
+      "comfort",
+      "workplace"
+    ]
+  },
+  {
+    "id": "w327",
+    "word": "precaution",
+    "ipa": "/prɪˈkɔːʃən/",
+    "meaning": "biện pháp phòng ngừa",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Wear safety goggles as a precaution against flying debris.",
+    "tags": [
+      "safety",
+      "prevention"
+    ]
+  },
+  {
+    "id": "w328",
+    "word": "evacuation",
+    "ipa": "/ɪˌvækjuˈeɪʃən/",
+    "meaning": "sự sơ tán khẩn cấp",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Building occupants practiced emergency fire evacuation procedures.",
+    "tags": [
+      "emergency",
+      "exit"
+    ]
+  },
+  {
+    "id": "w329",
+    "word": "sanitize",
+    "ipa": "/ˈsænɪtaɪz/",
+    "meaning": "khử khuẩn, sát trùng",
+    "partOfSpeech": "verb",
+    "topic": "Health",
+    "example": "Crews sanitize all public surfaces thoroughly between shifts.",
+    "tags": [
+      "disinfect",
+      "clean"
+    ]
+  },
+  {
+    "id": "w330",
+    "word": "malware",
+    "ipa": "/ˈmælweər/",
+    "meaning": "phần mềm độc hại, virus máy tính",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Install antivirus software to protect your system against malware.",
+    "tags": [
+      "security",
+      "virus"
+    ]
+  },
+  {
+    "id": "w331",
+    "word": "troubleshoot",
+    "ipa": "/ˈtrʌbəlʃuːt/",
+    "meaning": "tìm và khắc phục sự cố kỹ thuật",
+    "partOfSpeech": "verb",
+    "topic": "Technology",
+    "example": "The IT technician arrived promptly to troubleshoot the network issue.",
+    "tags": [
+      "fix",
+      "tech"
+    ]
+  },
+  {
+    "id": "w332",
+    "word": "broadband",
+    "ipa": "/ˈbrɔːdbænd/",
+    "meaning": "kết nối mạng băng thông rộng tốc độ cao",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "High-speed broadband allows seamless video conferencing without lag.",
+    "tags": [
+      "internet",
+      "network"
+    ]
+  },
+  {
+    "id": "w333",
+    "word": "compatible",
+    "ipa": "/kəmˈpætəbəl/",
+    "meaning": "tương thích (về phần mềm, thiết bị)",
+    "partOfSpeech": "adjective",
+    "topic": "Technology",
+    "example": "Make sure the headset is compatible with your operating system.",
+    "tags": [
+      "hardware",
+      "software"
+    ]
+  },
+  {
+    "id": "w334",
+    "word": "encrypt",
+    "ipa": "/ɪnˈkrɪpt/",
+    "meaning": "mã hóa bảo mật dữ liệu",
+    "partOfSpeech": "verb",
+    "topic": "Technology",
+    "example": "Banking platforms encrypt financial transactions to thwart cyber fraud.",
+    "tags": [
+      "security",
+      "data"
+    ]
+  },
+  {
+    "id": "w335",
+    "word": "downtime",
+    "ipa": "/ˈdaʊntaɪm/",
+    "meaning": "thời gian hệ thống tạm ngưng hoạt động",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Scheduled server maintenance was carried out overnight to minimize downtime.",
+    "tags": [
+      "outage",
+      "maintenance"
+    ]
+  },
+  {
+    "id": "w336",
+    "word": "configure",
+    "ipa": "/kənˈfɪɡjər/",
+    "meaning": "cấu hình, thiết lập thông số kỹ thuật",
+    "partOfSpeech": "verb",
+    "topic": "Technology",
+    "example": "It took thirty minutes to configure the new office wireless router.",
+    "tags": [
+      "setup",
+      "settings"
+    ]
+  },
+  {
+    "id": "w337",
+    "word": "peripheral",
+    "ipa": "/pəˈrɪfərəl/",
+    "meaning": "thiết bị ngoại vi (chuột, bàn phím, máy in)",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Connect computer peripherals like scanners and printers via USB ports.",
+    "tags": [
+      "hardware",
+      "accessory"
+    ]
+  },
+  {
+    "id": "w338",
+    "word": "versatile",
+    "ipa": "/ˈvɜːrsətəl/",
+    "meaning": "đa năng, linh hoạt trong nhiều vai trò",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "She is a versatile employee capable of handling sales and customer care.",
+    "tags": [
+      "adaptable",
+      "skills"
+    ]
+  },
+  {
+    "id": "w339",
+    "word": "tentative",
+    "ipa": "/ˈtentətɪv/",
+    "meaning": "dự kiến, chưa dứt khoát chính thức",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "We agreed on a tentative schedule for the product release in May.",
+    "tags": [
+      "provisional",
+      "plan"
+    ]
+  },
+  {
+    "id": "w340",
+    "word": "unanimous",
+    "ipa": "/juːˈnænɪməs/",
+    "meaning": "nhất trí hoàn toàn, 100% đồng thuận",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The board reached a unanimous decision to accept the buyout offer.",
+    "tags": [
+      "consensus",
+      "agreement"
+    ]
+  },
+  {
+    "id": "w341",
+    "word": "diligent",
+    "ipa": "/ˈdɪlɪdʒənt/",
+    "meaning": "chăm chỉ, mẫn cán, tận tâm",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Diligent workers are frequently rewarded with rapid career promotions.",
+    "tags": [
+      "hardworking",
+      "attitude"
+    ]
+  },
+  {
+    "id": "w342",
+    "word": "lucrative",
+    "ipa": "/ˈluːkrətɪv/",
+    "meaning": "sinh lời cao, đem lại nhiều lợi nhuận",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Exporting coffee beans proved to be a highly lucrative venture.",
+    "tags": [
+      "profitable",
+      "money"
+    ]
+  },
+  {
+    "id": "w343",
+    "word": "persistent",
+    "ipa": "/pərˈsɪstənt/",
+    "meaning": "kiên trì, bền bỉ, dai dẳng",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Thanks to persistent follow-ups, the agent closed the large deal.",
+    "tags": [
+      "tenacious",
+      "effort"
+    ]
+  },
+  {
+    "id": "w344",
+    "word": "exempt",
+    "ipa": "/ɪɡˈzempt/",
+    "meaning": "được miễn trừ (thuế, nghĩa vụ)",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Certain charitable donations are exempt from federal tax.",
+    "tags": [
+      "exception",
+      "duty"
+    ]
+  },
+  {
+    "id": "w345",
+    "word": "unprecedented",
+    "ipa": "/ʌnˈpresɪdentɪd/",
+    "meaning": "chưa từng có tiền lệ",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The product launch enjoyed unprecedented customer demand worldwide.",
+    "tags": [
+      "historic",
+      "record"
+    ]
+  },
+  {
+    "id": "w346",
+    "word": "phenomenal",
+    "ipa": "/fəˈnɒmɪnəl/",
+    "meaning": "phi thường, ấn tượng ngoạn mục",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The marketing push generated phenomenal revenue within two weeks.",
+    "tags": [
+      "extraordinary",
+      "success"
+    ]
+  },
+  {
+    "id": "w347",
+    "word": "reluctant",
+    "ipa": "/rɪˈlʌktənt/",
+    "meaning": "miễn cưỡng, ngần ngại",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Investors were reluctant to commit capital during economic turmoil.",
+    "tags": [
+      "hesitant",
+      "doubt"
+    ]
+  },
+  {
+    "id": "w348",
+    "word": "rigorous",
+    "ipa": "/ˈrɪɡərəs/",
+    "meaning": "nghiêm ngặt, khắt khe, chặt chẽ",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Safety equipment must pass rigorous factory inspection standards.",
+    "tags": [
+      "strict",
+      "quality"
+    ]
+  },
+  {
+    "id": "w349",
+    "word": "thoroughly",
+    "ipa": "/ˈθʌrəli/",
+    "meaning": "một cách kỹ lưỡng, thấu đáo",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "The inspector thoroughly examined every machine component.",
+    "tags": [
+      "detailed",
+      "careful"
+    ]
+  },
+  {
+    "id": "w350",
+    "word": "inadvertently",
+    "ipa": "/ˌɪnədˈvɜːtəntli/",
+    "meaning": "vô tình, sơ suất không cố ý",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "The accountant inadvertently mailed the financial statement to the wrong client.",
+    "tags": [
+      "mistake",
+      "accidental"
+    ]
+  },
+  {
+    "id": "w351",
+    "word": "periodically",
+    "ipa": "/ˌpɪəriˈɒdɪkli/",
+    "meaning": "định kỳ, theo chu kỳ đều đặn",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "Software systems must be updated periodically to patch vulnerabilities.",
+    "tags": [
+      "regularly",
+      "schedule"
+    ]
+  },
+  {
+    "id": "w352",
+    "word": "drastically",
+    "ipa": "/ˈdræstɪkli/",
+    "meaning": "mạnh mẽ, quyết liệt, trầm trọng",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "Budget deficits were reduced drastically through strict cost-cutting measures.",
+    "tags": [
+      "extreme",
+      "fast"
+    ]
+  },
+  {
+    "id": "w353",
+    "word": "mutually",
+    "ipa": "/ˈmjuːtʃuəli/",
+    "meaning": "lẫn nhau, hai bên cùng",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "The two firms reached a mutually beneficial trade agreement.",
+    "tags": [
+      "together",
+      "reciprocal"
+    ]
+  },
+  {
+    "id": "w354",
+    "word": "tentatively",
+    "ipa": "/ˈtentətɪvli/",
+    "meaning": "tạm thời, dự kiến chưa chốt hẳn",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "The conference date has been tentatively scheduled for mid-October.",
+    "tags": [
+      "provisional",
+      "time"
+    ]
+  },
+  {
+    "id": "w355",
+    "word": "namely",
+    "ipa": "/ˈneɪmli/",
+    "meaning": "cụ thể là, đó là",
+    "partOfSpeech": "adverb",
+    "topic": "Business",
+    "example": "Only three candidates made the final shortlist, namely Jane, Alex, and David.",
+    "tags": [
+      "specifically",
+      "clarification"
+    ]
+  },
+  {
+    "id": "w356",
+    "word": "anticipate",
+    "ipa": "/ænˈtɪsɪpeɪt/",
+    "meaning": "dự đoán trước, lường trước",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We anticipate strong holiday demand for wireless headphones.",
+    "tags": [
+      "forecast",
+      "expect"
+    ]
+  },
+  {
+    "id": "w357",
+    "word": "consolidate",
+    "ipa": "/kənˈsɒlɪdeɪt/",
+    "meaning": "hợp nhất, củng cố vững chắc",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The company plans to consolidate multiple regional warehouses into one hub.",
+    "tags": [
+      "merge",
+      "strengthen"
+    ]
+  },
+  {
+    "id": "w358",
+    "word": "curtail",
+    "ipa": "/kɜːˈteɪl/",
+    "meaning": "cắt giảm, hạn chế bớt",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The executive committee voted to curtail corporate travel expenditures.",
+    "tags": [
+      "cut",
+      "reduce"
+    ]
+  },
+  {
+    "id": "w359",
+    "word": "designate",
+    "ipa": "/ˈdezɪɡneɪt/",
+    "meaning": "chỉ định, bổ nhiệm làm gì",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The lobby has been designated as an official visitor waiting zone.",
+    "tags": [
+      "assign",
+      "name"
+    ]
+  },
+  {
+    "id": "w360",
+    "word": "disclose",
+    "ipa": "/dɪsˈkloʊz/",
+    "meaning": "tiết lộ, vạch trần công khai",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Public companies must disclose audited quarterly revenues by law.",
+    "tags": [
+      "reveal",
+      "publish"
+    ]
+  },
+  {
+    "id": "w361",
+    "word": "divert",
+    "ipa": "/daɪˈvɜːrt/",
+    "meaning": "chuyển hướng, chuyển mục đích sử dụng",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Due to runway repairs, the flight was diverted to an alternate airport.",
+    "tags": [
+      "redirect",
+      "traffic"
+    ]
+  },
+  {
+    "id": "w362",
+    "word": "eliminate",
+    "ipa": "/ɪˈlɪmɪneɪt/",
+    "meaning": "loại trừ, xóa bỏ hoàn toàn",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Lean manufacturing methods help eliminate wasteful production steps.",
+    "tags": [
+      "remove",
+      "dispose"
+    ]
+  },
+  {
+    "id": "w363",
+    "word": "facilitate",
+    "ipa": "/fəˈsɪlɪteɪt/",
+    "meaning": "tạo điều kiện thuận lợi, hỗ trợ tiến hành",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Modern messaging platforms facilitate instant team collaboration.",
+    "tags": [
+      "ease",
+      "assist"
+    ]
+  },
+  {
+    "id": "w364",
+    "word": "fluctuate",
+    "ipa": "/ˈflʌktʃueɪt/",
+    "meaning": "dao động thất thường lên xuống",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "Currency exchange rates fluctuate constantly throughout market trading hours.",
+    "tags": [
+      "change",
+      "variation"
+    ]
+  },
+  {
+    "id": "w365",
+    "word": "generate",
+    "ipa": "/ˈdʒenəreɪt/",
+    "meaning": "tạo ra, phát sinh (doanh thu, ý tưởng)",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The online promotional blast generated thousands of customer clicks.",
+    "tags": [
+      "produce",
+      "create"
+    ]
+  },
+  {
+    "id": "w366",
+    "word": "incorporate",
+    "ipa": "/ɪnˈkɔːrpəreɪt/",
+    "meaning": "kết hợp, sáp nhập vào làm một",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Our new mobile release incorporates user feedback from earlier trials.",
+    "tags": [
+      "include",
+      "integrate"
+    ]
+  },
+  {
+    "id": "w367",
+    "word": "intervene",
+    "ipa": "/ˌɪntərˈviːn/",
+    "meaning": "can thiệp để giải quyết vấn đề",
+    "partOfSpeech": "verb",
+    "topic": "Management",
+    "example": "The human resources director had to intervene to settle the dispute.",
+    "tags": [
+      "involve",
+      "mediate"
+    ]
+  },
+  {
+    "id": "w368",
+    "word": "minimize",
+    "ipa": "/ˈmɪnɪmaɪz/",
+    "meaning": "giảm thiểu tối đa",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We adjusted shift hours to minimize worker fatigue.",
+    "tags": [
+      "reduce",
+      "limit"
+    ]
+  },
+  {
+    "id": "w369",
+    "word": "modify",
+    "ipa": "/ˈmɒdɪfaɪ/",
+    "meaning": "sửa đổi, điều chỉnh nhẹ cho phù hợp",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Engineers modified the casing design to lower manufacturing costs.",
+    "tags": [
+      "adjust",
+      "change"
+    ]
+  },
+  {
+    "id": "w370",
+    "word": "notify",
+    "ipa": "/ˈnoʊtɪfaɪ/",
+    "meaning": "thông báo cho ai biết",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Please notify the reception desk immediately if you misplace your badge.",
+    "tags": [
+      "inform",
+      "tell"
+    ]
+  },
+  {
+    "id": "w371",
+    "word": "obtain",
+    "ipa": "/əbˈteɪn/",
+    "meaning": "đạt được, xin được (giấy phép, tài liệu)",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Contractors must obtain municipal permits before starting demolition.",
+    "tags": [
+      "get",
+      "acquire"
+    ]
+  },
+  {
+    "id": "w372",
+    "word": "optimize",
+    "ipa": "/ˈɒptɪmaɪz/",
+    "meaning": "tối ưu hóa",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We restructured server caches to optimize website load speeds.",
+    "tags": [
+      "improve",
+      "efficiency"
+    ]
+  },
+  {
+    "id": "w373",
+    "word": "postpone",
+    "ipa": "/poʊstˈpoʊn/",
+    "meaning": "trì hoãn sang một thời điểm khác",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The marketing director chose to postpone the launch until autumn.",
+    "tags": [
+      "delay",
+      "defer"
+    ]
+  },
+  {
+    "id": "w374",
+    "word": "procure",
+    "ipa": "/prəˈkjʊər/",
+    "meaning": "thu mua, mua sắm vật tư thiết bị",
+    "partOfSpeech": "verb",
+    "topic": "Logistics",
+    "example": "The purchasing agent will procure raw materials from certified vendors.",
+    "tags": [
+      "buy",
+      "acquire"
+    ]
+  },
+  {
+    "id": "w375",
+    "word": "reimburse",
+    "ipa": "/ˌriːɪmˈbɜːrs/",
+    "meaning": "hoàn trả tiền chi phí (sau khi công tác)",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "The accounting team will reimburse all taxi fares incurred during travel.",
+    "tags": [
+      "refund",
+      "payback"
+    ]
+  },
+  {
+    "id": "w376",
+    "word": "reiterate",
+    "ipa": "/riˈɪtəreɪt/",
+    "meaning": "nhắc lại, khẳng định lại lần nữa",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The manager wished to reiterate that safety rules are non-negotiable.",
+    "tags": [
+      "repeat",
+      "emphasize"
+    ]
+  },
+  {
+    "id": "w377",
+    "word": "relinquish",
+    "ipa": "/rɪˈlɪŋkwɪʃ/",
+    "meaning": "từ bỏ, nhượng quyền lại cho người khác",
+    "partOfSpeech": "verb",
+    "topic": "Legal",
+    "example": "The founder agreed to relinquish controlling shares in the corporation.",
+    "tags": [
+      "surrender",
+      "giveup"
+    ]
+  },
+  {
+    "id": "w378",
+    "word": "resolve",
+    "ipa": "/rɪˈzɒlv/",
+    "meaning": "giải quyết ổn thỏa một vấn đề",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Technicians worked through the night to resolve the network outage.",
+    "tags": [
+      "solve",
+      "settle"
+    ]
+  },
+  {
+    "id": "w379",
+    "word": "scrutinize",
+    "ipa": "/ˈskruːtɪnaɪz/",
+    "meaning": "soi xét, kiểm tra kỹ lưỡng từng li",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Auditors scrutinize every invoice for signs of billing discrepancies.",
+    "tags": [
+      "inspect",
+      "examine"
+    ]
+  },
+  {
+    "id": "w380",
+    "word": "surpass",
+    "ipa": "/sərˈpɑːs/",
+    "meaning": "vượt trội, vượt qua kỳ vọng/mục tiêu",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Quarterly sales figures surpassed even our most optimistic projections.",
+    "tags": [
+      "exceed",
+      "beat"
+    ]
+  },
+  {
+    "id": "w381",
+    "word": "sustain",
+    "ipa": "/səˈsteɪn/",
+    "meaning": "duy trì, chống đỡ được lâu dài",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The business managed to sustain double-digit growth for five consecutive years.",
+    "tags": [
+      "maintain",
+      "support"
+    ]
+  },
+  {
+    "id": "w382",
+    "word": "undertake",
+    "ipa": "/ˌʌndərˈteɪk/",
+    "meaning": "đảm nhận, cam kết thực hiện trọng trách",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "The firm agreed to undertake a massive research project for the government.",
+    "tags": [
+      "assume",
+      "start"
+    ]
+  },
+  {
+    "id": "w383",
+    "word": "utilize",
+    "ipa": "/ˈjuːtəlaɪz/",
+    "meaning": "tận dụng, sử dụng hiệu quả",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "We must utilize all available digital tools to connect with consumers.",
+    "tags": [
+      "use",
+      "employ"
+    ]
+  },
+  {
+    "id": "w384",
+    "word": "validate",
+    "ipa": "/ˈvælɪdeɪt/",
+    "meaning": "xác nhận tính hợp lệ, phê chuẩn",
+    "partOfSpeech": "verb",
+    "topic": "Business",
+    "example": "Please stamp and validate the parking ticket before exiting the lot.",
+    "tags": [
+      "confirm",
+      "authenticate"
+    ]
+  },
+  {
+    "id": "w385",
+    "word": "waive",
+    "ipa": "/weɪv/",
+    "meaning": "từ bỏ, miễn trừ (phí, quyền lợi)",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "The bank agreed to waive the monthly maintenance fee for new account holders.",
+    "tags": [
+      "forgo",
+      "cancel"
+    ]
+  },
+  {
+    "id": "w386",
+    "word": "withhold",
+    "ipa": "/wɪðˈhoʊld/",
+    "meaning": "giữ lại, khấu lưu (tiền thuế, thông tin)",
+    "partOfSpeech": "verb",
+    "topic": "Finance",
+    "example": "Employers withhold income taxes directly from employee paychecks.",
+    "tags": [
+      "retain",
+      "deduct"
+    ]
+  },
+  {
+    "id": "w387",
+    "word": "abundance",
+    "ipa": "/əˈbʌndəns/",
+    "meaning": "sự phong phú, dồi dào",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The region boasts an abundance of natural agricultural resources.",
+    "tags": [
+      "plenty",
+      "wealth"
+    ]
+  },
+  {
+    "id": "w388",
+    "word": "allocation",
+    "ipa": "/ˌæləˈkeɪʃən/",
+    "meaning": "sự phân bổ ngân sách / nguồn lực",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The annual budget allocation for research and development was doubled.",
+    "tags": [
+      "distribution",
+      "budget"
+    ]
+  },
+  {
+    "id": "w389",
+    "word": "alteration",
+    "ipa": "/ˌɔːltəˈreɪʃən/",
+    "meaning": "sự biến đổi, sửa đổi chỉnh sửa",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Any minor alteration to the architectural plans requires client sign-off.",
+    "tags": [
+      "change",
+      "modification"
+    ]
+  },
+  {
+    "id": "w390",
+    "word": "apparel",
+    "ipa": "/əˈpærəl/",
+    "meaning": "trang phục, quần áo may mặc",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The retail giant sells men's and women's athletic apparel worldwide.",
+    "tags": [
+      "clothing",
+      "retail"
+    ]
+  },
+  {
+    "id": "w391",
+    "word": "appliance",
+    "ipa": "/əˈplaɪəns/",
+    "meaning": "thiết bị gia dụng",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Energy-efficient home appliances help lower electricity bills.",
+    "tags": [
+      "devices",
+      "home"
+    ]
+  },
+  {
+    "id": "w392",
+    "word": "authorization",
+    "ipa": "/ˌɔːθəraɪˈzeɪʃən/",
+    "meaning": "sự cho phép chính thức bằng văn bản",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "You cannot enter the laboratory without prior security authorization.",
+    "tags": [
+      "permission",
+      "approval"
+    ]
+  },
+  {
+    "id": "w393",
+    "word": "behalf",
+    "ipa": "/bɪˈhɑːf/",
+    "meaning": "sự thay mặt, đại diện cho ai",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "I am writing on behalf of our chief executive officer.",
+    "tags": [
+      "representative",
+      "proxy"
+    ]
+  },
+  {
+    "id": "w394",
+    "word": "capacity",
+    "ipa": "/kəˈpæsɪti/",
+    "meaning": "sức chứa, năng suất hoạt động tối đa",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "The assembly factory is currently operating at full production capacity.",
+    "tags": [
+      "volume",
+      "output"
+    ]
+  },
+  {
+    "id": "w395",
+    "word": "commitment",
+    "ipa": "/kəˈmɪtmənt/",
+    "meaning": "sự cam kết gắn bó, lời hứa",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Our company maintains a steadfast commitment to green environmental standards.",
+    "tags": [
+      "dedication",
+      "promise"
+    ]
+  },
+  {
+    "id": "w396",
+    "word": "concession",
+    "ipa": "/kənˈseʃən/",
+    "meaning": "sự nhượng bộ trong đàm phán",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Both negotiating parties made key concessions to finalize the treaty.",
+    "tags": [
+      "compromise",
+      "negotiation"
+    ]
+  },
+  {
+    "id": "w397",
+    "word": "criterion",
+    "ipa": "/kraɪˈtɪəriən/",
+    "meaning": "tiêu chuẩn đánh giá",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Punctuality is a vital criterion when assessing employee suitability.",
+    "tags": [
+      "standard",
+      "measure"
+    ]
+  },
+  {
+    "id": "w398",
+    "word": "demolition",
+    "ipa": "/ˌdeməˈlɪʃən/",
+    "meaning": "sự phá dỡ công trình cũ",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "Demolition of the abandoned warehouse will commence next Tuesday.",
+    "tags": [
+      "destruction",
+      "building"
+    ]
+  },
+  {
+    "id": "w399",
+    "word": "designation",
+    "ipa": "/ˌdezɪɡˈneɪʃən/",
+    "meaning": "sự bổ nhiệm chức danh, danh hiệu",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Her official job designation was promoted to Senior Operations Director.",
+    "tags": [
+      "title",
+      "role"
+    ]
+  },
+  {
+    "id": "w400",
+    "word": "dimension",
+    "ipa": "/daɪˈmenʃən/",
+    "meaning": "kích thước chiều dài/rộng/cao",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Please record the exact parcel dimensions before generating the shipping label.",
+    "tags": [
+      "measurement",
+      "size"
+    ]
+  },
+  {
+    "id": "w401",
+    "word": "disposal",
+    "ipa": "/dɪˈspoʊzəl/",
+    "meaning": "sự tiêu hủy, xử lý rác thải / phế liệu",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Safe disposal of chemical waste is subject to strict governmental audits.",
+    "tags": [
+      "waste",
+      "removal"
+    ]
+  },
+  {
+    "id": "w402",
+    "word": "distinction",
+    "ipa": "/dɪˈstɪŋkʃən/",
+    "meaning": "nét đặc biệt, sự xuất sắc vượt trội",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The firm achieved the distinction of winning Best Employer three years in a row.",
+    "tags": [
+      "honor",
+      "award"
+    ]
+  },
+  {
+    "id": "w403",
+    "word": "duration",
+    "ipa": "/djʊˈreɪʃən/",
+    "meaning": "khoảng thời gian kéo dài của sự việc",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Visitors must wear protective hard hats for the entire duration of the plant tour.",
+    "tags": [
+      "time",
+      "period"
+    ]
+  },
+  {
+    "id": "w404",
+    "word": "emphasis",
+    "ipa": "/ˈemfəsɪs/",
+    "meaning": "sự nhấn mạnh, trọng tâm chú ý",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Our new training curriculum places strong emphasis on practical problem-solving.",
+    "tags": [
+      "focus",
+      "priority"
+    ]
+  },
+  {
+    "id": "w405",
+    "word": "enterprise",
+    "ipa": "/ˈentərpraɪz/",
+    "meaning": "doanh nghiệp, tổ chức kinh doanh",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "State-owned enterprises are undergoing major privatization reforms.",
+    "tags": [
+      "company",
+      "business"
+    ]
+  },
+  {
+    "id": "w406",
+    "word": "estate",
+    "ipa": "/ɪˈsteɪt/",
+    "meaning": "bất động sản, khu đất tài sản",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "The industrial estate houses over twenty manufacturing plants.",
+    "tags": [
+      "property",
+      "land"
+    ]
+  },
+  {
+    "id": "w407",
+    "word": "evaluation",
+    "ipa": "/ɪˌvæljuˈeɪʃən/",
+    "meaning": "sự lượng giá, đánh giá kết quả",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "The annual project evaluation will determine whether funding is renewed.",
+    "tags": [
+      "assessment",
+      "review"
+    ]
+  },
+  {
+    "id": "w408",
+    "word": "exception",
+    "ipa": "/ɪkˈsepʃən/",
+    "meaning": "ngoại lệ",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "All employees must scan their badges; no exceptions will be permitted.",
+    "tags": [
+      "exclusion",
+      "rule"
+    ]
+  },
+  {
+    "id": "w409",
+    "word": "expertise",
+    "ipa": "/ˌekspɜːrˈtiːz/",
+    "meaning": "chuyên môn sâu, tay nghề tài năng",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "We rely heavily on his legal expertise when negotiating cross-border contracts.",
+    "tags": [
+      "skills",
+      "knowledge"
+    ]
+  },
+  {
+    "id": "w410",
+    "word": "fluctuation",
+    "ipa": "/ˌflʌktʃuˈeɪʃən/",
+    "meaning": "sự biến động giá cả / chỉ số",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Oil price fluctuations directly impact transatlantic freight transport costs.",
+    "tags": [
+      "volatility",
+      "change"
+    ]
+  },
+  {
+    "id": "w411",
+    "word": "fraction",
+    "ipa": "/ˈfrækʃən/",
+    "meaning": "một phần nhỏ, phân số",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Online retailers sell products at a fraction of brick-and-mortar retail prices.",
+    "tags": [
+      "portion",
+      "share"
+    ]
+  },
+  {
+    "id": "w412",
+    "word": "garment",
+    "ipa": "/ˈɡɑːrmənt/",
+    "meaning": "áo quần, trang phục may sẵn",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The factory inspects each garment for stitching defects before packaging.",
+    "tags": [
+      "clothing",
+      "textile"
+    ]
+  },
+  {
+    "id": "w413",
+    "word": "glitch",
+    "ipa": "/ɡlɪtʃ/",
+    "meaning": "trục trặc nhỏ bất ngờ của hệ thống",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "A minor software glitch delayed passenger check-in for fifteen minutes.",
+    "tags": [
+      "bug",
+      "error"
+    ]
+  },
+  {
+    "id": "w414",
+    "word": "guideline",
+    "ipa": "/ˈɡaɪdlaɪn/",
+    "meaning": "hướng dẫn chỉ đạo",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "The document outlines strict guidelines for handling sensitive personal information.",
+    "tags": [
+      "rule",
+      "instructions"
+    ]
+  },
+  {
+    "id": "w415",
+    "word": "hesitation",
+    "ipa": "/ˌhezɪˈteɪʃən/",
+    "meaning": "sự do dự, ngập ngừng",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "If you have questions regarding the contract, do not hesitate to reach out.",
+    "tags": [
+      "doubt",
+      "pause"
+    ]
+  },
+  {
+    "id": "w416",
+    "word": "implication",
+    "ipa": "/ˌɪmplɪˈkeɪʃən/",
+    "meaning": "hệ quả tiềm tàng, ý nghĩa ẩn chứa",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Economists are examining the tax implications of the proposed bill.",
+    "tags": [
+      "consequence",
+      "effect"
+    ]
+  },
+  {
+    "id": "w417",
+    "word": "indicator",
+    "ipa": "/ˈɪndɪkeɪtər/",
+    "meaning": "chỉ số báo hiệu (kinh tế)",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Consumer spending is widely recognized as an essential economic indicator.",
+    "tags": [
+      "measure",
+      "sign"
+    ]
+  },
+  {
+    "id": "w418",
+    "word": "inflation",
+    "ipa": "/ɪnˈfleɪʃən/",
+    "meaning": "sự lạm phát tiền tệ",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Central banks raised benchmark interest rates to combat rising inflation.",
+    "tags": [
+      "prices",
+      "economy"
+    ]
+  },
+  {
+    "id": "w419",
+    "word": "installment",
+    "ipa": "/ɪnˈstɔːlmənt/",
+    "meaning": "khoản trả góp từng kỳ",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "The balance may be paid in twelve equal monthly installments without interest.",
+    "tags": [
+      "payment",
+      "plan"
+    ]
+  },
+  {
+    "id": "w420",
+    "word": "jurisdiction",
+    "ipa": "/ˌdʒʊərɪsˈdɪkʃən/",
+    "meaning": "thẩm quyền pháp lý, quyền tài phán",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The international commercial arbitration tribunal has legal jurisdiction over this matter.",
+    "tags": [
+      "court",
+      "authority"
+    ]
+  },
+  {
+    "id": "w421",
+    "word": "leisure",
+    "ipa": "/ˈleʒər/",
+    "meaning": "thời gian rảnh rỗi, giải trí nghỉ ngơi",
+    "partOfSpeech": "noun",
+    "topic": "Travel",
+    "example": "The resort caters to both corporate business events and leisure travelers.",
+    "tags": [
+      "free-time",
+      "vacation"
+    ]
+  },
+  {
+    "id": "w422",
+    "word": "milestone",
+    "ipa": "/ˈmaɪlstoʊn/",
+    "meaning": "cột mốc phát triển quan trọng",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Surpassing one million active users represents a proud milestone for the team.",
+    "tags": [
+      "achievement",
+      "target"
+    ]
+  },
+  {
+    "id": "w423",
+    "word": "misfortune",
+    "ipa": "/ˌmɪsˈfɔːrtʃuːn/",
+    "meaning": "rủi ro không may, vận đen",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The startup had the misfortune of launching right as global lockdowns began.",
+    "tags": [
+      "bad-luck",
+      "loss"
+    ]
+  },
+  {
+    "id": "w424",
+    "word": "monopoly",
+    "ipa": "/məˈnɒpəli/",
+    "meaning": "sự độc quyền thị trường",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Antitrust regulators investigate firms that establish an unfair monopoly.",
+    "tags": [
+      "control",
+      "market"
+    ]
+  },
+  {
+    "id": "w425",
+    "word": "negotiation",
+    "ipa": "/nɪˌɡoʊʃiˈeɪʃən/",
+    "meaning": "cuộc đàm phán thương thuyết",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Protracted price negotiations stalled the merger for another six weeks.",
+    "tags": [
+      "talks",
+      "bargaining"
+    ]
+  },
+  {
+    "id": "w426",
+    "word": "obligation",
+    "ipa": "/ˌɒblɪˈɡeɪʃən/",
+    "meaning": "nghĩa vụ bổn phận bắt buộc",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Suppliers must fulfill all contractual obligations before requesting final payment.",
+    "tags": [
+      "duty",
+      "requirement"
+    ]
+  },
+  {
+    "id": "w427",
+    "word": "obstacle",
+    "ipa": "/ˈɒbstəkəl/",
+    "meaning": "chướng ngại vật, trở ngại",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Supply chain bottlenecks proved the biggest obstacle to meeting delivery targets.",
+    "tags": [
+      "barrier",
+      "challenge"
+    ]
+  },
+  {
+    "id": "w428",
+    "word": "omission",
+    "ipa": "/oʊˈmɪʃən/",
+    "meaning": "sự bỏ sót, sơ suất không đưa vào",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Any deliberate omission of material facts could void the insurance claim.",
+    "tags": [
+      "exclusion",
+      "error"
+    ]
+  },
+  {
+    "id": "w429",
+    "word": "optician",
+    "ipa": "/ɒpˈtɪʃən/",
+    "meaning": "bác sĩ / chuyên viên nhãn khoa khúc xạ",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "Schedule an appointment with the optician to update your eyeglass prescription.",
+    "tags": [
+      "eyes",
+      "glasses"
+    ]
+  },
+  {
+    "id": "w430",
+    "word": "ordinance",
+    "ipa": "/ˈɔːrdɪnəns/",
+    "meaning": "sắc lệnh, quy định đô thị địa phương",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "City ordinances restrict commercial deliveries during peak morning commute hours.",
+    "tags": [
+      "law",
+      "city"
+    ]
+  },
+  {
+    "id": "w431",
+    "word": "participant",
+    "ipa": "/pɑːrˈtɪsɪpənt/",
+    "meaning": "người tham dự cuộc hội thảo / sự kiện",
+    "partOfSpeech": "noun",
+    "topic": "Events",
+    "example": "Workshop participants receive comprehensive training binders and a certificate.",
+    "tags": [
+      "attendee",
+      "member"
+    ]
+  },
+  {
+    "id": "w432",
+    "word": "patron",
+    "ipa": "/ˈpeɪtrən/",
+    "meaning": "khách hàng quen, người bảo trợ",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "Restaurant patrons are entitled to complimentary valet parking.",
+    "tags": [
+      "customer",
+      "supporter"
+    ]
+  },
+  {
+    "id": "w433",
+    "word": "penalty",
+    "ipa": "/ˈpenəlti/",
+    "meaning": "khoản tiền phạt, hình phạt",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "A steep late penalty will be assessed on overdue invoice balances.",
+    "tags": [
+      "fine",
+      "punishment"
+    ]
+  },
+  {
+    "id": "w434",
+    "word": "perquisite",
+    "ipa": "/ˈpɜːrkwɪzɪt/",
+    "meaning": "đãi ngộ bổng lộc thêm (bên cạnh lương)",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "A company vehicle and club membership are standard perquisites for senior directors.",
+    "tags": [
+      "perk",
+      "benefit"
+    ]
+  },
+  {
+    "id": "w435",
+    "word": "portion",
+    "ipa": "/ˈpɔːrʃən/",
+    "meaning": "một phần chia sẻ, khẩu phần",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "A generous portion of company profits was donated directly to community charities.",
+    "tags": [
+      "part",
+      "share"
+    ]
+  },
+  {
+    "id": "w436",
+    "word": "predecessor",
+    "ipa": "/ˈpriːdɪsesər/",
+    "meaning": "người tiền nhiệm trong chức vụ",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "The new division head aims to build on initiatives started by her predecessor.",
+    "tags": [
+      "former",
+      "leader"
+    ]
+  },
+  {
+    "id": "w437",
+    "word": "preference",
+    "ipa": "/ˈprefərəns/",
+    "meaning": "sở thích, sự ưu tiên chuộng hơn",
+    "partOfSpeech": "noun",
+    "topic": "Customer Service",
+    "example": "Please indicate your meal and seating preferences on the travel reservation card.",
+    "tags": [
+      "choice",
+      "priority"
+    ]
+  },
+  {
+    "id": "w438",
+    "word": "premium",
+    "ipa": "/ˈpriːmiəm/",
+    "meaning": "phí bảo hiểm đóng định kỳ (hoặc chất lượng cao)",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Policyholders pay an annual premium to maintain comprehensive fire coverage.",
+    "tags": [
+      "insurance",
+      "cost"
+    ]
+  },
+  {
+    "id": "w439",
+    "word": "priority",
+    "ipa": "/praɪˈɒrəti/",
+    "meaning": "sự ưu tiên số một",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Worker safety on the factory floor remains our utmost corporate priority.",
+    "tags": [
+      "urgency",
+      "importance"
+    ]
+  },
+  {
+    "id": "w440",
+    "word": "privilege",
+    "ipa": "/ˈprɪvəlɪdʒ/",
+    "meaning": "đặc quyền, vinh dự",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Executive club members enjoy the privilege of access to private airport lounges.",
+    "tags": [
+      "perk",
+      "advantage"
+    ]
+  },
+  {
+    "id": "w441",
+    "word": "procedure",
+    "ipa": "/prəˈsiːdʒər/",
+    "meaning": "quy trình, thủ tục tiến hành",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Please review the standard operating procedure for handling flammable chemicals.",
+    "tags": [
+      "process",
+      "steps"
+    ]
+  },
+  {
+    "id": "w442",
+    "word": "punctuality",
+    "ipa": "/ˌpʌŋktʃuˈæləti/",
+    "meaning": "sự đúng giờ",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Punctuality and reliability are essential attributes for airline pilots.",
+    "tags": [
+      "timeliness",
+      "discipline"
+    ]
+  },
+  {
+    "id": "w443",
+    "word": "qualification",
+    "ipa": "/ˌkwɒlɪfɪˈkeɪʃən/",
+    "meaning": "bằng cấp chuyên môn, tiêu chuẩn năng lực",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "The candidate possesses impressive educational qualifications and leadership track record.",
+    "tags": [
+      "credential",
+      "degree"
+    ]
+  },
+  {
+    "id": "w444",
+    "word": "recipient",
+    "ipa": "/rɪˈsɪpiənt/",
+    "meaning": "người nhận (thư từ, giải thưởng)",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The intended email recipient will receive an automated tracking link.",
+    "tags": [
+      "receiver",
+      "addressee"
+    ]
+  },
+  {
+    "id": "w445",
+    "word": "reliability",
+    "ipa": "/rɪˌlaɪəˈbɪləti/",
+    "meaning": "độ tin cậy, sự vững chắc đáng tin",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Japanese automobiles are celebrated worldwide for durability and mechanical reliability.",
+    "tags": [
+      "trust",
+      "dependability"
+    ]
+  },
+  {
+    "id": "w446",
+    "word": "reluctance",
+    "ipa": "/rɪˈlʌktəns/",
+    "meaning": "sự miễn cưỡng ngần ngại",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "His reluctance to embrace new digital systems impeded departmental productivity.",
+    "tags": [
+      "hesitation",
+      "unwillingness"
+    ]
+  },
+  {
+    "id": "w447",
+    "word": "representation",
+    "ipa": "/ˌreprɪzenˈteɪʃən/",
+    "meaning": "sự đại diện, đại diện pháp lý",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The firm retained prominent legal representation for the antitrust trial.",
+    "tags": [
+      "advocate",
+      "lawyer"
+    ]
+  },
+  {
+    "id": "w448",
+    "word": "reputation",
+    "ipa": "/ˌrepjʊˈteɪʃən/",
+    "meaning": "danh tiếng, uy tín thương hiệu",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "The luxury hotel group built an illustrious reputation for attentive guest service.",
+    "tags": [
+      "fame",
+      "prestige"
+    ]
+  },
+  {
+    "id": "w449",
+    "word": "requirement",
+    "ipa": "/rɪˈkwaɪərmənt/",
+    "meaning": "yêu cầu điều kiện bắt buộc",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Fluency in spoken English is a mandatory job requirement for flight attendants.",
+    "tags": [
+      "prerequisite",
+      "criteria"
+    ]
+  },
+  {
+    "id": "w450",
+    "word": "restriction",
+    "ipa": "/rɪˈstrɪkʃən/",
+    "meaning": "sự hạn chế, giới hạn quy định",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "International travelers should consult current customs restrictions on dairy imports.",
+    "tags": [
+      "limitation",
+      "rule"
+    ]
+  },
+  {
+    "id": "w451",
+    "word": "retention",
+    "ipa": "/rɪˈtenʃən/",
+    "meaning": "sự giữ chân (nhân sự, khách hàng)",
+    "partOfSpeech": "noun",
+    "topic": "HR",
+    "example": "Competitive salaries and flexible telecommuting policies enhance employee retention.",
+    "tags": [
+      "loyalty",
+      "holding"
+    ]
+  },
+  {
+    "id": "w452",
+    "word": "revision",
+    "ipa": "/rɪˈvɪʒən/",
+    "meaning": "bản chỉnh sửa sửa đổi bổ sung",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Please review the third revision of the draft proposal before distribution.",
+    "tags": [
+      "correction",
+      "edit"
+    ]
+  },
+  {
+    "id": "w453",
+    "word": "sanction",
+    "ipa": "/ˈsæŋkʃən/",
+    "meaning": "sự phê chuẩn (hoặc lệnh trừng phạt kinh tế)",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The international council threatened economic sanctions against violators of the treaty.",
+    "tags": [
+      "penalty",
+      "approval"
+    ]
+  },
+  {
+    "id": "w454",
+    "word": "segment",
+    "ipa": "/ˈseɡmənt/",
+    "meaning": "phân khúc thị trường",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Automakers are designing electric vehicles tailored to the luxury buyer segment.",
+    "tags": [
+      "category",
+      "niche"
+    ]
+  },
+  {
+    "id": "w455",
+    "word": "settlement",
+    "ipa": "/ˈsetəlmənt/",
+    "meaning": "sự dàn xếp thỏa thuận ổn thỏa",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Both companies agreed on an out-of-court monetary settlement to end the patent dispute.",
+    "tags": [
+      "agreement",
+      "resolution"
+    ]
+  },
+  {
+    "id": "w456",
+    "word": "shortage",
+    "ipa": "/ˈʃɔːrtɪdʒ/",
+    "meaning": "tình trạng khan hiếm thiếu hụt",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "Severe global microchip shortages delayed automobile manufacturing worldwide.",
+    "tags": [
+      "deficit",
+      "scarcity"
+    ]
+  },
+  {
+    "id": "w457",
+    "word": "significance",
+    "ipa": "/sɪɡˈnɪfɪkəns/",
+    "meaning": "tầm quan trọng, ý nghĩa to lớn",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The keynote speaker highlighted the strategic significance of clean green energy.",
+    "tags": [
+      "importance",
+      "weight"
+    ]
+  },
+  {
+    "id": "w458",
+    "word": "specimen",
+    "ipa": "/ˈspesɪmɪn/",
+    "meaning": "mẫu vật xét nghiệm / kiểm tra",
+    "partOfSpeech": "noun",
+    "topic": "Health",
+    "example": "The lab technician safely placed blood specimens into the refrigerated unit.",
+    "tags": [
+      "sample",
+      "test"
+    ]
+  },
+  {
+    "id": "w459",
+    "word": "specification",
+    "ipa": "/ˌspesɪfɪˈkeɪʃən/",
+    "meaning": "thông số kỹ thuật chi tiết",
+    "partOfSpeech": "noun",
+    "topic": "Technology",
+    "example": "Verify that the ordered industrial pump meets the engineering team's exact specifications.",
+    "tags": [
+      "specs",
+      "details"
+    ]
+  },
+  {
+    "id": "w460",
+    "word": "stability",
+    "ipa": "/stəˈbɪləti/",
+    "meaning": "sự ổn định vững chắc",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Low unemployment and low inflation promote sustained macroeconomic stability.",
+    "tags": [
+      "steadiness",
+      "security"
+    ]
+  },
+  {
+    "id": "w461",
+    "word": "stockholder",
+    "ipa": "/ˈstɒkhoʊldər/",
+    "meaning": "cổ đông sở hữu cổ phiếu",
+    "partOfSpeech": "noun",
+    "topic": "Finance",
+    "example": "Stockholders voted overwhelmingly in favor of the planned corporate acquisition.",
+    "tags": [
+      "shareholder",
+      "investor"
+    ]
+  },
+  {
+    "id": "w462",
+    "word": "supervision",
+    "ipa": "/ˌsuːpərˈvɪʒən/",
+    "meaning": "sự giám sát chỉ đạo",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Apprentice technicians must work under the direct supervision of a licensed electrician.",
+    "tags": [
+      "oversight",
+      "control"
+    ]
+  },
+  {
+    "id": "w463",
+    "word": "tariffs",
+    "ipa": "/ˈtærɪfs/",
+    "meaning": "hàng rào thuế quan xuất nhập khẩu",
+    "partOfSpeech": "noun",
+    "topic": "Logistics",
+    "example": "New trade tariffs caused shipping costs for consumer electronics to jump sharply.",
+    "tags": [
+      "customs",
+      "duties"
+    ]
+  },
+  {
+    "id": "w464",
+    "word": "testimonial",
+    "ipa": "/ˌtestɪˈmoʊniəl/",
+    "meaning": "lời chứng thực đánh giá của khách hàng",
+    "partOfSpeech": "noun",
+    "topic": "Marketing",
+    "example": "Glowing testimonials from satisfied clients are prominently featured on our home page.",
+    "tags": [
+      "review",
+      "praise"
+    ]
+  },
+  {
+    "id": "w465",
+    "word": "trajectory",
+    "ipa": "/trəˈdʒektəri/",
+    "meaning": "quỹ đạo phát triển, xu thế",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "The startup is on an impressive upward trajectory to achieve profitability this fiscal year.",
+    "tags": [
+      "trend",
+      "path"
+    ]
+  },
+  {
+    "id": "w466",
+    "word": "utility",
+    "ipa": "/juːˈtɪləti/",
+    "meaning": "dịch vụ tiện ích công cộng (điện, nước)",
+    "partOfSpeech": "noun",
+    "topic": "Real Estate",
+    "example": "Tenants pay monthly rent plus an extra charge for electricity and water utilities.",
+    "tags": [
+      "services",
+      "power"
+    ]
+  },
+  {
+    "id": "w467",
+    "word": "validity",
+    "ipa": "/vəˈlɪdəti/",
+    "meaning": "hiệu lực pháp lý, giá trị sử dụng",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "The passport officer examined the document to verify the validity of the travel visa.",
+    "tags": [
+      "legality",
+      "truth"
+    ]
+  },
+  {
+    "id": "w468",
+    "word": "variation",
+    "ipa": "/ˌveəriˈeɪʃən/",
+    "meaning": "sự biến đổi, dao động chút ít",
+    "partOfSpeech": "noun",
+    "topic": "Business",
+    "example": "Slight variations in product color occur naturally between separate manufacturing batches.",
+    "tags": [
+      "difference",
+      "change"
+    ]
+  },
+  {
+    "id": "w469",
+    "word": "violation",
+    "ipa": "/ˌvaɪəˈleɪʃən/",
+    "meaning": "hành vi vi phạm quy tắc / luật lệ",
+    "partOfSpeech": "noun",
+    "topic": "Legal",
+    "example": "Failing to wear a hard hat on the construction site constitutes a safety violation.",
+    "tags": [
+      "breach",
+      "infraction"
+    ]
+  },
+  {
+    "id": "w470",
+    "word": "workplace",
+    "ipa": "/ˈwɜːrkpleɪs/",
+    "meaning": "nơi làm việc, công sở",
+    "partOfSpeech": "noun",
+    "topic": "Management",
+    "example": "Ergonomic furniture helps foster a productive and comfortable corporate workplace.",
+    "tags": [
+      "office",
+      "environment"
+    ]
+  },
+  {
+    "id": "w471",
+    "word": "accessible",
+    "ipa": "/əkˈsesəbəl/",
+    "meaning": "dễ dàng tiếp cận, có thể tới được",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The newly renovated corporate headquarters is fully wheelchair accessible.",
+    "tags": [
+      "available",
+      "reachable"
+    ]
+  },
+  {
+    "id": "w472",
+    "word": "adequate",
+    "ipa": "/ˈædɪkwət/",
+    "meaning": "đủ đáp ứng yêu cầu",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Ensure the warehouse keeps an adequate supply of packing boxes on hand.",
+    "tags": [
+      "sufficient",
+      "enough"
+    ]
+  },
+  {
+    "id": "w473",
+    "word": "adjacent",
+    "ipa": "/əˈdʒeɪsənt/",
+    "meaning": "liền kề, ngay sát bên cạnh",
+    "partOfSpeech": "adjective",
+    "topic": "Real Estate",
+    "example": "The company cafeteria is adjacent to the main auditorium on floor one.",
+    "tags": [
+      "next-to",
+      "neighboring"
+    ]
+  },
+  {
+    "id": "w474",
+    "word": "administrative",
+    "ipa": "/ədˈmɪnɪstrətɪv/",
+    "meaning": "thuộc về hành chính quản trị",
+    "partOfSpeech": "adjective",
+    "topic": "Management",
+    "example": "She handles all administrative duties including scheduling meetings and fielding calls.",
+    "tags": [
+      "clerical",
+      "office"
+    ]
+  },
+  {
+    "id": "w475",
+    "word": "affordable",
+    "ipa": "/əˈfɔːrdəbəl/",
+    "meaning": "giá cả phải chăng, vừa túi tiền",
+    "partOfSpeech": "adjective",
+    "topic": "Marketing",
+    "example": "The brand offers durable and affordable laptop computers for college students.",
+    "tags": [
+      "economical",
+      "cheap"
+    ]
+  },
+  {
+    "id": "w476",
+    "word": "beneficial",
+    "ipa": "/ˌbenɪˈfɪʃəl/",
+    "meaning": "có lợi, mang lại lợi ích tốt",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Regular workplace safety seminars are beneficial to staff morale and accident prevention.",
+    "tags": [
+      "advantageous",
+      "helpful"
+    ]
+  },
+  {
+    "id": "w477",
+    "word": "comparable",
+    "ipa": "/ˈkɒmpərəbəl/",
+    "meaning": "tương đương, có thể so sánh ngang bằng",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Our new camera model provides comparable image clarity at half the competitor's price.",
+    "tags": [
+      "similar",
+      "equivalent"
+    ]
+  },
+  {
+    "id": "w478",
+    "word": "competent",
+    "ipa": "/ˈkɒmpɪtənt/",
+    "meaning": "thành thạo, có đủ năng lực làm việc",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "We require a competent IT technician to oversee network security configurations.",
+    "tags": [
+      "capable",
+      "skilled"
+    ]
+  },
+  {
+    "id": "w479",
+    "word": "consistent",
+    "ipa": "/kənˈsɪstənt/",
+    "meaning": "nhất quán, trước sau như một",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Consistent quality control is essential for maintaining customer trust.",
+    "tags": [
+      "reliable",
+      "steady"
+    ]
+  },
+  {
+    "id": "w480",
+    "word": "convenient",
+    "ipa": "/kənˈviːniənt/",
+    "meaning": "thuận tiện, tiện lợi",
+    "partOfSpeech": "adjective",
+    "topic": "Customer Service",
+    "example": "Our branch is conveniently situated adjacent to the central metro station.",
+    "tags": [
+      "handy",
+      "accessible"
+    ]
+  },
+  {
+    "id": "w481",
+    "word": "customary",
+    "ipa": "/ˈkʌstəməri/",
+    "meaning": "theo phong tục thông lệ",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "It is customary in the hospitality industry to tip hotel luggage porters.",
+    "tags": [
+      "traditional",
+      "usual"
+    ]
+  },
+  {
+    "id": "w482",
+    "word": "delinquent",
+    "ipa": "/dɪˈlɪŋkwənt/",
+    "meaning": "quá hạn trả nợ, chậm thanh toán",
+    "partOfSpeech": "adjective",
+    "topic": "Finance",
+    "example": "Credit agencies issue warning letters to borrowers with delinquent credit card accounts.",
+    "tags": [
+      "overdue",
+      "late"
+    ]
+  },
+  {
+    "id": "w483",
+    "word": "designated",
+    "ipa": "/ˈdezɪɡneɪtɪd/",
+    "meaning": "được chỉ định riêng cho mục đích cụ thể",
+    "partOfSpeech": "adjective",
+    "topic": "Management",
+    "example": "Park your vehicle only within designated employee parking bays.",
+    "tags": [
+      "reserved",
+      "assigned"
+    ]
+  },
+  {
+    "id": "w484",
+    "word": "disposable",
+    "ipa": "/dɪˈspoʊzəbəl/",
+    "meaning": "dùng một lần (hoặc thu nhập khả dụng)",
+    "partOfSpeech": "adjective",
+    "topic": "Finance",
+    "example": "Higher disposable income among middle-class families led to a boom in luxury travel.",
+    "tags": [
+      "available",
+      "single-use"
+    ]
+  },
+  {
+    "id": "w485",
+    "word": "distinctive",
+    "ipa": "/dɪˈstɪŋktɪv/",
+    "meaning": "đặc trưng, dễ phân biệt nổi bật",
+    "partOfSpeech": "adjective",
+    "topic": "Marketing",
+    "example": "The soda brand's curved glass bottle gives it a distinctive shelf appearance.",
+    "tags": [
+      "unique",
+      "characteristic"
+    ]
+  },
+  {
+    "id": "w486",
+    "word": "durable",
+    "ipa": "/ˈdʊərəbəl/",
+    "meaning": "bền bỉ, dùng được lâu dài",
+    "partOfSpeech": "adjective",
+    "topic": "Marketing",
+    "example": "The smartphone casing is forged from durable aerospace-grade titanium.",
+    "tags": [
+      "sturdy",
+      "long-lasting"
+    ]
+  },
+  {
+    "id": "w487",
+    "word": "economical",
+    "ipa": "/ˌekəˈnɒmɪkəl/",
+    "meaning": "tiết kiệm, kinh tế",
+    "partOfSpeech": "adjective",
+    "topic": "Finance",
+    "example": "Hybrid and electric vehicles are far more economical to commute in than gas cars.",
+    "tags": [
+      "cost-effective",
+      "saving"
+    ]
+  },
+  {
+    "id": "w488",
+    "word": "enthusiastic",
+    "ipa": "/ɪnˌθjuːziˈæstɪk/",
+    "meaning": "nhiệt huyết, hào hứng",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "The new sales interns showed an enthusiastic willingness to learn the product catalog.",
+    "tags": [
+      "eager",
+      "passionate"
+    ]
+  },
+  {
+    "id": "w489",
+    "word": "exceptional",
+    "ipa": "/ɪkˈsepʃənəl/",
+    "meaning": "xuất chúng, đặc biệt xuất sắc",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The chef earned international culinary acclaim for his exceptional creations.",
+    "tags": [
+      "outstanding",
+      "superb"
+    ]
+  },
+  {
+    "id": "w490",
+    "word": "excessive",
+    "ipa": "/ɪkˈsesɪv/",
+    "meaning": "quá mức, thái quá",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Auditors advised against excessive entertainment spending by the sales department.",
+    "tags": [
+      "too-much",
+      "immoderate"
+    ]
+  },
+  {
+    "id": "w491",
+    "word": "favorable",
+    "ipa": "/ˈfeɪvərəbəl/",
+    "meaning": "thuận lợi, có thiện chí",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "We secured highly favorable loan terms from our commercial lender.",
+    "tags": [
+      "positive",
+      "advantageous"
+    ]
+  },
+  {
+    "id": "w492",
+    "word": "imperative",
+    "ipa": "/ɪmˈperətɪv/",
+    "meaning": "cấp bách, bắt buộc tối quan trọng",
+    "partOfSpeech": "adjective",
+    "topic": "Management",
+    "example": "It is imperative that all flight safety protocols are verified prior to departure.",
+    "tags": [
+      "essential",
+      "urgent"
+    ]
+  },
+  {
+    "id": "w493",
+    "word": "impressive",
+    "ipa": "/ɪmˈpresɪv/",
+    "meaning": "gây ấn tượng mạnh",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The intern demonstrated an impressive grasp of complex data analytics software.",
+    "tags": [
+      "remarkable",
+      "great"
+    ]
+  },
+  {
+    "id": "w494",
+    "word": "invaluable",
+    "ipa": "/ɪnˈvæljuəbəl/",
+    "meaning": "vô giá, cực kỳ quý giá",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Her extensive background in Asian commerce proved invaluable during the contract talks.",
+    "tags": [
+      "priceless",
+      "precious"
+    ]
+  },
+  {
+    "id": "w495",
+    "word": "prevalent",
+    "ipa": "/ˈprevələnt/",
+    "meaning": "phổ biến thịnh hành",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Telecommuting has become increasingly prevalent across software firms.",
+    "tags": [
+      "widespread",
+      "common"
+    ]
+  },
+  {
+    "id": "w496",
+    "word": "promising",
+    "ipa": "/ˈprɒmɪsɪŋ/",
+    "meaning": "đầy triển vọng, hứa hẹn",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "Initial customer reception of the prototype shows promising market indicators.",
+    "tags": [
+      "hopeful",
+      "positive"
+    ]
+  },
+  {
+    "id": "w497",
+    "word": "provisional",
+    "ipa": "/prəˈvɪʒənəl/",
+    "meaning": "tạm thời, có giá trị lâm thời",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The city council granted provisional approval for the new shopping plaza.",
+    "tags": [
+      "temporary",
+      "conditional"
+    ]
+  },
+  {
+    "id": "w498",
+    "word": "redundant",
+    "ipa": "/rɪˈdʌndənt/",
+    "meaning": "dư thừa, bị sa thải do tinh giản",
+    "partOfSpeech": "adjective",
+    "topic": "HR",
+    "example": "Automation of warehouse sorting made several manual inspection jobs redundant.",
+    "tags": [
+      "unneeded",
+      "excess"
+    ]
+  },
+  {
+    "id": "w499",
+    "word": "renowned",
+    "ipa": "/rɪˈnaʊnd/",
+    "meaning": "nổi tiếng lẫy lừng",
+    "partOfSpeech": "adjective",
+    "topic": "Business",
+    "example": "The conference keynote will be delivered by a renowned international economist.",
+    "tags": [
+      "famous",
+      "celebrated"
+    ]
+  },
+  {
+    "id": "w500",
+    "word": "routine",
+    "ipa": "/ruːˈtiːn/",
+    "meaning": "thường lệ, định kỳ thông lệ",
+    "partOfSpeech": "adjective",
+    "topic": "Management",
+    "example": "Technicians performed routine maintenance checks on all passenger escalators.",
+    "tags": [
+      "regular",
+      "standard"
+    ]
+  }
+]
