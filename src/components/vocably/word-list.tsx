@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { useNavigate } from "@tanstack/react-router";
 import { Download, Pencil, Plus, Search, Trash2, Upload, Volume2, X } from "lucide-react";
 import { useWordStore } from "@/lib/vocably/word-store";
 import { speak } from "@/lib/vocably/tts";
 import { exportToCSV } from "@/lib/vocably/csv";
 import { STATUS_LABELS, TOPICS, type WordStatus } from "@/lib/vocably/types";
-import { useVisibleFilteredWords, useVisibleStats, useIsGuest, useIsAdmin, DEMO_WORD_LIMIT } from "@/lib/vocably/access";
-import { canMutateWord } from "@/lib/vocably/database";
+import { useVisibleFilteredWords, useVisibleStats, useIsGuest, useIsAdmin, useAuthUser } from "@/lib/vocably/access";
+import { canEditWordContent } from "@/lib/vocably/database";
+import { GuestUpgradeBanner } from "./guest-upgrade";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -23,6 +24,7 @@ export function WordListPage() {
   const stats = useVisibleStats();
   const isGuest = useIsGuest();
   const isAdmin = useIsAdmin();
+  const user = useAuthUser();
   const [page, setPage] = useState(1);
   const [showImport, setShowImport] = useState(false);
   const [expanded, setExpanded] = useState<number | null>(null);
@@ -32,12 +34,7 @@ export function WordListPage() {
 
   return (
     <div className="rise-in">
-      {isGuest && (
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-md)] border border-hard/30 bg-hard/10 px-4 py-3 text-sm text-hard">
-          <span>Demo: chỉ {DEMO_WORD_LIMIT} từ. Đăng nhập để thêm từ, nhập CSV và mở khóa toàn bộ.</span>
-          <Link to="/login" className="font-medium underline underline-offset-2">Đăng nhập</Link>
-        </div>
-      )}
+      <GuestUpgradeBanner />
       <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="font-display text-3xl font-medium tracking-tight">Kho từ vựng</h1>
@@ -128,9 +125,11 @@ export function WordListPage() {
           <div className="px-6 py-16 text-center">
             <p className="font-display text-xl">Không có từ nào</p>
             <p className="mt-1 text-sm text-muted">Đổi bộ lọc hoặc thêm từ mới.</p>
+            {!isGuest && (
             <Button className="mt-4" onClick={() => navigate({ to: "/words/add" })}>
               <Plus className="size-4" /> Thêm từ
             </Button>
+            )}
           </div>
         ) : (
           <ul>
@@ -170,7 +169,7 @@ export function WordListPage() {
                       <StatusBadge status={w.status} />
                     </div>
                     <div className="flex justify-end gap-1" onClick={(e) => e.stopPropagation()}>
-                      {canMutateWord(w, isAdmin) ? (
+                      {canEditWordContent(w, user) ? (
                         <>
                           <Button variant="ghost" size="icon-sm" onClick={() => navigate({ to: "/words/edit/$id", params: { id: String(w.id) } })}>
                             <Pencil className="size-4" />
@@ -180,15 +179,20 @@ export function WordListPage() {
                             size="icon-sm"
                             className="text-again"
                             onClick={() => {
-                              if (w.id && confirm(`Xóa từ “${w.word}”?`)) void deleteWord(w.id);
+                              if (!w.id) return;
+                              if (!confirm(`Xóa từ “${w.word}”?`)) return;
+                              void deleteWord(w.id).catch((err: unknown) => {
+                                const msg = err instanceof Error ? err.message : "Không xóa được từ này.";
+                                window.alert(msg);
+                              });
                             }}
                           >
                             <Trash2 className="size-4" />
                           </Button>
                         </>
                       ) : (
-                        <span className="px-2 text-[10px] font-medium uppercase tracking-wider text-subtle" title="Từ hệ thống">
-                          Seed
+                        <span className="px-2 text-[10px] font-medium uppercase tracking-wider text-subtle" title="Từ hệ thống — chỉ admin sửa/xóa">
+                          {isGuest ? "Demo" : "Hệ thống"}
                         </span>
                       )}
                     </div>

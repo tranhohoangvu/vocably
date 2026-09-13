@@ -20,7 +20,7 @@ export type VocabWord = {
   lapses: number;
   fsrsState: number;
   lastReview: string | null;
-  /** true = từ seed hệ thống, user thường không xóa/sửa */
+  /** true = từ seed hệ thống, user/demo không xóa/sửa nội dung */
   isSeed?: boolean;
 };
 
@@ -95,5 +95,33 @@ export const STATUS_LABELS: Record<WordStatus | "all", string> = {
   known: "Đã thuộc",
 };
 
-export const DEFAULT_ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL as string;
-export const DEFAULT_ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD as string;
+const envEmail = (import.meta.env.VITE_ADMIN_EMAIL as string | undefined)?.trim();
+const envPassword = (import.meta.env.VITE_ADMIN_PASSWORD as string | undefined)?.trim();
+
+export const DEFAULT_ADMIN_EMAIL = envEmail || "admin@vocably.app";
+export const DEFAULT_ADMIN_PASSWORD = envPassword || "vocably-admin";
+
+/** Fields that change the dictionary entry itself (not FSRS progress). */
+export const CONTENT_KEYS = [
+  "word",
+  "ipa",
+  "meaning",
+  "partOfSpeech",
+  "topic",
+  "example",
+  "tags",
+  "isSeed",
+] as const satisfies readonly (keyof VocabWord)[];
+
+export const STUDY_KEYS = [
+  "status",
+  "nextReview",
+  "stability",
+  "difficulty",
+  "elapsedDays",
+  "scheduledDays",
+  "reps",
+  "lapses",
+  "fsrsState",
+  "lastReview",
+] as const satisfies readonly (keyof VocabWord)[];

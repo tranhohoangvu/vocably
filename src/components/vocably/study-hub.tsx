@@ -1,9 +1,9 @@
-import { useNavigate, Link } from "@tanstack/react-router";
-import { ArrowRight, BookOpen, Brain, Headphones, PenLine, Lock } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
+import { ArrowRight, BookOpen, Brain, Headphones, PenLine } from "lucide-react";
 import { useSettingsStore } from "@/lib/vocably/settings-store";
-import { useVisibleDueWords, useVisibleWords, useIsGuest, DEMO_WORD_LIMIT } from "@/lib/vocably/access";
+import { useVisibleDueWords, useVisibleWords } from "@/lib/vocably/access";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { GuestUpgradeBanner } from "./guest-upgrade";
 
 const MODES = [
   {
@@ -44,23 +44,12 @@ export function StudyHubPage() {
   const navigate = useNavigate();
   const dueWords = useVisibleDueWords();
   const words = useVisibleWords();
-  const isGuest = useIsGuest();
   const sessionSize = useSettingsStore((s) => s.sessionSize);
   const setSetting = useSettingsStore((s) => s.setSetting);
 
   return (
     <div className="rise-in">
-      {isGuest && (
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-md)] border border-hard/30 bg-hard/10 px-4 py-3 text-sm">
-          <p className="text-hard">
-            <Lock className="mr-1.5 inline size-4" />
-            Chế độ demo: {DEMO_WORD_LIMIT} từ. Đăng nhập để mở khóa toàn bộ kho từ và nhập CSV.
-          </p>
-          <Button size="sm" variant="secondary" asChild>
-            <Link to="/login">Đăng nhập</Link>
-          </Button>
-        </div>
-      )}
+      <GuestUpgradeBanner className="mb-6" />
 
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>

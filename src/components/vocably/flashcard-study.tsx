@@ -21,7 +21,7 @@ export function FlashcardStudy() {
   const navigate = useNavigate();
   const words = useVisibleWords();
   const dueWords = useVisibleDueWords();
-  const updateWord = useWordStore((s) => s.updateWord);
+  const updateProgress = useWordStore((s) => s.updateProgress);
   const sessionSize = useSettingsStore((s) => s.sessionSize);
   const autoSpeak = useSettingsStore((s) => s.autoSpeak);
   const ttsRate = useSettingsStore((s) => s.ttsRate);
@@ -76,7 +76,7 @@ export function FlashcardStudy() {
   const handleRate = useCallback(
     async (rating: 1 | 2 | 3 | 4) => {
       if (!current?.id) return;
-      await updateWord(current.id, scheduleCard(current, rating));
+      await updateProgress(current.id, scheduleCard(current, rating));
       const key = ["", "again", "hard", "good", "easy"][rating] as keyof typeof stats;
       setStats((s) => ({ ...s, [key]: s[key] + 1 }));
       recordStudy();
@@ -86,7 +86,7 @@ export function FlashcardStudy() {
         setFlipped(false);
       }
     },
-    [current, idx, queue.length, updateWord, recordStudy],
+    [current, idx, queue.length, updateProgress, recordStudy],
   );
 
   useEffect(() => {

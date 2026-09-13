@@ -1,9 +1,7 @@
 import { create } from "zustand";
 import type { AuthUser, StoredAccount, UserRole } from "./types";
 import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from "./types";
-
-const SESSION_KEY = "vocably_auth_user";
-const ACCOUNTS_KEY = "vocably_accounts";
+import { ACCOUNTS_KEY, SESSION_KEY, writeClientSession } from "./session";
 
 const DEFAULT_GUEST: AuthUser = {
   name: "Khách",
@@ -29,9 +27,8 @@ function readSession(): AuthUser | null {
     const saved = localStorage.getItem(SESSION_KEY);
     if (!saved) return null;
     const u = JSON.parse(saved) as AuthUser;
-
+    if (!u || typeof u !== "object" || typeof u.email !== "string") return null;
     if (!u.role) u.role = u.email === DEFAULT_ADMIN_EMAIL ? "admin" : "user";
-
     return u;
   } catch {
     return null;
@@ -39,9 +36,7 @@ function readSession(): AuthUser | null {
 }
 
 function writeSession(user: AuthUser | null) {
-  if (typeof window === "undefined") return;
-  if (user) localStorage.setItem(SESSION_KEY, JSON.stringify(user));
-  else localStorage.removeItem(SESSION_KEY);
+  writeClientSession(user);
 }
 
 function readAccounts(): Record<string, StoredAccount> {
@@ -91,6 +86,12 @@ type AuthState = {
     password: string,
   ) => Promise<{ success: true; user: AuthUser } | { success: false; error: string }>;
   signup: (
+    name: string,
+    email: string,
+    password: string,
+    targetScore?: number,
+  ) => Promise<{ success: true; user: AuthUser } | { success: false; error: string }>;
+  convertGuest: (
     name: string,
     email: string,
     password: string,
@@ -185,6 +186,14 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     return { success: true, user };
   },
 
+  convertGuest: async (name, email, password, targetScore = 850) => {
+    const me = get().user;
+    if (!me?.isGuest) {
+      return { success: false, error: "Chỉ tài khoản demo mới dùng được tính năng này." };
+    }
+    return get().signup(name, email, password, targetScore);
+  },
+
   loginGuest: () => {
     const user = { ...DEFAULT_GUEST, joinedDate: new Date().toISOString().slice(0, 10) };
     writeSession(user);
@@ -200,7 +209,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   updateProfile: (data) => {
     set((state) => {
       if (!state.user || state.user.isGuest) return state;
-      const updated = { ...state.user, ...data, isGuest: false };
+      const updated = { ...state.user, ...data, isGuest: false, role: state.user.role };
       writeSession(updated);
       const map = readAccounts();
       const key = updated.email.toLowerCase();
@@ -293,7 +302,6 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     }
     map[key] = next;
     writeAccounts(map);
-    // Đồng bộ session nếu sửa chính mình
     if (key === me.email.toLowerCase()) {
       const user = toPublicUser(next);
       writeSession(user);

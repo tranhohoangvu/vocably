@@ -23,6 +23,7 @@ import { Badge } from "@/components/ui/badge";
 import { Wordmark } from "./logo";
 import { useAuthStore } from "@/lib/vocably/auth-store";
 import { useSettingsStore } from "@/lib/vocably/settings-store";
+import { AuthedBounce } from "./authed-bounce";
 import { cn } from "@/lib/utils";
 
 const DEMO = {
@@ -55,7 +56,7 @@ export function LandingPage() {
 
   const enterDemo = () => {
     if (!isAuthenticated) loginGuest();
-    navigate({ to: "/dashboard" });
+    navigate({ to: "/dashboard", replace: true });
   };
 
   const goLogin = () => navigate({ to: "/login" });
@@ -85,7 +86,8 @@ export function LandingPage() {
   };
 
   return (
-    <div className="min-h-dvh bg-bg text-fg selection:bg-primary/20 selection:text-primary">
+    <AuthedBounce>
+    <div className="min-h-dvh overflow-x-hidden bg-bg text-fg selection:bg-primary/20 selection:text-primary">
       <header className="sticky top-0 z-30 border-b border-border/60 bg-bg/70 backdrop-blur-xl transition-all">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-8">
           <a href="#top" onClick={(e) => scrollToId(e, "top")} className="min-w-0 transition-transform hover:scale-105 active:scale-95">
@@ -143,7 +145,7 @@ export function LandingPage() {
       </header>
 
       <section id="top" className="relative mx-auto grid max-w-6xl items-center gap-16 px-4 py-20 md:grid-cols-2 md:px-8 md:py-32">
-        <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[800px] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
+        <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[min(800px,100vw)] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
 
         <div className="rise-in">
           <Badge tone="primary" className="border border-primary/20 bg-primary/10 px-3 py-1 text-xs">
@@ -192,10 +194,17 @@ export function LandingPage() {
             <span>Mô phỏng FSRS</span>
           </div>
 
-          <button
-            type="button"
+          <div
+            role="button"
+            tabIndex={0}
             onClick={() => setFlipped((f) => !f)}
-            className="flash-scene block w-full text-left transition-transform hover:scale-[1.02]"
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setFlipped((f) => !f);
+              }
+            }}
+            className="flash-scene block w-full cursor-pointer text-left transition-transform hover:scale-[1.02]"
             style={{ height: 400 }}
           >
             <div className={cn("flash-inner", flipped && "is-flipped")}>
@@ -254,7 +263,7 @@ export function LandingPage() {
                 </div>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </section>
 
@@ -474,5 +483,6 @@ export function LandingPage() {
         </div>
       </footer>
     </div>
+    </AuthedBounce>
   );
 }

@@ -1,5 +1,13 @@
 import { create } from "zustand";
-import { getDb, canMutateWord } from "./database";
+import {
+  getDb,
+  canEditWordContent,
+  isContentChange,
+  pickStudyFields,
+  GUEST_MUTATION_ERROR,
+  SEED_MUTATION_ERROR,
+  LOGIN_REQUIRED_ERROR,
+} from "./database";
 import { useAuthStore } from "./auth-store";
 import type { VocabWord, WordDraft, WordStatus } from "./types";
 
@@ -22,6 +30,7 @@ type WordState = {
   fetchWords: () => Promise<void>;
   addWord: (wordData: WordDraft) => Promise<number>;
   updateWord: (id: number, changes: Partial<VocabWord>) => Promise<void>;
+  updateProgress: (id: number, changes: Partial<VocabWord>) => Promise<void>;
   deleteWord: (id: number) => Promise<void>;
   importWords: (newWords: WordDraft[]) => Promise<{ added: number; skipped: number }>;
   setFilter: (filter: Partial<Filter>) => void;
@@ -31,7 +40,9 @@ type WordState = {
   getStats: () => Stats;
 };
 
-const emptyFsrs = (now: string): Pick<
+const emptyFsrs = (
+  now: string,
+): Pick<
   VocabWord,
   | "status"
   | "nextReview"
@@ -58,6 +69,17 @@ const emptyFsrs = (now: string): Pick<
   lastReview: null,
 });
 
+function actor() {
+  return useAuthStore.getState().user;
+}
+
+function assertCanMutateBank() {
+  const user = actor();
+  if (!user) throw new Error(LOGIN_REQUIRED_ERROR);
+  if (user.isGuest) throw new Error(GUEST_MUTATION_ERROR);
+  return user;
+}
+
 export const useWordStore = create<WordState>((set, get) => ({
   words: [],
   loading: false,
@@ -71,8 +93,8 @@ export const useWordStore = create<WordState>((set, get) => ({
   },
 
   addWord: async (wordData) => {
+    assertCanMutateBank();
     const now = new Date().toISOString();
-    // Từ do user thêm luôn có isSeed = false
     const id = await getDb().words.add({ ...wordData, ...emptyFsrs(now), isSeed: false });
     await get().fetchWords();
     return id;
@@ -81,34 +103,46 @@ export const useWordStore = create<WordState>((set, get) => ({
   updateWord: async (id, changes) => {
     const db = getDb();
     const word = await db.words.get(id);
-    const user = useAuthStore.getState().user;
-    const isAdmin = user?.role === "admin";
+    if (!word) throw new Error("Không tìm thấy từ.");
 
-    // Phân quyền: Chặn sửa từ vựng hệ thống nếu không phải là admin
-    if (word && !canMutateWord(word, isAdmin)) {
-      throw new Error("Chỉ Admin mới có quyền sửa từ vựng hệ thống.");
+    if (isContentChange(changes)) {
+      const user = actor();
+      if (!canEditWordContent(word, user)) {
+        if (!user || user.isGuest) throw new Error(GUEST_MUTATION_ERROR);
+        throw new Error(SEED_MUTATION_ERROR);
+      }
+      const next: Partial<VocabWord> = { ...changes };
+      delete next.isSeed;
+      await db.words.update(id, next);
+    } else {
+      await db.words.update(id, pickStudyFields(changes));
     }
+    await get().fetchWords();
+  },
 
-    await db.words.update(id, changes);
+  updateProgress: async (id, changes) => {
+    const db = getDb();
+    const word = await db.words.get(id);
+    if (!word) return;
+    await db.words.update(id, pickStudyFields(changes));
     await get().fetchWords();
   },
 
   deleteWord: async (id) => {
     const db = getDb();
     const word = await db.words.get(id);
-    const user = useAuthStore.getState().user;
-    const isAdmin = user?.role === "admin";
-
-    // Phân quyền: Chặn xóa từ vựng hệ thống nếu không phải là admin
-    if (word && !canMutateWord(word, isAdmin)) {
-      throw new Error("Chỉ Admin mới có quyền xóa từ vựng hệ thống.");
+    const user = actor();
+    if (!word) return;
+    if (!canEditWordContent(word, user)) {
+      if (!user || user.isGuest) throw new Error(GUEST_MUTATION_ERROR);
+      throw new Error(SEED_MUTATION_ERROR);
     }
-
     await db.words.delete(id);
     await get().fetchWords();
   },
 
   importWords: async (newWords) => {
+    assertCanMutateBank();
     if (!newWords || newWords.length === 0) return { added: 0, skipped: 0 };
     const existing = await getDb().words.toArray();
     const existingMap = new Set(existing.map((w) => w.word.toLowerCase().trim()));

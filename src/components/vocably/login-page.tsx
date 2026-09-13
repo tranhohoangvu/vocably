@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { LogoMark } from "./logo";
 import { useAuthStore } from "@/lib/vocably/auth-store";
+import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from "@/lib/vocably/types";
+import { AuthedBounce } from "./authed-bounce";
 import { cn } from "@/lib/utils";
 
 export function LoginPage() {
@@ -41,7 +43,7 @@ export function LoginPage() {
         }
       }
       setMessage({ type: "success", text: "Thành công. Đang chuyển…" });
-      setTimeout(() => navigate({ to: "/dashboard" }), 300);
+      setTimeout(() => navigate({ to: "/dashboard", replace: true }), 300);
     } catch {
       setMessage({ type: "error", text: "Có lỗi xảy ra, thử lại." });
     } finally {
@@ -50,6 +52,7 @@ export function LoginPage() {
   };
 
   return (
+    <AuthedBounce>
     <div className="flex min-h-dvh flex-col bg-bg text-fg">
       <header className="mx-auto flex w-full max-w-md items-center justify-between px-4 py-5">
         <Link to="/" className="inline-flex items-center gap-1 text-sm text-muted hover:text-fg">
@@ -186,7 +189,7 @@ export function LoginPage() {
             className="w-full"
             onClick={() => {
               loginGuest();
-              navigate({ to: "/dashboard" });
+              navigate({ to: "/dashboard", replace: true });
             }}
           >
             Thử demo · 50 từ (khách)
@@ -194,8 +197,12 @@ export function LoginPage() {
           <p className="mt-4 text-center text-xs text-subtle">
             Tài khoản và dữ liệu lưu trên trình duyệt này.
           </p>
+          <p className="mt-2 text-center text-[11px] text-subtle">
+            Admin mẫu: {DEFAULT_ADMIN_EMAIL} / {DEFAULT_ADMIN_PASSWORD}
+          </p>
         </div>
       </main>
     </div>
+    </AuthedBounce>
   );
 }

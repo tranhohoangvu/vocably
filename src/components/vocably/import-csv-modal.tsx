@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { parseCSV, downloadTemplate } from "@/lib/vocably/csv";
 import { useWordStore } from "@/lib/vocably/word-store";
+import { useIsGuest } from "@/lib/vocably/access";
 import type { WordDraft } from "@/lib/vocably/types";
 import { cn } from "@/lib/utils";
 
@@ -13,6 +14,7 @@ const COLUMNS = ["word", "ipa", "meaning", "partOfSpeech", "topic", "example", "
 export function ImportCsvModal({ open, onOpenChange }: { open: boolean; onOpenChange: (v: boolean) => void }) {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const importWords = useWordStore((s) => s.importWords);
+  const isGuest = useIsGuest();
   const [dragActive, setDragActive] = useState(false);
   const [file, setFile] = useState<File | null>(null);
   const [parsed, setParsed] = useState<{ validWords: WordDraft[]; errors: string[] } | null>(null);
@@ -37,6 +39,7 @@ export function ImportCsvModal({ open, onOpenChange }: { open: boolean; onOpenCh
   };
 
   const confirm = async () => {
+    if (isGuest) return;
     if (!parsed?.validWords.length) return;
     setImporting(true);
     try {

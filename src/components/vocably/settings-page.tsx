@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { BookOpen, Database, Eye, Moon, Sun, Volume2 } from "lucide-react";
 import { useSettingsStore, useStreakStore } from "@/lib/vocably/settings-store";
-import { useVisibleStats } from "@/lib/vocably/access";
+import { useVisibleStats, useIsGuest } from "@/lib/vocably/access";
+import { GuestUpgradeForm } from "./guest-upgrade";
 import { speak } from "@/lib/vocably/tts";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -13,6 +14,7 @@ export function SettingsPage() {
   const { theme, ttsRate, sessionSize, showIpa, autoSpeak, setSetting } = useSettingsStore();
   const { streak } = useStreakStore();
   const stats = useVisibleStats();
+  const isGuest = useIsGuest();
   const [testing, setTesting] = useState(false);
 
   return (
@@ -21,6 +23,8 @@ export function SettingsPage() {
         <h1 className="font-display text-3xl font-medium tracking-tight">Cài đặt</h1>
         <p className="mt-1 text-sm text-muted">Giao diện, âm thanh và phiên học FSRS</p>
       </div>
+
+      {isGuest && <GuestUpgradeForm />}
 
       <Card>
         <h2 className="mb-4 flex items-center gap-2 font-medium">

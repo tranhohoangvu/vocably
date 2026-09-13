@@ -160,7 +160,7 @@ export function AppSidebar({ onNavigate }: { onNavigate?: () => void }) {
               onClick={() => {
                 logout();
                 onNavigate?.();
-                navigate({ to: "/" });
+                navigate({ to: "/", replace: true });
               }}
             >
               <LogOut className="size-3.5" /> Đăng xuất

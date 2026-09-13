@@ -1,8 +1,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { ArrowLeft, Save, Volume2 } from "lucide-react";
-import { useIsGuest, useIsAdmin } from "@/lib/vocably/access";
-import { canMutateWord } from "@/lib/vocably/database";
+import { useIsGuest, useAuthUser, canEditWordContent } from "@/lib/vocably/access";
 import { useWordStore } from "@/lib/vocably/word-store";
 import { speak } from "@/lib/vocably/tts";
 import { getDb } from "@/lib/vocably/database";
@@ -27,7 +26,7 @@ const EMPTY = {
 export function WordEditor({ wordId }: { wordId?: number }) {
   const navigate = useNavigate();
   const isGuest = useIsGuest();
-  const isAdmin = useIsAdmin();
+  const user = useAuthUser();
   const addWord = useWordStore((s) => s.addWord);
   const updateWord = useWordStore((s) => s.updateWord);
   const [form, setForm] = useState(EMPTY);
@@ -38,7 +37,7 @@ export function WordEditor({ wordId }: { wordId?: number }) {
   const isEdit = !!wordId;
 
   useEffect(() => {
-    if (isGuest) navigate({ to: "/login", replace: true });
+    if (isGuest) navigate({ to: "/words", replace: true });
   }, [isGuest, navigate]);
 
   useEffect(() => {
@@ -47,18 +46,18 @@ export function WordEditor({ wordId }: { wordId?: number }) {
       .words.get(wordId)
       .then((w) => {
         if (!w) return;
-        if (!canMutateWord(w, isAdmin)) {
+        if (!canEditWordContent(w, user)) {
           setLocked(true);
           return;
         }
         setForm({ ...w, tags: (w.tags || []).join(", ") });
       });
-  }, [wordId, isGuest, isAdmin]);
+  }, [wordId, isGuest, user]);
 
   if (isGuest) {
     return (
       <div className="flex min-h-[40vh] items-center justify-center text-sm text-muted">
-        Đang chuyển tới đăng nhập…
+        Đang chuyển về kho từ…
       </div>
     );
   }
@@ -66,7 +65,7 @@ export function WordEditor({ wordId }: { wordId?: number }) {
   if (locked) {
     return (
       <div className="mx-auto max-w-lg space-y-4 py-16 text-center">
-        <p className="text-muted">Từ hệ thống (seed) không thể chỉnh sửa.</p>
+        <p className="text-muted">Từ hệ thống chỉ Admin mới được chỉnh sửa hoặc xóa.</p>
         <Button variant="secondary" onClick={() => navigate({ to: "/words" })}>
           <ArrowLeft className="size-4" /> Về kho từ
         </Button>

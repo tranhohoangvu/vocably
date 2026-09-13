@@ -1,7 +1,8 @@
 import { useMemo } from "react";
 import { useAuthStore } from "./auth-store";
 import { useWordStore } from "./word-store";
-import type { VocabWord, WordStatus } from "./types";
+import { canEditWordContent as canEditWordContentFn } from "./database";
+import type { AuthUser, VocabWord, WordStatus } from "./types";
 
 /** Số từ mở cho tài khoản khách (demo). */
 export const DEMO_WORD_LIMIT = 50;
@@ -16,6 +17,17 @@ export function useIsFullUser(): boolean {
 
 export function useIsAdmin(): boolean {
   return useAuthStore((s) => s.user?.role === "admin");
+}
+
+export function useAuthUser(): AuthUser | null {
+  return useAuthStore((s) => s.user);
+}
+
+export function canEditWordContent(
+  word: VocabWord,
+  user: Pick<AuthUser, "isGuest" | "role"> | null | undefined,
+): boolean {
+  return canEditWordContentFn(word, user);
 }
 
 /** Từ hiển thị / học được theo quyền (guest = 50 từ đầu). */

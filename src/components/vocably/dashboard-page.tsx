@@ -1,7 +1,8 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { BookOpen, Brain, CheckCircle2, FileEdit, Flame, Headphones, ArrowRight, TrendingUp } from "lucide-react";
 import { useStreakStore } from "@/lib/vocably/settings-store";
-import { useVisibleWords, useVisibleStats, useVisibleDueWords, useIsGuest, DEMO_WORD_LIMIT } from "@/lib/vocably/access";
+import { useVisibleWords, useVisibleStats, useVisibleDueWords } from "@/lib/vocably/access";
+import { GuestUpgradeBanner } from "./guest-upgrade";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -20,7 +21,6 @@ export function DashboardPage() {
   const words = useVisibleWords();
   const stats = useVisibleStats();
   const dueWords = useVisibleDueWords();
-  const isGuest = useIsGuest();
   const { streak, studyHistory } = useStreakStore();
   const mastery = stats.total > 0 ? Math.round((stats.known / stats.total) * 100) : 0;
 
@@ -33,12 +33,7 @@ export function DashboardPage() {
 
   return (
     <div className="rise-in space-y-6">
-      {isGuest && (
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-[var(--radius-md)] border border-hard/30 bg-hard/10 px-4 py-3 text-sm text-hard">
-          <span>Demo: {DEMO_WORD_LIMIT} từ. Đăng nhập để mở khóa toàn bộ kho từ (~500) và nhập CSV.</span>
-          <Link to="/login" className="font-medium underline underline-offset-2">Đăng nhập</Link>
-        </div>
-      )}
+      <GuestUpgradeBanner />
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="font-display text-3xl font-medium tracking-tight md:text-4xl">Chào buổi học.</h1>

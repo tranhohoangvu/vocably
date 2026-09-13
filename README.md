@@ -1,3 +1,5 @@
+> **Bản standalone** — đã loại bỏ toàn bộ lớp Grok App Builder (auth provider hệ thống, PGLite, preview bridge, multiplayer…). Giữ nguyên các cải tiến phân quyền guest/seed/admin, `session.ts`, `guest-upgrade`, `convertGuest` từ bản BNY.
+
 # VOCABLY – Nền Tảng Học Từ Vựng TOEIC Ứng Dụng Thuật Toán Phân Tích Nhận Thức
 
 Vocably là một ứng dụng web học từ vựng TOEIC được thiết kế theo kiến trúc Offline-first, tập trung vào việc tối ưu hóa trí nhớ dài hạn thông qua thuật toán lặp lại ngắt quãng (Spaced Repetition) tiên tiến. Dự án giải quyết bài toán cốt lõi của người học ngoại ngữ: ghi nhớ khối lượng từ vựng lớn mà không bị học vẹt, đồng thời đảm bảo tính riêng tư tuyệt đối về dữ liệu.
