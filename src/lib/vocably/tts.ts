@@ -1,3 +1,12 @@
+let cachedVoices: SpeechSynthesisVoice[] = [];
+
+if (typeof window !== "undefined" && "speechSynthesis" in window) {
+  cachedVoices = window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged = () => {
+    cachedVoices = window.speechSynthesis.getVoices();
+  };
+}
+
 export function speak(text: string, lang = "en-US", rate = 0.9) {
   if (typeof window === "undefined" || !window.speechSynthesis || !text) return;
   window.speechSynthesis.cancel();
@@ -6,7 +15,7 @@ export function speak(text: string, lang = "en-US", rate = 0.9) {
   utterance.rate = rate;
   utterance.pitch = 1;
 
-  const voices = window.speechSynthesis.getVoices();
+  const voices = cachedVoices.length ? cachedVoices : window.speechSynthesis.getVoices();
   const preferred = voices.find(
     (v) => v.lang.startsWith("en") && (v.name.includes("Google") || v.name.includes("Natural")),
   );

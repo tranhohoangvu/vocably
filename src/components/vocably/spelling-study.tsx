@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, CheckCircle2, Volume2, XCircle } from "lucide-react";
+import { useWordStore } from "@/lib/vocably/word-store";
 import { useSettingsStore, useStreakStore } from "@/lib/vocably/settings-store";
-import { useVisibleWords } from "@/lib/vocably/access";
+import { useStudyPool, useAuthUser } from "@/lib/vocably/access";
+import { scheduleCard } from "@/lib/vocably/fsrs";
+import { saveStudySession } from "@/lib/vocably/database";
 import { speak } from "@/lib/vocably/tts";
 import type { VocabWord } from "@/lib/vocably/types";
 import { Button } from "@/components/ui/button";
@@ -15,7 +18,10 @@ import { cn } from "@/lib/utils";
 
 export function SpellingStudy() {
   const navigate = useNavigate();
-  const words = useVisibleWords();
+  const poolWords = useStudyPool();
+  const user = useAuthUser();
+  const updateProgress = useWordStore((s) => s.updateProgress);
+  const sessionSize = useSettingsStore((s) => s.sessionSize);
   const ttsRate = useSettingsStore((s) => s.ttsRate);
   const recordStudy = useStreakStore((s) => s.recordStudy);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -29,7 +35,8 @@ export function SpellingStudy() {
   const started = useRef(false);
 
   const start = () => {
-    setQueue([...words].sort(() => Math.random() - 0.5).slice(0, 15));
+    const size = sessionSize || 15;
+    setQueue([...poolWords].sort(() => Math.random() - 0.5).slice(0, size));
     setIdx(0);
     setInput("");
     setStatus(null);
@@ -39,11 +46,11 @@ export function SpellingStudy() {
 
   useEffect(() => {
     if (started.current) return;
-    if (words.length === 0) return;
+    if (poolWords.length === 0) return;
     started.current = true;
     start();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [words.length]);
+  }, [poolWords.length]);
 
   const current = queue[idx];
   const handleSpeak = useCallback(() => {
@@ -65,13 +72,29 @@ export function SpellingStudy() {
     setStatus(ok ? "correct" : "wrong");
     if (ok) {
       setScore((s) => s + 1);
-      recordStudy();
+      recordStudy(1, user?.email);
+      if (current.id) {
+        void updateProgress(current.id, scheduleCard(current, 3)); // Good
+      }
+    } else {
+      if (current.id) {
+        void updateProgress(current.id, scheduleCard(current, 1)); // Again (lapse)
+      }
     }
   };
 
   const next = () => {
-    if (idx + 1 >= queue.length) setDone(true);
-    else {
+    if (idx + 1 >= queue.length) {
+      setDone(true);
+      void saveStudySession({
+        userEmail: user?.email || "guest@vocably.local",
+        date: new Date().toISOString().slice(0, 10),
+        timestamp: new Date().toISOString(),
+        mode: "spelling",
+        wordsStudied: queue.length,
+        correct: score,
+      });
+    } else {
       setIdx((i) => i + 1);
       setInput("");
       setStatus(null);
@@ -136,7 +159,10 @@ export function SpellingStudy() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === "Enter") status ? next() : check();
+            if (e.key === "Enter") {
+              if (status) next();
+              else check();
+            }
           }}
           placeholder={`${current.word.length} chữ cái`}
         />

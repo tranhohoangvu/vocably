@@ -21,7 +21,7 @@ export function DashboardPage() {
   const words = useVisibleWords();
   const stats = useVisibleStats();
   const dueWords = useVisibleDueWords();
-  const { streak, studyHistory } = useStreakStore();
+  const { streak, studyHistory, studyCounts } = useStreakStore();
   const mastery = stats.total > 0 ? Math.round((stats.known / stats.total) * 100) : 0;
 
   const topicBreakdown: Record<string, { total: number; known: number }> = {};
@@ -146,7 +146,7 @@ export function DashboardPage() {
           </h2>
           <span className="text-sm text-muted tabular-nums">{studyHistory.length} ngày hoạt động</span>
         </div>
-        <HeatmapCalendar history={studyHistory} />
+        <HeatmapCalendar history={studyHistory} counts={studyCounts} />
       </Card>
 
       <Card>

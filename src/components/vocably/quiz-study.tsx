@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, CheckCircle2, Volume2, XCircle } from "lucide-react";
-import { useStreakStore } from "@/lib/vocably/settings-store";
-import { useVisibleWords } from "@/lib/vocably/access";
+import { useWordStore } from "@/lib/vocably/word-store";
+import { useSettingsStore, useStreakStore } from "@/lib/vocably/settings-store";
+import { useStudyPool, useAuthUser, useVisibleWords } from "@/lib/vocably/access";
+import { scheduleCard } from "@/lib/vocably/fsrs";
+import { saveStudySession } from "@/lib/vocably/database";
 import { speak } from "@/lib/vocably/tts";
 import type { VocabWord } from "@/lib/vocably/types";
 import { Button } from "@/components/ui/button";
@@ -29,7 +32,11 @@ function getOptions(correct: VocabWord, all: VocabWord[], field: "meaning" | "wo
 
 export function QuizStudy() {
   const navigate = useNavigate();
-  const words = useVisibleWords();
+  const poolWords = useStudyPool();
+  const allWords = useVisibleWords();
+  const user = useAuthUser();
+  const updateProgress = useWordStore((s) => s.updateProgress);
+  const sessionSize = useSettingsStore((s) => s.sessionSize);
   const recordStudy = useStreakStore((s) => s.recordStudy);
   const [queue, setQueue] = useState<VocabWord[]>([]);
   const [idx, setIdx] = useState(0);
@@ -41,7 +48,8 @@ export function QuizStudy() {
   const started = useRef(false);
 
   const start = useCallback(() => {
-    const q = shuffle(words).slice(0, 20);
+    const size = sessionSize || 20;
+    const q = shuffle(poolWords).slice(0, size);
     setQueue(q);
     setIdx(0);
     setSelected(null);
@@ -50,16 +58,16 @@ export function QuizStudy() {
     if (q[0]) {
       const dir = Math.random() > 0.5 ? "en-vi" : "vi-en";
       setDirection(dir);
-      setOptions(getOptions(q[0], words, dir === "en-vi" ? "meaning" : "word"));
+      setOptions(getOptions(q[0], allWords, dir === "en-vi" ? "meaning" : "word"));
     }
-  }, [words]);
+  }, [poolWords, allWords, sessionSize]);
 
   useEffect(() => {
     if (started.current) return;
-    if (words.length === 0) return;
+    if (poolWords.length === 0) return;
     started.current = true;
     start();
-  }, [words.length, start]);
+  }, [poolWords.length, start]);
 
   const current = queue[idx];
 
@@ -73,27 +81,43 @@ export function QuizStudy() {
       if (selected !== null || !current) return;
       const correctAnswer = direction === "en-vi" ? current.meaning : current.word;
       setSelected(opt);
-      if (opt === correctAnswer) {
+      const isCorrect = opt === correctAnswer;
+      if (isCorrect) {
         setScore((s) => s + 1);
-        recordStudy();
+        recordStudy(1, user?.email);
+        if (current.id) {
+          void updateProgress(current.id, scheduleCard(current, 3)); // Good
+        }
+      } else {
+        if (current.id) {
+          void updateProgress(current.id, scheduleCard(current, 1)); // Again (lapse)
+        }
       }
     },
-    [selected, current, direction, recordStudy],
+    [selected, current, direction, recordStudy, user, updateProgress],
   );
 
   const handleNext = useCallback(() => {
     if (idx + 1 >= queue.length) {
       setDone(true);
+      void saveStudySession({
+        userEmail: user?.email || "guest@vocably.local",
+        date: new Date().toISOString().slice(0, 10),
+        timestamp: new Date().toISOString(),
+        mode: "quiz",
+        wordsStudied: queue.length,
+        correct: score,
+      });
       return;
     }
     const nextIdx = idx + 1;
     const nextWord = queue[nextIdx];
     const dir = Math.random() > 0.5 ? "en-vi" : "vi-en";
     setDirection(dir);
-    setOptions(getOptions(nextWord, words, dir === "en-vi" ? "meaning" : "word"));
+    setOptions(getOptions(nextWord, allWords, dir === "en-vi" ? "meaning" : "word"));
     setIdx(nextIdx);
     setSelected(null);
-  }, [idx, queue, words]);
+  }, [idx, queue, allWords, user, score]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

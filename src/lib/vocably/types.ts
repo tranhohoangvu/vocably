@@ -38,8 +38,10 @@ export type SettingEntry = { key: string; value: unknown };
 
 export type StudySession = {
   id?: number;
+  userEmail?: string;
   date: string;
-  mode: string;
+  timestamp?: string;
+  mode: "flashcard" | "quiz" | "fill" | "spelling" | string;
   wordsStudied: number;
   correct: number;
 };

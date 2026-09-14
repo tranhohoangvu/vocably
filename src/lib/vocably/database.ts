@@ -14,6 +14,11 @@ class VocablyDB extends Dexie {
       studySessions: "++id, date, mode, wordsStudied, correct",
       settings: "key",
     });
+    this.version(2).stores({
+      words: "++id, word, topic, status, nextReview, createdAt",
+      studySessions: "++id, date, mode, wordsStudied, correct, userEmail",
+      settings: "key",
+    });
   }
 }
 
@@ -139,3 +144,22 @@ export function pickStudyFields(changes: Partial<VocabWord>): Partial<VocabWord>
 export const GUEST_MUTATION_ERROR = "Tài khoản demo không được thêm, sửa hoặc xóa từ vựng.";
 export const SEED_MUTATION_ERROR = "Chỉ Admin mới có quyền sửa hoặc xóa từ vựng hệ thống.";
 export const LOGIN_REQUIRED_ERROR = "Cần đăng nhập tài khoản để thay đổi kho từ.";
+
+export async function saveStudySession(session: Omit<StudySession, "id">): Promise<void> {
+  try {
+    const db = getDb();
+    await db.studySessions.add(session);
+  } catch (err) {
+    console.error("Failed to save study session:", err);
+  }
+}
+
+export async function getStudySessions(userEmail?: string): Promise<StudySession[]> {
+  try {
+    const db = getDb();
+    if (!userEmail) return await db.studySessions.toArray();
+    return await db.studySessions.where("userEmail").equals(userEmail).toArray();
+  } catch {
+    return [];
+  }
+}

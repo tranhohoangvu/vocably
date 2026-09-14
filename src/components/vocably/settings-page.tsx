@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { BookOpen, Database, Eye, Moon, Sun, Volume2 } from "lucide-react";
+import { useRef, useState } from "react";
+import { AlertCircle, BookOpen, CheckCircle2, Database, Download, Eye, Moon, Sun, Upload, Volume2 } from "lucide-react";
 import { useSettingsStore, useStreakStore } from "@/lib/vocably/settings-store";
-import { useVisibleStats, useIsGuest } from "@/lib/vocably/access";
+import { useVisibleStats, useIsGuest, useAuthUser } from "@/lib/vocably/access";
+import { exportFullBackup, importFullBackup } from "@/lib/vocably/backup";
 import { GuestUpgradeForm } from "./guest-upgrade";
 import { speak } from "@/lib/vocably/tts";
 import { Button } from "@/components/ui/button";
@@ -15,7 +16,11 @@ export function SettingsPage() {
   const { streak } = useStreakStore();
   const stats = useVisibleStats();
   const isGuest = useIsGuest();
+  const user = useAuthUser();
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [testing, setTesting] = useState(false);
+  const [backupMsg, setBackupMsg] = useState<{ type: "ok" | "err"; text: string } | null>(null);
+  const [restoring, setRestoring] = useState(false);
 
   return (
     <div className="mx-auto max-w-2xl space-y-4 rise-in">
@@ -150,6 +155,72 @@ export function SettingsPage() {
         <p className="mt-4 text-xs leading-relaxed text-subtle">
           Toàn bộ từ, lịch FSRS và streak nằm trong IndexedDB trên thiết bị này. Không gửi lên máy chủ.
         </p>
+
+        <div className="mt-5 border-t border-border pt-4">
+          <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted">
+            Sao lưu & Khôi phục toàn diện (JSON)
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => {
+                void exportFullBackup(user?.email);
+                setBackupMsg({ type: "ok", text: "Đã xuất file sao lưu thành công." });
+              }}
+            >
+              <Download className="size-4" /> Xuất bản sao lưu (JSON)
+            </Button>
+
+            <Button
+              variant="secondary"
+              size="sm"
+              disabled={restoring}
+              onClick={() => fileInputRef.current?.click()}
+            >
+              <Upload className="size-4" /> Khôi phục dữ liệu
+            </Button>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json"
+              className="hidden"
+              onChange={async (e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                setRestoring(true);
+                setBackupMsg(null);
+                const res = await importFullBackup(file, user?.email);
+                setRestoring(false);
+                if (res.success) {
+                  setBackupMsg({
+                    type: "ok",
+                    text: `Đã khôi phục thành công ${res.wordsCount} từ vựng và ${res.sessionsCount} phiên học!`,
+                  });
+                } else {
+                  setBackupMsg({ type: "err", text: res.error || "Lỗi khôi phục dữ liệu." });
+                }
+                if (fileInputRef.current) fileInputRef.current.value = "";
+              }}
+            />
+          </div>
+
+          {backupMsg && (
+            <div
+              className={cn(
+                "mt-3 flex items-center gap-2 rounded-[var(--radius-sm)] p-2.5 text-xs font-medium",
+                backupMsg.type === "ok" ? "bg-known/10 text-known" : "bg-again/10 text-again",
+              )}
+            >
+              {backupMsg.type === "ok" ? (
+                <CheckCircle2 className="size-4 shrink-0" />
+              ) : (
+                <AlertCircle className="size-4 shrink-0" />
+              )}
+              <span>{backupMsg.text}</span>
+            </div>
+          )}
+        </div>
       </Card>
     </div>
   );

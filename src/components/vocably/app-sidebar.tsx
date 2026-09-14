@@ -10,7 +10,6 @@ import {
   PenLine,
   Headphones,
   LogOut,
-  Globe,
   Shield,
 } from "lucide-react";
 import { cn } from "@/lib/utils";

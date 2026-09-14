@@ -1,16 +1,30 @@
 const MONTHS = ["Th1", "Th2", "Th3", "Th4", "Th5", "Th6", "Th7", "Th8", "Th9", "Th10", "Th11", "Th12"];
 
-export function HeatmapCalendar({ history }: { history: string[] }) {
+export function HeatmapCalendar({
+  history,
+  counts,
+}: {
+  history: string[];
+  counts?: Record<string, number>;
+}) {
   const today = new Date().toISOString().slice(0, 10);
   const active = new Set(history);
 
-  const days: { dateStr: string; on: boolean; isToday: boolean }[] = [];
+  const days: { dateStr: string; count: number; isToday: boolean }[] = [];
   for (let i = 363; i >= 0; i--) {
     const d = new Date();
     d.setDate(d.getDate() - i);
     const ds = d.toISOString().slice(0, 10);
-    days.push({ dateStr: ds, on: active.has(ds), isToday: ds === today });
+    const count = counts?.[ds] ?? (active.has(ds) ? 10 : 0);
+    days.push({ dateStr: ds, count, isToday: ds === today });
   }
+
+  const getLevelClass = (count: number) => {
+    if (count <= 0) return "";
+    if (count < 10) return "lv1";
+    if (count < 25) return "lv2";
+    return "lv3";
+  };
 
   const monthMarkers: string[] = [];
   for (let m = 11; m >= 0; m--) {
@@ -40,8 +54,12 @@ export function HeatmapCalendar({ history }: { history: string[] }) {
             {days.map((d) => (
               <div
                 key={d.dateStr}
-                title={`${d.dateStr}: ${d.on ? "Đã học" : "Chưa học"}`}
-                className={`heatmap-cell ${d.on ? "lv3" : ""} ${d.isToday ? "is-today" : ""}`}
+                title={
+                  d.count > 0
+                    ? `${d.dateStr}: ${d.count} từ đã ôn luyện`
+                    : `${d.dateStr}: Chưa học`
+                }
+                className={`heatmap-cell ${getLevelClass(d.count)} ${d.isToday ? "is-today" : ""}`}
               />
             ))}
           </div>

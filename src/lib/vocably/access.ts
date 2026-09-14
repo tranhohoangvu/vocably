@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useAuthStore } from "./auth-store";
 import { useWordStore } from "./word-store";
+import { useSettingsStore } from "./settings-store";
 import { canEditWordContent as canEditWordContentFn } from "./database";
 import type { AuthUser, VocabWord, WordStatus } from "./types";
 
@@ -81,4 +82,31 @@ export function useVisibleFilteredWords(): VocabWord[] {
       return topicMatch && statusMatch && searchMatch;
     });
   }, [words, filter]);
+}
+
+export function useStudyPool(): VocabWord[] {
+  const words = useVisibleWords();
+  const studyTopic = useSettingsStore((s) => s.studyTopic);
+  const studySource = useSettingsStore((s) => s.studySource);
+
+  return useMemo(() => {
+    let pool = words;
+    if (studyTopic && studyTopic !== "all") {
+      pool = pool.filter((w) => w.topic === studyTopic);
+    }
+    if (studySource === "due") {
+      const now = new Date();
+      const due = pool.filter(
+        (w) => w.status !== "known" && (!w.nextReview || new Date(w.nextReview) <= now),
+      );
+      if (due.length > 0) return due;
+    } else if (studySource === "new") {
+      const news = pool.filter((w) => w.status === "new");
+      if (news.length > 0) return news;
+    } else if (studySource === "learning") {
+      const learning = pool.filter((w) => w.status === "learning" || w.status === "review");
+      if (learning.length > 0) return learning;
+    }
+    return pool.length > 0 ? pool : words;
+  }, [words, studyTopic, studySource]);
 }

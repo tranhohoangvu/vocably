@@ -2,6 +2,7 @@ import { create } from "zustand";
 import type { AuthUser, StoredAccount, UserRole } from "./types";
 import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from "./types";
 import { ACCOUNTS_KEY, SESSION_KEY, writeClientSession } from "./session";
+import { useStreakStore } from "./settings-store";
 
 const DEFAULT_GUEST: AuthUser = {
   name: "Khách",
@@ -129,6 +130,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     await ensureDefaultAdmin();
     const user = readSession();
     set({ user, isAuthenticated: !!user });
+    useStreakStore.getState().loadStreak(user?.email);
   },
 
   login: async (email, password) => {
@@ -152,6 +154,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     const user = toPublicUser(acc);
     writeSession(user);
     set({ user, isAuthenticated: true });
+    useStreakStore.getState().loadStreak(user.email);
     return { success: true, user };
   },
 
@@ -183,6 +186,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     const user = toPublicUser(acc);
     writeSession(user);
     set({ user, isAuthenticated: true });
+    useStreakStore.getState().loadStreak(user.email);
     return { success: true, user };
   },
 
@@ -198,12 +202,14 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     const user = { ...DEFAULT_GUEST, joinedDate: new Date().toISOString().slice(0, 10) };
     writeSession(user);
     set({ user, isAuthenticated: true });
+    useStreakStore.getState().loadStreak(user.email);
     return user;
   },
 
   logout: () => {
     writeSession(null);
     set({ user: null, isAuthenticated: false });
+    useStreakStore.getState().loadStreak(null);
   },
 
   updateProfile: (data) => {

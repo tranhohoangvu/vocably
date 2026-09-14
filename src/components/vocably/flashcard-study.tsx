@@ -3,8 +3,9 @@ import { useNavigate } from "@tanstack/react-router";
 import { ArrowLeft, Volume2 } from "lucide-react";
 import { useWordStore } from "@/lib/vocably/word-store";
 import { useSettingsStore, useStreakStore } from "@/lib/vocably/settings-store";
-import { useVisibleDueWords, useVisibleWords } from "@/lib/vocably/access";
+import { useStudyPool, useAuthUser } from "@/lib/vocably/access";
 import { scheduleCard, RATING_META } from "@/lib/vocably/fsrs";
+import { saveStudySession } from "@/lib/vocably/database";
 import { speak } from "@/lib/vocably/tts";
 import type { VocabWord } from "@/lib/vocably/types";
 import { Button } from "@/components/ui/button";
@@ -19,8 +20,8 @@ function shuffle<T>(arr: T[]) {
 
 export function FlashcardStudy() {
   const navigate = useNavigate();
-  const words = useVisibleWords();
-  const dueWords = useVisibleDueWords();
+  const poolWords = useStudyPool();
+  const user = useAuthUser();
   const updateProgress = useWordStore((s) => s.updateProgress);
   const sessionSize = useSettingsStore((s) => s.sessionSize);
   const autoSpeak = useSettingsStore((s) => s.autoSpeak);
@@ -37,22 +38,21 @@ export function FlashcardStudy() {
 
   const buildQueue = useCallback(() => {
     const size = sessionSize || 20;
-    const pool = dueWords.length ? dueWords : words;
-    const next = shuffle(pool).slice(0, size);
+    const next = shuffle(poolWords).slice(0, size);
     setQueue(next);
     setIdx(0);
     setFlipped(false);
     setDone(false);
     setStats({ again: 0, hard: 0, good: 0, easy: 0 });
-  }, [dueWords, words, sessionSize]);
+  }, [poolWords, sessionSize]);
 
   // Chỉ dựng hàng đợi một lần khi đã có từ (tránh vòng lặp setState)
   useEffect(() => {
     if (started.current) return;
-    if (words.length === 0) return;
+    if (poolWords.length === 0) return;
     started.current = true;
     buildQueue();
-  }, [words.length, buildQueue]);
+  }, [poolWords.length, buildQueue]);
 
   const restart = useCallback(() => {
     buildQueue();
@@ -79,14 +79,24 @@ export function FlashcardStudy() {
       await updateProgress(current.id, scheduleCard(current, rating));
       const key = ["", "again", "hard", "good", "easy"][rating] as keyof typeof stats;
       setStats((s) => ({ ...s, [key]: s[key] + 1 }));
-      recordStudy();
-      if (idx + 1 >= queue.length) setDone(true);
-      else {
+      recordStudy(1, user?.email);
+      if (idx + 1 >= queue.length) {
+        setDone(true);
+        const correctCount = stats.good + stats.easy + (rating >= 3 ? 1 : 0);
+        void saveStudySession({
+          userEmail: user?.email || "guest@vocably.local",
+          date: new Date().toISOString().slice(0, 10),
+          timestamp: new Date().toISOString(),
+          mode: "flashcard",
+          wordsStudied: queue.length,
+          correct: correctCount,
+        });
+      } else {
         setIdx((i) => i + 1);
         setFlipped(false);
       }
     },
-    [current, idx, queue.length, updateProgress, recordStudy],
+    [current, idx, queue.length, updateProgress, recordStudy, stats, user],
   );
 
   useEffect(() => {
