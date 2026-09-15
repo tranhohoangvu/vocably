@@ -16,7 +16,7 @@ type FormMode = "create" | "edit" | null;
 export function AdminPage() {
   const navigate = useNavigate();
   const isAdmin = useIsAdmin();
-  const listAccounts = useAuthStore((s) => s.listAccounts);
+  const fetchAccountsAsync = useAuthStore((s) => s.fetchAccountsAsync);
   const createAccount = useAuthStore((s) => s.createAccount);
   const updateAccount = useAuthStore((s) => s.updateAccount);
   const deleteAccount = useAuthStore((s) => s.deleteAccount);
@@ -34,9 +34,10 @@ export function AdminPage() {
   });
   const [saving, setSaving] = useState(false);
 
-  const refresh = useCallback(() => {
-    setAccounts(listAccounts());
-  }, [listAccounts]);
+  const refresh = useCallback(async () => {
+    const accs = await fetchAccountsAsync();
+    setAccounts(accs);
+  }, [fetchAccountsAsync]);
 
   useEffect(() => {
     if (!isAdmin) {
@@ -118,11 +119,11 @@ export function AdminPage() {
     }
   };
 
-  const onDelete = (email: string) => {
+  const onDelete = async (email: string) => {
     if (!confirm(`Xóa tài khoản ${email}?`)) return;
-    const res = deleteAccount(email);
+    const res = await deleteAccount(email);
     setMsg(res.success ? { type: "ok", text: `Đã xóa ${email}` } : { type: "err", text: res.error || "Lỗi" });
-    refresh();
+    await refresh();
   };
 
   return (
@@ -297,7 +298,9 @@ export function AdminPage() {
 
       <p className="text-xs text-subtle">
         <Shield className="mr-1 inline size-3.5" />
-        Dữ liệu user lưu localStorage trên trình duyệt này.
+        {useAuthStore.getState().isCloudMode
+          ? "Hệ thống đang kết nối Cloud Supabase (bảng profiles)."
+          : "Dữ liệu user lưu nội bộ trên trình duyệt này."}
       </p>
     </div>
   );

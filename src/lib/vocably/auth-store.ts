@@ -3,6 +3,7 @@ import type { AuthUser, StoredAccount, UserRole } from "./types";
 import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from "./types";
 import { ACCOUNTS_KEY, SESSION_KEY, writeClientSession } from "./session";
 import { useStreakStore } from "./settings-store";
+import { getSupabase, isSupabaseConfigured } from "./supabase";
 
 const DEFAULT_GUEST: AuthUser = {
   name: "Khách",
@@ -29,7 +30,7 @@ function readSession(): AuthUser | null {
     if (!saved) return null;
     const u = JSON.parse(saved) as AuthUser;
     if (!u || typeof u !== "object" || typeof u.email !== "string") return null;
-    if (!u.role) u.role = u.email === DEFAULT_ADMIN_EMAIL ? "admin" : "user";
+    if (!u.role) u.role = u.email.toLowerCase() === DEFAULT_ADMIN_EMAIL.toLowerCase() ? "admin" : "user";
     return u;
   } catch {
     return null;
@@ -78,9 +79,21 @@ async function ensureDefaultAdmin() {
   writeAccounts(map);
 }
 
+async function fetchSupabaseProfile(userId: string) {
+  const supabase = getSupabase();
+  if (!supabase) return null;
+  try {
+    const { data } = await supabase.from("profiles").select("*").eq("id", userId).maybeSingle();
+    return data;
+  } catch {
+    return null;
+  }
+}
+
 type AuthState = {
   user: AuthUser | null;
   isAuthenticated: boolean;
+  isCloudMode: boolean;
   hydrate: () => Promise<void>;
   login: (
     email: string,
@@ -102,8 +115,9 @@ type AuthState = {
   logout: () => void;
   updateProfile: (data: Partial<AuthUser>) => void;
   listAccounts: () => StoredAccount[];
-  setUserRole: (email: string, role: UserRole) => { success: boolean; error?: string };
-  deleteAccount: (email: string) => { success: boolean; error?: string };
+  fetchAccountsAsync: () => Promise<StoredAccount[]>;
+  setUserRole: (email: string, role: UserRole) => Promise<{ success: boolean; error?: string }>;
+  deleteAccount: (email: string) => Promise<{ success: boolean; error?: string }>;
   createAccount: (data: {
     name: string;
     email: string;
@@ -125,20 +139,92 @@ type AuthState = {
 export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   isAuthenticated: false,
+  isCloudMode: isSupabaseConfigured(),
 
   hydrate: async () => {
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        try {
+          const { data } = await supabase.auth.getSession();
+          if (data.session?.user) {
+            const u = data.session.user;
+            const profile = await fetchSupabaseProfile(u.id);
+            const isDefaultAdmin = u.email?.toLowerCase() === DEFAULT_ADMIN_EMAIL.toLowerCase();
+            const role: UserRole = (profile?.role || (isDefaultAdmin ? "admin" : "user")) as UserRole;
+            const authUser: AuthUser = {
+              id: u.id,
+              name: profile?.name || u.user_metadata?.name || u.email?.split("@")[0] || "User",
+              email: u.email || "",
+              targetScore: profile?.target_score || u.user_metadata?.targetScore || 850,
+              avatar: (profile?.name?.[0] || u.user_metadata?.name?.[0] || "U").toUpperCase(),
+              isGuest: false,
+              role,
+              joinedDate: profile?.created_at?.slice(0, 10) || u.created_at?.slice(0, 10) || new Date().toISOString().slice(0, 10),
+            };
+            writeSession(authUser);
+            set({ user: authUser, isAuthenticated: true, isCloudMode: true });
+            useStreakStore.getState().loadStreak(authUser.email);
+            return;
+          }
+        } catch (err) {
+          console.error("Supabase hydration error, falling back to local session:", err);
+        }
+      }
+    }
+
+    // Fallback: Local offline mode (hoặc tài khoản demo khách)
     await ensureDefaultAdmin();
     const user = readSession();
-    set({ user, isAuthenticated: !!user });
+    set({ user, isAuthenticated: !!user, isCloudMode: isSupabaseConfigured() });
     useStreakStore.getState().loadStreak(user?.email);
   },
 
   login: async (email, password) => {
-    await ensureDefaultAdmin();
     const key = email.trim().toLowerCase();
     if (!key || !password) {
       return { success: false, error: "Vui lòng nhập email và mật khẩu." };
     }
+
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        try {
+          const { data, error } = await supabase.auth.signInWithPassword({
+            email: key,
+            password,
+          });
+          if (error) {
+            return { success: false, error: error.message };
+          }
+          if (data.user) {
+            const u = data.user;
+            const profile = await fetchSupabaseProfile(u.id);
+            const isDefaultAdmin = u.email?.toLowerCase() === DEFAULT_ADMIN_EMAIL.toLowerCase();
+            const role: UserRole = (profile?.role || (isDefaultAdmin ? "admin" : "user")) as UserRole;
+            const authUser: AuthUser = {
+              id: u.id,
+              name: profile?.name || u.user_metadata?.name || u.email?.split("@")[0] || "User",
+              email: u.email || key,
+              targetScore: profile?.target_score || u.user_metadata?.targetScore || 850,
+              avatar: (profile?.name?.[0] || u.user_metadata?.name?.[0] || "U").toUpperCase(),
+              isGuest: false,
+              role,
+              joinedDate: profile?.created_at?.slice(0, 10) || u.created_at?.slice(0, 10) || new Date().toISOString().slice(0, 10),
+            };
+            writeSession(authUser);
+            set({ user: authUser, isAuthenticated: true, isCloudMode: true });
+            useStreakStore.getState().loadStreak(authUser.email);
+            return { success: true, user: authUser };
+          }
+        } catch (err) {
+          return { success: false, error: err instanceof Error ? err.message : "Đăng nhập Supabase thất bại." };
+        }
+      }
+    }
+
+    // Fallback: Local offline mode
+    await ensureDefaultAdmin();
     const map = readAccounts();
     const acc = map[key];
     if (!acc) {
@@ -159,13 +245,58 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   },
 
   signup: async (name, email, password, targetScore = 850) => {
-    await ensureDefaultAdmin();
     const key = email.trim().toLowerCase();
     if (!name.trim()) return { success: false, error: "Vui lòng nhập tên hiển thị." };
     if (!key.includes("@")) return { success: false, error: "Email không hợp lệ." };
     if (!password || password.length < 6) {
       return { success: false, error: "Mật khẩu tối thiểu 6 ký tự." };
     }
+
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        try {
+          const isInitialAdmin = key === DEFAULT_ADMIN_EMAIL.toLowerCase();
+          const role: UserRole = isInitialAdmin ? "admin" : "user";
+          const { data, error } = await supabase.auth.signUp({
+            email: key,
+            password,
+            options: {
+              data: {
+                name: name.trim(),
+                targetScore: Number(targetScore) || 850,
+                role,
+              },
+            },
+          });
+          if (error) {
+            return { success: false, error: error.message };
+          }
+          if (data.user) {
+            const u = data.user;
+            const authUser: AuthUser = {
+              id: u.id,
+              name: name.trim(),
+              email: key,
+              targetScore: Number(targetScore) || 850,
+              avatar: (name.trim()[0] || "V").toUpperCase(),
+              isGuest: false,
+              role,
+              joinedDate: new Date().toISOString().slice(0, 10),
+            };
+            writeSession(authUser);
+            set({ user: authUser, isAuthenticated: true, isCloudMode: true });
+            useStreakStore.getState().loadStreak(authUser.email);
+            return { success: true, user: authUser };
+          }
+        } catch (err) {
+          return { success: false, error: err instanceof Error ? err.message : "Đăng ký Supabase thất bại." };
+        }
+      }
+    }
+
+    // Fallback: Local offline mode
+    await ensureDefaultAdmin();
     const map = readAccounts();
     if (map[key]) {
       return { success: false, error: "Email đã được đăng ký. Hãy đăng nhập." };
@@ -207,6 +338,12 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   },
 
   logout: () => {
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        void supabase.auth.signOut();
+      }
+    }
     writeSession(null);
     set({ user: null, isAuthenticated: false });
     useStreakStore.getState().loadStreak(null);
@@ -217,6 +354,19 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       if (!state.user || state.user.isGuest) return state;
       const updated = { ...state.user, ...data, isGuest: false, role: state.user.role };
       writeSession(updated);
+
+      if (isSupabaseConfigured() && updated.id) {
+        const supabase = getSupabase();
+        if (supabase) {
+          void supabase.from("profiles").update({
+            name: updated.name,
+            target_score: updated.targetScore,
+            avatar: updated.avatar,
+            updated_at: new Date().toISOString(),
+          }).eq("id", updated.id);
+        }
+      }
+
       const map = readAccounts();
       const key = updated.email.toLowerCase();
       if (map[key]) {
@@ -232,13 +382,50 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     return Object.values(map).sort((a, b) => a.joinedDate.localeCompare(b.joinedDate));
   },
 
-  setUserRole: (email, role) => {
+  fetchAccountsAsync: async () => {
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        try {
+          const { data } = await supabase.from("profiles").select("*");
+          if (data && data.length > 0) {
+            return data.map((p) => ({
+              id: p.id,
+              name: p.name,
+              email: p.email,
+              targetScore: p.target_score ?? 850,
+              avatar: p.avatar ?? (p.name?.[0] || "U").toUpperCase(),
+              isGuest: false,
+              role: (p.role as UserRole) || "user",
+              joinedDate: p.created_at?.slice(0, 10) || new Date().toISOString().slice(0, 10),
+              passwordHash: "",
+            }));
+          }
+        } catch {
+          /* ignore */
+        }
+      }
+    }
+    return get().listAccounts();
+  },
+
+  setUserRole: async (email, role) => {
     const me = get().user;
     if (!me || me.role !== "admin") return { success: false, error: "Không có quyền." };
     const key = email.toLowerCase();
     if (key === me.email.toLowerCase() && role !== "admin") {
       return { success: false, error: "Không thể tự hạ quyền admin của chính bạn." };
     }
+
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        const { error } = await supabase.from("profiles").update({ role }).eq("email", key);
+        if (error) return { success: false, error: error.message };
+        return { success: true };
+      }
+    }
+
     const map = readAccounts();
     if (!map[key]) return { success: false, error: "Không tìm thấy tài khoản." };
     map[key] = { ...map[key], role };
@@ -246,13 +433,23 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     return { success: true };
   },
 
-  deleteAccount: (email) => {
+  deleteAccount: async (email) => {
     const me = get().user;
     if (!me || me.role !== "admin") return { success: false, error: "Không có quyền." };
     const key = email.toLowerCase();
     if (key === me.email.toLowerCase()) {
       return { success: false, error: "Không thể xóa chính tài khoản đang đăng nhập." };
     }
+
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        const { error } = await supabase.from("profiles").delete().eq("email", key);
+        if (error) return { success: false, error: error.message };
+        return { success: true };
+      }
+    }
+
     const map = readAccounts();
     if (!map[key]) return { success: false, error: "Không tìm thấy tài khoản." };
     delete map[key];
@@ -269,6 +466,7 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     if (!data.password || data.password.length < 6) {
       return { success: false, error: "Mật khẩu tối thiểu 6 ký tự." };
     }
+
     const map = readAccounts();
     if (map[key]) return { success: false, error: "Email đã tồn tại." };
     const passwordHash = await hashPassword(data.password);
@@ -290,11 +488,11 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     const me = get().user;
     if (!me || me.role !== "admin") return { success: false, error: "Không có quyền." };
     const key = email.toLowerCase();
-    const map = readAccounts();
-    if (!map[key]) return { success: false, error: "Không tìm thấy tài khoản." };
     if (key === me.email.toLowerCase() && data.role && data.role !== "admin") {
       return { success: false, error: "Không thể tự hạ quyền admin của chính bạn." };
     }
+    const map = readAccounts();
+    if (!map[key]) return { success: false, error: "Không tìm thấy tài khoản." };
     const next = { ...map[key] };
     if (data.name?.trim()) {
       next.name = data.name.trim();

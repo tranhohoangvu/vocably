@@ -9,6 +9,7 @@ import {
   LOGIN_REQUIRED_ERROR,
 } from "./database";
 import { useAuthStore } from "./auth-store";
+import { getSupabase, isSupabaseConfigured } from "./supabase";
 import type { VocabWord, WordDraft, WordStatus } from "./types";
 
 type Filter = { topic: string; status: WordStatus | "all"; search: string };
@@ -97,6 +98,27 @@ export const useWordStore = create<WordState>((set, get) => ({
     const now = new Date().toISOString();
     const id = await getDb().words.add({ ...wordData, ...emptyFsrs(now), isSeed: false });
     await get().fetchWords();
+
+    if (isSupabaseConfigured()) {
+      const user = actor();
+      if (user?.id && !user.isGuest) {
+        const supabase = getSupabase();
+        if (supabase) {
+          void supabase.from("words").insert({
+            word: wordData.word,
+            ipa: wordData.ipa,
+            meaning: wordData.meaning,
+            part_of_speech: wordData.partOfSpeech,
+            topic: wordData.topic,
+            example: wordData.example,
+            tags: wordData.tags,
+            is_seed: false,
+            user_id: user.id,
+          });
+        }
+      }
+    }
+
     return id;
   },
 
@@ -124,8 +146,36 @@ export const useWordStore = create<WordState>((set, get) => ({
     const db = getDb();
     const word = await db.words.get(id);
     if (!word) return;
-    await db.words.update(id, pickStudyFields(changes));
+    const studyFields = pickStudyFields(changes);
+    await db.words.update(id, studyFields);
     await get().fetchWords();
+
+    if (isSupabaseConfigured()) {
+      const user = actor();
+      if (user?.id && !user.isGuest) {
+        const supabase = getSupabase();
+        if (supabase) {
+          void supabase.from("user_word_progress").upsert(
+            {
+              user_id: user.id,
+              word_id: id,
+              status: changes.status || word.status,
+              next_review: changes.nextReview || word.nextReview,
+              stability: changes.stability ?? word.stability,
+              difficulty: changes.difficulty ?? word.difficulty,
+              elapsed_days: changes.elapsedDays ?? word.elapsedDays,
+              scheduled_days: changes.scheduledDays ?? word.scheduledDays,
+              reps: changes.reps ?? word.reps,
+              lapses: changes.lapses ?? word.lapses,
+              fsrs_state: changes.fsrsState ?? word.fsrsState,
+              last_review: changes.lastReview ?? word.lastReview,
+              updated_at: new Date().toISOString(),
+            },
+            { onConflict: "user_id,word_id" },
+          );
+        }
+      }
+    }
   },
 
   deleteWord: async (id) => {
@@ -139,6 +189,13 @@ export const useWordStore = create<WordState>((set, get) => ({
     }
     await db.words.delete(id);
     await get().fetchWords();
+
+    if (isSupabaseConfigured() && user?.id) {
+      const supabase = getSupabase();
+      if (supabase) {
+        void supabase.from("words").delete().match({ id, user_id: user.id });
+      }
+    }
   },
 
   importWords: async (newWords) => {

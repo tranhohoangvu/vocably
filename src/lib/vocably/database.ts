@@ -1,6 +1,7 @@
 import Dexie, { type Table } from "dexie";
 import type { AuthUser, SettingEntry, StudySession, VocabWord } from "./types";
 import { CONTENT_KEYS, STUDY_KEYS } from "./types";
+import { getSupabase, isSupabaseConfigured } from "./supabase";
 
 class VocablyDB extends Dexie {
   words!: Table<VocabWord, number>;
@@ -149,6 +150,22 @@ export async function saveStudySession(session: Omit<StudySession, "id">): Promi
   try {
     const db = getDb();
     await db.studySessions.add(session);
+
+    if (isSupabaseConfigured()) {
+      const supabase = getSupabase();
+      if (supabase) {
+        const { data: userData } = await supabase.auth.getUser();
+        if (userData.user) {
+          void supabase.from("study_sessions").insert({
+            user_id: userData.user.id,
+            date: session.date,
+            mode: session.mode,
+            words_studied: session.wordsStudied,
+            correct: session.correct,
+          });
+        }
+      }
+    }
   } catch (err) {
     console.error("Failed to save study session:", err);
   }
