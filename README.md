@@ -1,5 +1,11 @@
 # VOCABLY – Nền Tảng Học Từ Vựng TOEIC Ứng Dụng Thuật Toán Phân Tích Nhận Thức
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-vocably--english--learning.vercel.app-10b981?style=for-the-badge&logo=vercel)](https://vocably-english-learning.vercel.app/)
+[![Database](https://img.shields.io/badge/Database-Supabase-3ecf8e?style=for-the-badge&logo=supabase)](https://supabase.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+> 🌐 **Website chính thức**: [https://vocably-english-learning.vercel.app/](https://vocably-english-learning.vercel.app/)
+
 Vocably là ứng dụng web học từ vựng TOEIC được thiết kế theo kiến trúc **Hybrid (Offline-first & Cloud-ready)**, tập trung tối ưu hóa khả năng ghi nhớ dài hạn thông qua thuật toán lặp lại ngắt quãng **FSRS-4.5 (Free Spaced Repetition Scheduler)**. Dự án giải quyết bài toán cốt lõi của người học ngoại ngữ: ghi nhớ khối lượng lớn từ vựng chuẩn ETS một cách tự nhiên, phản xạ cao, không học vẹt, đồng thời đảm bảo quyền riêng tư và tốc độ phản hồi tức thì.
 
 ---
@@ -106,3 +112,27 @@ Mặc định, Vocably hoạt động **100% Offline** không cần mạng. Khi 
    VITE_SUPABASE_ANON_KEY=your-anon-key
    ```
    Khởi động lại app (`npm run dev`), Vocably sẽ tự động chuyển sang chế độ **Cloud-connected** mà không cần sửa bất kỳ dòng code nào.
+
+---
+
+## 8. Triển Khai Production (Vercel & Supabase)
+
+Hệ thống đã được tối ưu hóa sẵn sàng cho việc triển khai lên **Vercel** thông qua **Nitro Server Toolkit**:
+
+1. **Khởi tạo cơ sở dữ liệu trên Supabase**:
+   - Chạy toàn bộ kịch bản trong file `supabase/schema.sql` tại Supabase SQL Editor.
+   - Lấy `Project URL` và `anon key` tại **Project Settings** $\rightarrow$ **API**.
+
+2. **Deploy lên Vercel**:
+   - Kết nối repository GitHub với Vercel.
+   - Thiết lập các biến môi trường tại **Project Settings** $\rightarrow$ **Environment Variables**:
+     - `VITE_SUPABASE_URL`: URL project Supabase (ví dụ: `https://xxxx.supabase.co`).
+     - `VITE_SUPABASE_ANON_KEY`: Anon public key của Supabase.
+     - `VITE_ADMIN_EMAIL`: Email của tài khoản Quản trị viên.
+     - `VITE_ADMIN_PASSWORD`: Mật khẩu tài khoản Quản trị viên.
+   - Bấm **Deploy**. Vercel sẽ tự động đóng gói ứng dụng qua Nitro Serverless Function.
+
+3. **Cấu hình Redirect URL tại Supabase**:
+   - Truy cập Supabase $\rightarrow$ **Authentication** $\rightarrow$ **URL Configuration**.
+   - Cập nhật **Site URL** và thêm `https://vocably-english-learning.vercel.app/**` vào **Redirect URLs**.
+
